@@ -1,0 +1,208 @@
+.pad-top-0{
+    padding-top:0px;
+}
+.pad-bottom-0{
+    padding-bottom:0px;
+}
+.pad-left-0{
+    padding-left:0px;
+}
+.pad-right-0{
+    padding-right:0px;
+}
+.pad-top-21{
+    padding-top: 21px;
+}
+.detail-container{
+    padding: 6px 0px;
+}
+.prod-name-heading{
+    font-size: 18px;
+}
+.rate-btn{
+    font-size:10px;
+}
+.rate-info{
+    color: gray;
+    font-weight: bolder;
+}
+.price{
+    font-weight: bold;
+    font-size: xx-large;
+}
+.spec-head{
+    font-weight: 700;
+}
+#resest-bootstrap .spec-table-cont th,#resest-bootstrap .spec-table-cont td{
+    border:none;
+}
+#resest-bootstrap .spec-table-cont tbody tr td:first-child{
+    color:gray;
+}
+#resest-bootstrap .spec-table-cont tbody tr td{
+    font-size:14px;
+}
+#resest-bootstrap .col-xs-12{
+        padding-right: 15px;
+        padding-left: 15px;
+}
+
+#bootstrap-overrides{
+    background-color:white;
+}
+.prod-rate{
+    font-size: 43px;
+    font-weight: bold;
+}
+.prod-rate-star{
+    font-size: x-large;
+}
+.total-review{
+    color: gray;
+    font-weight: bold;
+    font-size: 15px;
+}
+.individual-rate-container{
+    float: left;
+    padding-right: 10px;
+}
+.individual-rate-count{
+    font-weight: bold;
+    font-size: 14px;
+}
+.individual-rate-container .glyphicon-star{
+    font-size: 12px;
+}
+.progress-bar-container{
+        clear: right;
+    padding-top: 6px;
+}
+.progress-bar-container .progress{
+    height: 6px;
+    width: 125px;
+    border-radius: 0px;
+    border-top-width: 20px;
+    padding-top: 0px;
+}
+.rate-review-btn-container .btn{
+    background-color: #f9f9f9;
+    color: #212121;
+    box-shadow: 1px 1px 1px gray;
+    font-size: 14px;
+    font-weight: bold;
+}
+.rate-review-btn-container .btn a{
+    color: #212121;
+    text-decoration: none;
+}
+.comment-container .comment-rate{
+    font-size:11px;
+}
+#resest-bootstrap .comment-container .rate-btn-badge{
+    font-size: 8px;
+}
+.inline-block{
+    display:inline-block;
+}
+.comment-head{
+    font-weight: bold;
+    line-height: 20px;
+}
+.commenter-detail{
+    color: gray;
+    font-size: 12px;
+}
+.pointer{
+    cursor:pointer;
+}
+.like-dislike-count{
+        margin-right: 15px;
+}
+.comment-action-container{
+    color: gray;
+    font-size: 13px;
+}
+.comment-action-container #dropdownMenu1{
+    background-color: white;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: gray;
+}
+.comment-action-container #dropdownMenu1 .caret{
+    border-top: 6px dashed;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+.comment-action-container .glyphicon-thumbs-up{
+    font-size: 16px;
+}
+.comment-action-container .glyphicon-thumbs-down{
+    font-size: 16px;
+}
+.comment-action-container .glyphicon-thumbs-up:hover{
+    color:blue;
+}
+.comment-action-container .glyphicon-thumbs-down:hover{
+    color:red;
+}
+.comment-container .nav>li>a {
+    padding: 15px 15px 0px;
+}
+    
+    .btn-container-pad{
+        padding: 8px 4px;
+    }
+    .btn-container-pad a{
+        text-decoration: none;
+        color:white;
+    }
+    #bootstrap-overrides .add-cart{
+        border-radius: 0px;
+        background-color: #ff9f00;
+        border-color: #ff9f00;
+       /* font-size: large;  */
+    }
+   #bootstrap-overrides .buy-now{
+    border-radius: 0px;
+    background-color: #fb641b;
+    border-color: #fb641b;
+     /* font-size: large;  */
+    }
+    #bootstrap-overrides .row-override{
+    margin-right: 0px;
+    margin-left: 0px;
+    }
+    .block-btn{
+        display: block;
+        width: 100%;
+    }
+   #comment-sec .nav-pills>li.active>a, #comment-sec .nav-pills>li.active>a:focus,#comment-sec .nav-pills>li.active>a:hover {
+    color: #337ab7;
+    text-decoration: underline;
+    background-color:inherit;
+
+}
+
+#comment-sec .nav-pills>li>a {
+    border-radius: 0px;
+    color:black;
+}
+#comment-sec .nav>li>a:focus,#comment-sec .nav>li>a:hover {
+    text-decoration: none;
+    background-color: inherit;
+}
+
+@media only screen and (min-width:768px) {
+    #comment-sec .nav-pills>li.active>a,#comment-sec .nav-pills>li.active>a:focus,#comment-sec .nav-pills>li.active>a:hover {
+    border-bottom: 4px solid #337ab7;
+    text-decoration: none;
+    }
+    #comment-sec .nav-pills>li>a {
+    font-weight: bold;
+}
+    
+.rate-review-btn-container{
+    padding-top: 4em;
+}
+}

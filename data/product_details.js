@@ -1,4 +1,4 @@
-{
+var productDetails = {
 	"products": [
 		{
 			"id": "1",
@@ -8,7 +8,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -260,7 +260,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -512,7 +512,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -764,7 +764,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -1016,7 +1016,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -1268,7 +1268,7 @@
 			"brand_id": "1",
 			"product_name": "samsung Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -1520,7 +1520,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -1772,7 +1772,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -2024,7 +2024,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -2276,7 +2276,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -2528,7 +2528,7 @@
 			"brand_id": "1",
 			"product_name": "samsung Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -2780,7 +2780,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -3032,7 +3032,7 @@
 			"brand_id": "1",
 			"product_name": "samsung Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -3284,7 +3284,7 @@
 			"brand_id": "1",
 			"product_name": "samsung Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -3536,7 +3536,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -3788,7 +3788,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -4040,7 +4040,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -4292,7 +4292,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -4544,7 +4544,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -4796,7 +4796,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -5048,7 +5048,7 @@
 			"brand_id": "1",
 			"product_name": "samsung Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -5300,7 +5300,7 @@
 			"brand_id": "1",
 			"product_name": "samsung Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -5552,7 +5552,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -5804,7 +5804,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -6056,7 +6056,7 @@
 			"brand_id": "1",
 			"product_name": "samsung Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -6308,7 +6308,7 @@
 			"brand_id": "1",
 			"product_name": "samsung galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -6560,7 +6560,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -6812,7 +6812,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -7064,7 +7064,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -7316,7 +7316,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -7568,7 +7568,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -7820,7 +7820,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -8072,7 +8072,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -8324,7 +8324,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -8576,7 +8576,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -8828,7 +8828,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -9080,7 +9080,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -9332,7 +9332,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -9584,7 +9584,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -9836,7 +9836,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -10088,7 +10088,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -10340,7 +10340,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -10592,7 +10592,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -10844,7 +10844,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -11096,7 +11096,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -11348,7 +11348,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -11600,7 +11600,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -11852,7 +11852,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -12104,7 +12104,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -12356,7 +12356,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -12608,7 +12608,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -12860,7 +12860,7 @@
 			"brand_id": "2",
 			"product_name": "lenovo galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -13112,7 +13112,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -13364,7 +13364,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -13616,7 +13616,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -13868,7 +13868,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -14120,7 +14120,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -14372,7 +14372,7 @@
 			"brand_id": "3",
 			"product_name": "mi Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -14624,7 +14624,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -14876,7 +14876,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -15128,7 +15128,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -15380,7 +15380,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -15632,7 +15632,7 @@
 			"brand_id": "3",
 			"product_name": "mi Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -15884,7 +15884,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -16136,7 +16136,7 @@
 			"brand_id": "3",
 			"product_name": "mi Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -16388,7 +16388,7 @@
 			"brand_id": "3",
 			"product_name": "mi Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -16640,7 +16640,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -16892,7 +16892,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -17144,7 +17144,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -17396,7 +17396,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -17648,7 +17648,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -17900,7 +17900,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -18152,7 +18152,7 @@
 			"brand_id": "3",
 			"product_name": "mi Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -18404,7 +18404,7 @@
 			"brand_id": "3",
 			"product_name": "mi Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -18656,7 +18656,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -18908,7 +18908,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -19160,7 +19160,7 @@
 			"brand_id": "3",
 			"product_name": "mi Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -19412,7 +19412,7 @@
 			"brand_id": "3",
 			"product_name": "mi galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -19664,7 +19664,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -19916,7 +19916,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -20168,7 +20168,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -20420,7 +20420,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -20672,7 +20672,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -20924,7 +20924,7 @@
 			"brand_id": "4",
 			"product_name": "motorola Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -21176,7 +21176,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -21428,7 +21428,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -21680,7 +21680,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -21932,7 +21932,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -22184,7 +22184,7 @@
 			"brand_id": "4",
 			"product_name": "motorola Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -22436,7 +22436,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -22688,7 +22688,7 @@
 			"brand_id": "4",
 			"product_name": "motorola Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -22940,7 +22940,7 @@
 			"brand_id": "4",
 			"product_name": "motorola Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -23192,7 +23192,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -23444,7 +23444,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -23696,7 +23696,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -23948,7 +23948,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -24200,7 +24200,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -24452,7 +24452,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -24704,7 +24704,7 @@
 			"brand_id": "4",
 			"product_name": "motorola Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -24956,7 +24956,7 @@
 			"brand_id": "4",
 			"product_name": "motorola Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -25208,7 +25208,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -25460,7 +25460,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -25712,7 +25712,7 @@
 			"brand_id": "4",
 			"product_name": "motorola Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -25964,7 +25964,7 @@
 			"brand_id": "4",
 			"product_name": "motorola galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -26216,7 +26216,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -26468,7 +26468,7 @@
 			"brand_id": "6",
 			"product_name": "leEco galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -26720,7 +26720,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -26972,7 +26972,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -27224,7 +27224,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -27476,7 +27476,7 @@
 			"brand_id": "5",
 			"product_name": "leEco Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -27728,7 +27728,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -27980,7 +27980,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -28232,7 +28232,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -28484,7 +28484,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -28736,7 +28736,7 @@
 			"brand_id": "5",
 			"product_name": "leEco Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -28988,7 +28988,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -29240,7 +29240,7 @@
 			"brand_id": "5",
 			"product_name": "leEco Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -29492,7 +29492,7 @@
 			"brand_id": "5",
 			"product_name": "leEco Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -29744,7 +29744,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -29996,7 +29996,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -30248,7 +30248,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -30500,7 +30500,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -30752,7 +30752,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -31004,7 +31004,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -31256,7 +31256,7 @@
 			"brand_id": "5",
 			"product_name": "leEco Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -31508,7 +31508,7 @@
 			"brand_id": "5",
 			"product_name": "leEco Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -31760,7 +31760,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -32012,7 +32012,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -32264,7 +32264,7 @@
 			"brand_id": "5",
 			"product_name": "leEco Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -32516,7 +32516,7 @@
 			"brand_id": "5",
 			"product_name": "leEco galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -32768,7 +32768,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -33020,7 +33020,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -33272,7 +33272,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -33524,7 +33524,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -33776,7 +33776,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -34028,7 +34028,7 @@
 			"brand_id": "6",
 			"product_name": "apple Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -34280,7 +34280,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -34532,7 +34532,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -34784,7 +34784,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -35036,7 +35036,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -35288,7 +35288,7 @@
 			"brand_id": "6",
 			"product_name": "apple Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -35540,7 +35540,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -35792,7 +35792,7 @@
 			"brand_id": "6",
 			"product_name": "apple Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -36044,7 +36044,7 @@
 			"brand_id": "6",
 			"product_name": "apple Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -36296,7 +36296,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -36548,7 +36548,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -36800,7 +36800,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -37052,7 +37052,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -37304,7 +37304,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -37556,7 +37556,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -37808,7 +37808,7 @@
 			"brand_id": "6",
 			"product_name": "apple Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -38060,7 +38060,7 @@
 			"brand_id": "6",
 			"product_name": "apple Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -38312,7 +38312,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -38564,7 +38564,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -38816,7 +38816,7 @@
 			"brand_id": "6",
 			"product_name": "apple Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -39068,7 +39068,7 @@
 			"brand_id": "6",
 			"product_name": "apple galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -39320,7 +39320,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -39572,7 +39572,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -39824,7 +39824,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -40076,7 +40076,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -40328,7 +40328,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -40580,7 +40580,7 @@
 			"brand_id": "7",
 			"product_name": "asus Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -40832,7 +40832,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -41084,7 +41084,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -41336,7 +41336,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -41588,7 +41588,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -41840,7 +41840,7 @@
 			"brand_id": "7",
 			"product_name": "asus Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -42092,7 +42092,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -42344,7 +42344,7 @@
 			"brand_id": "7",
 			"product_name": "asus Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -42596,7 +42596,7 @@
 			"brand_id": "7",
 			"product_name": "asus Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -42848,7 +42848,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -43100,7 +43100,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -43352,7 +43352,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -43604,7 +43604,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -43856,7 +43856,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -44108,7 +44108,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -44360,7 +44360,7 @@
 			"brand_id": "7",
 			"product_name": "asus Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -44612,7 +44612,7 @@
 			"brand_id": "7",
 			"product_name": "asus Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -44864,7 +44864,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -45116,7 +45116,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -45368,7 +45368,7 @@
 			"brand_id": "7",
 			"product_name": "asus Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -45620,7 +45620,7 @@
 			"brand_id": "7",
 			"product_name": "asus galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -45872,7 +45872,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -46124,7 +46124,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -46376,7 +46376,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -46628,7 +46628,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -46880,7 +46880,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -47132,7 +47132,7 @@
 			"brand_id": "8",
 			"product_name": "micromax Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -47384,7 +47384,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -47636,7 +47636,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -47888,7 +47888,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -48140,7 +48140,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -48392,7 +48392,7 @@
 			"brand_id": "8",
 			"product_name": "micromax Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -48644,7 +48644,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -48896,7 +48896,7 @@
 			"brand_id": "8",
 			"product_name": "micromax Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -49148,7 +49148,7 @@
 			"brand_id": "8",
 			"product_name": "micromax Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -49400,7 +49400,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -49652,7 +49652,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -49904,7 +49904,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -50156,7 +50156,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -50408,7 +50408,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -50660,7 +50660,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -50912,7 +50912,7 @@
 			"brand_id": "8",
 			"product_name": "micromax Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -51164,7 +51164,7 @@
 			"brand_id": "8",
 			"product_name": "micromax Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -51416,7 +51416,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -51668,7 +51668,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -51920,7 +51920,7 @@
 			"brand_id": "8",
 			"product_name": "micromax Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -52172,7 +52172,7 @@
 			"brand_id": "8",
 			"product_name": "micromax galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -52424,7 +52424,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -52676,7 +52676,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -52928,7 +52928,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -53180,7 +53180,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -53432,7 +53432,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -53684,7 +53684,7 @@
 			"brand_id": "9",
 			"product_name": "arise Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -53936,7 +53936,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -54188,7 +54188,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -54440,7 +54440,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -54692,7 +54692,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -54944,7 +54944,7 @@
 			"brand_id": "9",
 			"product_name": "arise Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -55196,7 +55196,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -55448,7 +55448,7 @@
 			"brand_id": "9",
 			"product_name": "arise Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -55700,7 +55700,7 @@
 			"brand_id": "9",
 			"product_name": "arise Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -55952,7 +55952,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -56204,7 +56204,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -56456,7 +56456,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -56708,7 +56708,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -56960,7 +56960,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -57212,7 +57212,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -57464,7 +57464,7 @@
 			"brand_id": "9",
 			"product_name": "arise Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -57716,7 +57716,7 @@
 			"brand_id": "9",
 			"product_name": "arise Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -57968,7 +57968,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -58220,7 +58220,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -58472,7 +58472,7 @@
 			"brand_id": "9",
 			"product_name": "arise Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -58724,7 +58724,7 @@
 			"brand_id": "9",
 			"product_name": "arise galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -58976,7 +58976,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -59228,7 +59228,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -59480,7 +59480,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -59732,7 +59732,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -59984,7 +59984,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -60236,7 +60236,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -60488,7 +60488,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -60740,7 +60740,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -60992,7 +60992,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -61244,7 +61244,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -61496,7 +61496,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -61748,7 +61748,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -62000,7 +62000,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -62252,7 +62252,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -62504,7 +62504,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -62756,7 +62756,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -63008,7 +63008,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -63260,7 +63260,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -63512,7 +63512,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -63764,7 +63764,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -64016,7 +64016,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -64268,7 +64268,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -64520,7 +64520,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -64772,7 +64772,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -65024,7 +65024,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -65276,7 +65276,7 @@
 			"brand_id": "10",
 			"product_name": "blackberry galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -65528,7 +65528,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -65780,7 +65780,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -66032,7 +66032,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -66284,7 +66284,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -66536,7 +66536,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -66788,7 +66788,7 @@
 			"brand_id": "11",
 			"product_name": "atom Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -67040,7 +67040,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -67292,7 +67292,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -67544,7 +67544,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -67796,7 +67796,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -68048,7 +68048,7 @@
 			"brand_id": "11",
 			"product_name": "atom Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -68300,7 +68300,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -68552,7 +68552,7 @@
 			"brand_id": "11",
 			"product_name": "atom Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -68804,7 +68804,7 @@
 			"brand_id": "11",
 			"product_name": "atom Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -69056,7 +69056,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -69308,7 +69308,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -69560,7 +69560,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -69812,7 +69812,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -70064,7 +70064,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -70316,7 +70316,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -70568,7 +70568,7 @@
 			"brand_id": "11",
 			"product_name": "atom Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -70820,7 +70820,7 @@
 			"brand_id": "11",
 			"product_name": "atom Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -71072,7 +71072,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -71324,7 +71324,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -71576,7 +71576,7 @@
 			"brand_id": "11",
 			"product_name": "atom Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -71828,7 +71828,7 @@
 			"brand_id": "11",
 			"product_name": "atom galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -72080,7 +72080,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -72332,7 +72332,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -72584,7 +72584,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -72836,7 +72836,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -73088,7 +73088,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -73340,7 +73340,7 @@
 			"brand_id": "12",
 			"product_name": "auxus Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -73592,7 +73592,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -73844,7 +73844,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -74096,7 +74096,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -74348,7 +74348,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -74600,7 +74600,7 @@
 			"brand_id": "12",
 			"product_name": "auxus Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -74852,7 +74852,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -75104,7 +75104,7 @@
 			"brand_id": "12",
 			"product_name": "auxus Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -75356,7 +75356,7 @@
 			"brand_id": "12",
 			"product_name": "auxus Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -75608,7 +75608,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -75860,7 +75860,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -76112,7 +76112,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -76364,7 +76364,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -76616,7 +76616,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -76868,7 +76868,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -77120,7 +77120,7 @@
 			"brand_id": "12",
 			"product_name": "auxus Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -77372,7 +77372,7 @@
 			"brand_id": "12",
 			"product_name": "auxus Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -77624,7 +77624,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -77876,7 +77876,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -78128,7 +78128,7 @@
 			"brand_id": "12",
 			"product_name": "auxus Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -78380,7 +78380,7 @@
 			"brand_id": "12",
 			"product_name": "auxus galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -78632,7 +78632,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -78884,7 +78884,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -79136,7 +79136,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -79388,7 +79388,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -79640,7 +79640,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -79892,7 +79892,7 @@
 			"brand_id": "13",
 			"product_name": "dell Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -80144,7 +80144,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -80396,7 +80396,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -80648,7 +80648,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -80900,7 +80900,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -81152,7 +81152,7 @@
 			"brand_id": "13",
 			"product_name": "dell Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -81404,7 +81404,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -81656,7 +81656,7 @@
 			"brand_id": "13",
 			"product_name": "dell Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -81908,7 +81908,7 @@
 			"brand_id": "13",
 			"product_name": "dell Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -82160,7 +82160,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -82412,7 +82412,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -82664,7 +82664,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -82916,7 +82916,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -83168,7 +83168,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -83420,7 +83420,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -83672,7 +83672,7 @@
 			"brand_id": "13",
 			"product_name": "dell Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -83924,7 +83924,7 @@
 			"brand_id": "13",
 			"product_name": "dell Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -84176,7 +84176,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -84428,7 +84428,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -84680,7 +84680,7 @@
 			"brand_id": "13",
 			"product_name": "dell Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -84932,7 +84932,7 @@
 			"brand_id": "13",
 			"product_name": "dell galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -85184,7 +85184,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -85436,7 +85436,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -85688,7 +85688,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -85940,7 +85940,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -86192,7 +86192,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -86444,7 +86444,7 @@
 			"brand_id": "14",
 			"product_name": "hp Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -86696,7 +86696,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -86948,7 +86948,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -87200,7 +87200,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -87452,7 +87452,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -87704,7 +87704,7 @@
 			"brand_id": "14",
 			"product_name": "hp Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -87956,7 +87956,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -88208,7 +88208,7 @@
 			"brand_id": "14",
 			"product_name": "hp Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -88460,7 +88460,7 @@
 			"brand_id": "14",
 			"product_name": "hp Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -88712,7 +88712,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -88964,7 +88964,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -89216,7 +89216,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -89468,7 +89468,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -89720,7 +89720,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -89972,7 +89972,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -90224,7 +90224,7 @@
 			"brand_id": "14",
 			"product_name": "hp Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -90476,7 +90476,7 @@
 			"brand_id": "14",
 			"product_name": "hp Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -90728,7 +90728,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -90980,7 +90980,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -91232,7 +91232,7 @@
 			"brand_id": "14",
 			"product_name": "hp Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -91484,7 +91484,7 @@
 			"brand_id": "14",
 			"product_name": "hp galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -91736,7 +91736,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy on5",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -91988,7 +91988,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy on6",
 			"price": "7590",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -92240,7 +92240,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy on7",
 			"price": "8490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -92492,7 +92492,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy NXT",
 			"price": "17490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -92744,7 +92744,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy C9 Pro",
 			"price": "9990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -92996,7 +92996,7 @@
 			"brand_id": "15",
 			"product_name": "edge Z2",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -93248,7 +93248,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy J5-6",
 			"price": "3290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -93500,7 +93500,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy Note 5",
 			"price": "1290",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -93752,7 +93752,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy J2",
 			"price": "2990",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -94004,7 +94004,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy J7 Prime",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -94256,7 +94256,7 @@
 			"brand_id": "15",
 			"product_name": "edge Metro XL",
 			"price": "47490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -94508,7 +94508,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy J7",
 			"price": "9567",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -94760,7 +94760,7 @@
 			"brand_id": "15",
 			"product_name": "edge Guru 1200",
 			"price": "6000",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -95012,7 +95012,7 @@
 			"brand_id": "15",
 			"product_name": "edge Guru Music 2",
 			"price": "3456",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -95264,7 +95264,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy J1",
 			"price": "40090",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -95516,7 +95516,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy J7-6",
 			"price": "36690",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -95768,7 +95768,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy J1 Ace",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -96020,7 +96020,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy A7 2016",
 			"price": "23490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -96272,7 +96272,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy J2 Ace",
 			"price": "27490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -96524,7 +96524,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy grand prime 4g",
 			"price": "74190",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -96776,7 +96776,7 @@
 			"brand_id": "15",
 			"product_name": "edge Guru FM plus",
 			"price": "7490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -97028,7 +97028,7 @@
 			"brand_id": "15",
 			"product_name": "edge Metro 313",
 			"price": "36490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -97280,7 +97280,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy A9 Pro",
 			"price": "10490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -97532,7 +97532,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy S5",
 			"price": "12490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -97784,7 +97784,7 @@
 			"brand_id": "15",
 			"product_name": "edge Guru Plus B110",
 			"price": "71490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -98036,7 +98036,7 @@
 			"brand_id": "15",
 			"product_name": "edge galaxy S7",
 			"price": "80490",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -98306,7 +98306,7 @@
 					"feature_value": "Back Cover"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -98385,7 +98385,7 @@
 					"feature_value": "Back Cover"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -98464,7 +98464,7 @@
 					"feature_value": "Back Cover"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -98543,7 +98543,7 @@
 					"feature_value": "Back Cover"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -98622,7 +98622,7 @@
 					"feature_value": "Back Cover"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -98701,7 +98701,7 @@
 					"feature_value": "Back Cover"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -98784,7 +98784,7 @@
 					"feature_value": "AC Adapter"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -98887,7 +98887,7 @@
 					"feature_value": "AC Adapter"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -98990,7 +98990,7 @@
 					"feature_value": "AC Adapter"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -99093,7 +99093,7 @@
 					"feature_value": "AC Adapter"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -99204,7 +99204,7 @@
 					"feature_value": "micro sd card"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -99340,7 +99340,7 @@
 					"feature_value": "micro sd card"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -99468,7 +99468,7 @@
 					"feature_value": "micro sd card"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -99604,7 +99604,7 @@
 					"feature_value": "micro sd card"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -99720,7 +99720,7 @@
 					"feature_value": "Notifier"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -99986,7 +99986,7 @@
 					"feature_value": "Fitness & Outdoor"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -100248,7 +100248,7 @@
 					"feature_value": "Notifier"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -100514,7 +100514,7 @@
 					"feature_value": "Fitness & Outdoor"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -100784,7 +100784,7 @@
 					"feature_value": "Water Resistant"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -100992,7 +100992,7 @@
 					"feature_value": "Water Resistant"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -101192,7 +101192,7 @@
 					"feature_value": "Tumble Wash"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -101422,7 +101422,7 @@
 					"feature_value": "Wheel Support | Lint Filter Supported"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -101640,7 +101640,7 @@
 					"feature_value": "Tumble Wash"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -101870,7 +101870,7 @@
 					"feature_value": "Wheel Support | Lint Filter Supported"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -102084,7 +102084,7 @@
 					"feature_value": "1 Door Refrigerator"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -102269,7 +102269,7 @@
 					"feature_value": "Built-in Stabilizer"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -102454,7 +102454,7 @@
 					"feature_value": "1 Door Refrigerator"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -102639,7 +102639,7 @@
 					"feature_value": "Built-in Stabilizer"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -102828,7 +102828,7 @@
 					"feature_value": "1065 W"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -103024,7 +103024,7 @@
 					"feature_value": "1065 W"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -103224,7 +103224,7 @@
 					"feature_value": "19.2 x 37 cm"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -103394,7 +103394,7 @@
 			"brand_id": "1",
 			"product_name": "Norpro 3168 Donut Maker Donut Maker",
 			"price": "1698",
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -103456,7 +103456,7 @@
 					"feature_value": "Grill Sandwich Maker"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "In the Box",
 					"spec_type_details": [
@@ -103613,7 +103613,7 @@
 					"feature_value": "Grill Sandwich Maker"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "In the Box",
 					"spec_type_details": [
@@ -103770,7 +103770,7 @@
 					"feature_value": "12 x 18.5 inch"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -103928,7 +103928,7 @@
 					"feature_value": "4 cm"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "In The Box",
 					"spec_type_details": [
@@ -104038,7 +104038,7 @@
 					"feature_value": "Rechargeable"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -104196,7 +104196,7 @@
 					"feature_value": "Cordless Shaver"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "general",
 					"spec_type_details": [
@@ -104318,7 +104318,7 @@
 					"feature_value": "Natural Ingredient"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "Shaving Gel Traits",
 					"spec_type_details": [
@@ -104401,7 +104401,7 @@
 					"feature_value": "Blue"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "In The Box",
 					"spec_type_details": [
@@ -104468,7 +104468,7 @@
 					"feature_value": "Half Sleeve"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "null",
 					"spec_type_details": [
@@ -104582,7 +104582,7 @@
 					"feature_value": "Set of 1"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "null",
 					"spec_type_details": [
@@ -104692,7 +104692,7 @@
 					"feature_value": "Date Display Available"
 				}
 			],
-			"Specifications": [
+			"specifications": [
 				{
 					"spec_type": "General",
 					"spec_type_details": [

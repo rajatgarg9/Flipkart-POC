@@ -1,4 +1,4 @@
-{
+var productCategories={
     "categories": [
         {
             "main_cat_id": "1",

@@ -1,4 +1,4 @@
-{
+var productMainCategories={
     "categories": [
         {
             "id": "1",
