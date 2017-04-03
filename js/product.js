@@ -39,7 +39,7 @@ return arr;
             var result = renderer({productDetails});
             
             document.getElementById("bootstrap-overrides").innerHTML=result+document.getElementById("bootstrap-overrides").innerHTML;*/
- var source   = document.getElementById("entry-template").innerHTMLhtml;
+ var source   = document.getElementById("entry-template").innerHTML;
  var template = Handlebars.compile(source);
 
 var context = {title: "My New Post", body: "This is my first post!"};
