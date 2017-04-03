@@ -38,6 +38,7 @@
 }
 #resest-bootstrap .spec-table-cont tbody tr td:first-child{
     color:gray;
+    width:30%;
 }
 #resest-bootstrap .spec-table-cont tbody tr td{
     font-size:14px;
