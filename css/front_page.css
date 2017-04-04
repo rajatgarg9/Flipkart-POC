@@ -30,6 +30,7 @@
     color: white;
     background-color: #2874f0;
 }
+#bootstrap-overrides .dropdown-head > a,
 #bootstrap-overrides .dropdown-head > a:focus,
 #bootstrap-overrides .dropdown-head > a:visited,
 #bootstrap-overrides .dropdown-head > a:active {
