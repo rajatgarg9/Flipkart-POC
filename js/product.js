@@ -1,7 +1,10 @@
 "use strict"
 var specData,
     specTemplate,
-    reviewTemplate;
+    reviewTemplate,
+    mainCategoryTemplate,
+    productHeadingTemplate,
+    productPriceTemplate;
 var specPath = productDetails.products[0].specifications;
 
 class Specification {
@@ -34,10 +37,32 @@ templateHandler(specTemplate);
 reviewTemplate = {
     raw_temp: document.getElementById("review-list-template").innerHTML,
     context: productDetails.products[0],
-    dest_node: document.getElementById("review-sec"),
+    dest_node: document.getElementById("comment-sec"),
     node_position: 'beforeend'
 }
 templateHandler(reviewTemplate);
+mainCategoryTemplate = {
+    raw_temp: document.getElementById("header-main-cat-list-template").innerHTML,
+    context: productMainCategories,
+    dest_node: document.getElementById("header-main-cat-list"),
+    node_position: 'beforeend'
+}
+templateHandler(mainCategoryTemplate);
+productHeadingTemplate = {
+    raw_temp: document.getElementById("product-heading-template").innerHTML,
+    context: productDetails.products[0],
+    dest_node: document.getElementById("product-heading"),
+    node_position: 'beforeend'
+}
+templateHandler(productHeadingTemplate);
+productPriceTemplate = {
+    raw_temp: document.getElementById("product-price-template").innerHTML,
+    context: productDetails.products[0],
+    dest_node: document.getElementById("product-price"),
+    node_position: 'beforeend'
+}
+templateHandler(productPriceTemplate);
+
 
 /*
 * @method:templateHandler
@@ -48,7 +73,7 @@ templateHandler(reviewTemplate);
 function templateHandler(templateInfo) {
     var _template,
         _html;
-    _template = Handlebars.compile(specTemplate.raw_temp);
-    _html = _template(specTemplate.context);
-    specTemplate.dest_node.insertAdjacentHTML(specTemplate.node_position, _html);
+    _template = Handlebars.compile(templateInfo.raw_temp);
+    _html = _template(templateInfo.context);
+    templateInfo.dest_node.insertAdjacentHTML(templateInfo.node_position, _html);
 }

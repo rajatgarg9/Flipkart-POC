@@ -18,7 +18,7 @@ var productMainCategories={
         },
         {
             "id": "5",
-            "name": "books_&_more"
+            "name": "books & more"
         }
     ]
 }

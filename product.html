@@ -12,6 +12,36 @@
 </head>
 
 <body id="bootstrap-overrides">
+    <script id="header-main-cat-list-template" type="text/x-handlebars-template">
+        {{#each categories}}
+        <li class="dropdown dropdown-head">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{name}} 
+			   <span class="caret"></span>
+			</a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#">Action</a>
+                </li>
+                <li>
+                    <a href="#">Another action</a>
+                </li>
+                <li>
+                    <a href="#">Something else here</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="#">Separated link</a>
+                </li>
+            </ul>
+        </li>
+        {{/each}}
+    </script>
+    <script id="product-heading-template" type="text/x-handlebars-template">
+        <h4 class="prod-name-heading">{{product_name}}</h4>
+    </script>
+    <script id="product-price-template" type="text/x-handlebars-template">
+        <p class="price">₹{{price}}</p>
+    </script>
     <script id="spec-list-template" type="text/x-handlebars-template">
         {{#each specifications}}
         <li class="list-group-item">
@@ -36,29 +66,29 @@
         {{/each}}
     </script>
     <script id="review-list-template" type="text/x-handlebars-template">
-    {{#each reviews}}
+        {{#each reviews}}
         <li class="list-group-item">
             <div class="comment-container">
                 <div class="btn-group btn-group-sm" role="group" aria-label="...">
                     <button type="button" class="btn btn-success rate-btn">
-                                                <span class="comment-rate">{{this.rate}}</span>
-                                                <span class="badge rate-btn-badge">
-                                              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </span>
-                                            </button>
+                        <span class="comment-rate">{{rate}}</span>
+                        <span class="badge rate-btn-badge">
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        </span>
+                    </button>
                 </div>
                 <div class="inline-block">
-                    <h5 class="comment-head">{{this.title}}</h5>
+                    <h5 class="comment-head">{{title}}</h5>
                 </div>
                 <div>
                     <p>
-                        {{this.description}}
+                        {{description}}
                     </p>
                     <div class="row">
                         <div class="col-xs-12">
                             <p class="commenter-detail">
-                                {{this.name}} <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Certified
-                                Buyer {{this.time}}
+                                {{name}} <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Certified
+                                Buyer {{time}}
                             </p>
                         </div>
                         <div class="col-xs-12">
@@ -85,7 +115,7 @@
                 </div>
             </div>
         </li>
-    {{/each}}
+        {{/each}}
     </script>
 
     <div class="container-fluid">
@@ -171,107 +201,8 @@
         </div>
         <div class="row head-color">
             <div class="col-xs-12">
-                <ul class="nav nav-pills lft-pad-sm-20 lft-pad-md-53">
-                    <li class="dropdown dropdown-head">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Electronics 
-																	<span class="caret"></span>
-																</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Action</a>
-                            </li>
-                            <li>
-                                <a href="#">Another action</a>
-                            </li>
-                            <li>
-                                <a href="#">Something else here</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="#">Separated link</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown dropdown-head">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Appliance 
-																	<span class="caret"></span>
-																</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Action</a>
-                            </li>
-                            <li>
-                                <a href="#">Another action</a>
-                            </li>
-                            <li>
-                                <a href="#">Something else here</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="#">Separated link</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown dropdown-head">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Men 
-																	<span class="caret"></span>
-																</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Action</a>
-                            </li>
-                            <li>
-                                <a href="#">Another action</a>
-                            </li>
-                            <li>
-                                <a href="#">Something else here</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="#">Separated link</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown dropdown-head">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">women 
-																	<span class="caret"></span>
-																</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Action</a>
-                            </li>
-                            <li>
-                                <a href="#">Another action</a>
-                            </li>
-                            <li>
-                                <a href="#">Something else here</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="#">Separated link</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown dropdown-head">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">books &amp; More 
-																	<span class="caret"></span>
-																</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Action</a>
-                            </li>
-                            <li>
-                                <a href="#">Another action</a>
-                            </li>
-                            <li>
-                                <a href="#">Something else here</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="#">Separated link</a>
-                            </li>
-                        </ul>
-                    </li>
+                <ul class="nav nav-pills lft-pad-sm-20 lft-pad-md-53" id="header-main-cat-list">
+
                 </ul>
             </div>
         </div>
@@ -310,8 +241,7 @@
                 <div class="col-xs-12 col-sm-8 col-md-8 ">
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="detail-container">
-                                <h4 class="prod-name-heading">Moto M (Gold, 64 GB) (4 GB RAM)</h4>
+                            <div class="detail-container" id="product-heading">
                             </div>
                             <div class="detail-container">
                                 <div class="btn-group btn-group-sm" role="group" aria-label="...">
@@ -324,8 +254,7 @@
                                 </div>
                                 <span class="rate-info">18,023 Ratings &amp; 4,849 Reviews</span>
                             </div>
-                            <div class="detail-container">
-                                <p class="price">₹17,999</p>
+                            <div class="detail-container" id="product-price">
                             </div>
                         </div>
                     </div>
