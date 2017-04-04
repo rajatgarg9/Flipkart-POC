@@ -4,7 +4,10 @@ var specData,
     reviewTemplate,
     mainCategoryTemplate,
     productHeadingTemplate,
-    productPriceTemplate;
+    productPriceTemplate,
+    mailHeadLinkTemplate,
+    footerShortcutLinkTemplate,
+    footeraddressTemplate;
 var specPath = productDetails.products[0].specifications;
 
 class Specification {
@@ -62,6 +65,30 @@ productPriceTemplate = {
     node_position: 'beforeend'
 }
 templateHandler(productPriceTemplate);
+
+mailHeadLinkTemplate = {
+    raw_temp: document.getElementById("main-head-list-template").innerHTML,
+    context: headerData,
+    dest_node: document.getElementById("main-head-list"),
+    node_position: 'beforeend'
+}
+templateHandler(mailHeadLinkTemplate);
+
+footerShortcutLinkTemplate = {
+    raw_temp: document.getElementById("footer-shortcut-link-template").innerHTML,
+    context: footerData.footer_info[0],
+    dest_node: document.getElementById("footer-shortcut-link"),
+    node_position: 'beforeend'
+}
+templateHandler(footerShortcutLinkTemplate);
+
+footeraddressTemplate = {
+    raw_temp: document.getElementById("footer-address-template").innerHTML,
+    context: footerData.footer_info[1],
+    dest_node: document.getElementById("footer-address"),
+    node_position: 'beforeend'
+}
+templateHandler(footeraddressTemplate);
 
 
 /*

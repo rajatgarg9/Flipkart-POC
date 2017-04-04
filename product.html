@@ -12,6 +12,13 @@
 </head>
 
 <body id="bootstrap-overrides">
+    <script id="main-head-list-template" type="text/x-handlebars-template">
+        {{#each header_link}}
+        <li role="presentation" class="top-nav-link">
+            <a href="#">{{this}}</a>
+        </li>
+        {{/each}}
+    </script>
     <script id="header-main-cat-list-template" type="text/x-handlebars-template">
         {{#each categories}}
         <li class="dropdown dropdown-head">
@@ -117,32 +124,40 @@
         </li>
         {{/each}}
     </script>
+    <script id="footer-shortcut-link-template" type="text/x-handlebars-template">
+        {{#each footer_shortcut}}
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1">
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>{{this.name}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each category}}
+                    <tr>
+                        <td>{{this}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{/each}}
+    </script>
+    <script id="footer-address-template" type="text/x-handlebars-template">
+        {{#each footer_address}}
+        <div class="col-xs-6 address-padding">
+            <address>
+                <strong>{{this.address_type}}:</strong><br/>{{this.address}}
+            </address>
+        </div>
+        {{/each}}
+    </script>
 
     <div class="container-fluid">
         <div class="row head-color head-nav">
             <div class="col-xs-12">
-                <ul class="nav nav-pills pull-right rgt-pad-md-48" id="main-head">
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Sell on Advertise</a>
-                    </li>
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Advertise</a>
-                    </li>
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Gift Card</a>
-                    </li>
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Track Order</a>
-                    </li>
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Signup</a>
-                    </li>
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Log In</a>
-                    </li>
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Cart</a>
-                    </li>
+                <ul class="nav nav-pills pull-right rgt-pad-md-48" id="main-head-list">
                 </ul>
             </div>
         </div>
@@ -389,85 +404,8 @@
             <div class="col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <div class="row footer-table-nav">
-                            <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1">
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>MISC</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Online Shopping</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Affiliate Program</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gift Card</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Flipkart First Subscription</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1">
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>HELP</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Payments</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Shipping</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cancellation &amp; Returns</td>
-                                        </tr>
-                                        <tr>
-                                            <td>FAQ</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Report Infringement</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1">
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>FLIPKART</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Contact Us</td>
-                                        </tr>
-                                        <tr>
-                                            <td>About Us</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Careers</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Flipkart Stories</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Press</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sell on Flipkart</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="row footer-table-nav" id="footer-shortcut-link">
+
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
@@ -499,24 +437,8 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
-                                <div class="col-xs-12-default address-border">
-                                    <div class="col-xs-6 address-padding">
-                                        <address>
-                                            <strong>Mail Us:</strong><br> Flipkart Internet Private Limited,<br> Ozone Manay
-                                            Tech Park,<br> #56/18 &amp; 55/09, 7th Floor,<br> Garvebhavipalya, Hosur Road,
-                                            <br> Bangalore - 560068,<br> Karnataka, India.
-                                            <br>
-                                        </address>
-                                    </div>
-                                    <div class="col-xs-6 reg-address-border address-padding">
-                                        <address>
-                                            <strong>Registered Office Address:</strong><br> Flipkart Internet Private Limited,
-                                            <br> Vaishnavi Summit, Ground Floor, 7th Main,<br> 80 Feet Road, 3rd Block,
-                                            <br> Koramangala,
-                                            <br> Bengaluru - 560034<br> India
-                                            <br> CIN : U51109KA2012PTC066107<br> Telephone: 1800 208 9898
-                                        </address>
-                                    </div>
+                                <div class="col-xs-12-default address-border" id="footer-address">
+
                                 </div>
                             </div>
                         </div>
@@ -526,6 +448,7 @@
         </div>
         <!-- End footer-->
     </div>
+    <script src="data/header_footer.js"></script>
     <script src="data/main_category.js"></script>
     <script src="data/product_cat.js"></script>
     <script src="data/product_details.js"></script>
