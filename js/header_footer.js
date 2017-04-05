@@ -9,7 +9,7 @@
     (() => {
         var _mainCategoryTemplate = {
             raw_temp: document.getElementById("header-main-cat-list-template").innerHTML,
-            context:headerDropdownData,
+            context:Object.assign({},productMainCategories,productCategories),
             dest_node: document.getElementById("header-main-cat-list"),
             node_position: 'beforeend'
         },
@@ -26,6 +26,12 @@
                 node_position: 'beforeend'
             },
             _footeraddressTemplate = {
+                raw_temp: document.getElementById("footer-static-text-template").innerHTML,
+                context: [{"text":globalKeys.global_keys.flipkart_track_your_order},{"text":globalKeys.global_keys.flipkart_free_easy_returns},{"text":globalKeys.global_keys.flipkart_online_cancellations}],
+                dest_node: document.getElementById("footer-static-text"),
+                node_position: 'beforeend'
+            },
+            _footerAddressTemplate = {
                 raw_temp: document.getElementById("footer-address-template").innerHTML,
                 context: footerData.footer_info[1],
                 dest_node: document.getElementById("footer-address"),
@@ -33,7 +39,8 @@
             };
 
             //function call
-        templateHandler(_footeraddressTemplate);
+        templateHandler( _footeraddressTemplate);
+        templateHandler(_footerAddressTemplate);
         templateHandler(_footerShortcutLinkTemplate);
         templateHandler(_mainHeadLinkTemplate);
         templateHandler(_mainCategoryTemplate);

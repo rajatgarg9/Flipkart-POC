@@ -20,25 +20,18 @@
         {{/each}}
     </script>
     <script id="header-main-cat-list-template" type="text/x-handlebars-template">
-        {{#each parent_categories}}
+        {{#each main_categories}}
         <li class="dropdown dropdown-head">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{this.name}} 
 			   <span class="caret"></span>
 			</a>
             <ul class="dropdown-menu">
-                {{#if categories}}{{#each categories}}
+                {{#each ../categories}} {{#ifcond ../id this.main_cat_id}}
                 <li>
                     <a href="javascript:void(0)">{{this.name}}</a>
                 </li>
-                {{/each}} {{else}}
-                <li>
-                    <a href="javascript:void(0)">{{no_product_message}}</a>
-                </li>
-                {{/if}}
+                {{/ifcond}} {{/each}}
             </ul>
-
-
-
         </li>
         {{/each}}
     </script>
@@ -141,6 +134,14 @@
                 </tbody>
             </table>
         </div>
+        {{/each}}
+    </script>
+    <script id="footer-static-text-template" type="text/x-handlebars-template">
+        {{#each this}}
+        <td><span class="glyphicon glyphicon-map-marker glyphicon-size" aria-hidden="true"></span>
+            <p class="glyphicon-txt-size"><strong>{{text}}</strong>
+            </p>
+        </td>
         {{/each}}
     </script>
     <script id="footer-address-template" type="text/x-handlebars-template">
@@ -411,23 +412,8 @@
                                 <div class="col-xs-12-default">
                                     <table class="table table-bordered">
                                         <tbody>
-                                            <tr class="text-center ">
-                                                <td><span class="glyphicon glyphicon-map-marker glyphicon-size" aria-hidden="true">
-                                                    </span>
-                                                    <p class="glyphicon-txt-size"><strong>TRACK YOUR ORDER</strong>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <span class="glyphicon glyphicon-refresh glyphicon-size " aria-hidden="true">
-                                                    </span>
-                                                    <p class="glyphicon-txt-size"><strong>FREE &amp; EASY RETURNS</strong>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <span class="glyphicon glyphicon-remove-circle glyphicon-size" aria-hidden="true"></span>
-                                                    <p class="glyphicon-txt-size break-word"><strong>ONLINE CANCELLATIONS</strong>
-                                                    </p>
-                                                </td>
+                                            <tr class="text-center" id="footer-static-text">
+
                                             </tr>
                                         </tbody>
                                     </table>
@@ -452,7 +438,7 @@
     <script src="data/product_cat.js"></script>
     <script src="data/product_details.js"></script>
     <script src="data/brand.js"></script>
-    <script src="data/header_category_dropdown.js"></script>
+    <script src="data/global_keys.js"></script>
     <script src="js/libs/jquery-3.2.0.js"></script>
     <script src="js/libs/handlebars-v4.0.5.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>

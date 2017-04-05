@@ -54,7 +54,8 @@ var productCategories={
             "id": "6",
             "name": "Air Conditioners"
         },
-        {
+        {   
+            "main_cat_id": "2",
             "id": "7",
             "name": "Geysers"
         },

@@ -1,5 +1,5 @@
 var productMainCategories={
-    "categories": [
+    "main_categories": [
         {
             "id": "1",
             "name": "Electronics"
