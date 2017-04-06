@@ -1,461 +1,456 @@
+
+
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Online shopping Site: Shop online for mobiles,electronics,fashion &amp; more @ Flipkart</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/front_page.css">
-    <link rel="stylesheet" type="text/css" href="css/product.css">
-</head>
-
-<body id="bootstrap-overrides">
-    <script id="main-head-list-template" type="text/x-handlebars-template">
-        {{#each header_link}}
-        <li role="presentation" class="top-nav-link">
-            <a href="javascript:void(0)">{{this}}</a>
-        </li>
-        {{/each}}
-    </script>
-    <script id="cart-btn-data-template" type="text/x-handlebars-template">
-        <span class="cart-btn-txt">{{flipkart_cart}}</span>
-        <span class="badge cart-btn-badge">{{cart_items.length}}</span>
-    </script>
-    <script id="header-main-cat-list-template" type="text/x-handlebars-template">
-        {{#each main_categories}}
-        <li class="dropdown dropdown-head">
-            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{this.name}} 
-			   <span class="caret"></span>
-			</a>
-            <ul class="dropdown-menu">
-                {{#each ../categories}} {{#ifcond ../id this.main_cat_id}}
-                <li>
-                    <a href="javascript:void(0)">{{this.name}}</a>
-                </li>
-                {{/ifcond}} {{/each}}
-            </ul>
-        </li>
-        {{/each}}
-    </script>
-    <script id="add-cart-buy-btn-template" type="text/x-handlebars-template">
-        <div class="col-xs-12 col-sm-12 col-md-6">
-            <div class="btn-container-pad">
-                <button class="btn btn-primary block-btn add-cart" type="submit">
-                    <a href="javascript:void(0)">
-                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> {{flipkart_add_to_cart}}
-                    </a>
-                </button>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6">
-            <div class="btn-container-pad">
-                <button class="btn btn-primary block-btn buy-now" type="submit">
-                    <a href="javascript:void(0)">
-                        <span class="glyphicon glyphicon-flash" aria-hidden="true"></span> {{flipkart_buy_now}}
-                    </a>
-                </button>
-            </div>
-        </div>
-    </script>
-    <script id="product-heading-template" type="text/x-handlebars-template">
-        <h4 class="prod-name-heading">{{product_name}}</h4>
-    </script>
-    <script id="product-price-template" type="text/x-handlebars-template">
-        <p class="price">₹{{price}}</p>
-    </script>
-    <script id="spec-list-template" type="text/x-handlebars-template">
-        {{#each specifications}}
-        <li class="list-group-item">
-            <div class="spec-table-cont">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>{{spec_type}}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {{#each spec_type_details}}
-                        <tr>
-                            <td>{{feature_name}}</td>
-                            <td>{{feature_value}}</td>
-                        </tr>
-                        {{/each}}
-                    </tbody>
-                </table>
-            </div>
-        </li>
-        {{/each}}
-    </script>
-    <script id="rate-review-btn-template" type="text/x-handlebars-template">
-        <button type="button" class="btn btn-secondary block-btn">
-            <a href="javascript:void(0)">{{this}}</a>
-        </button>
-    </script>
-    <script id="comment-type-list-template" type="text/x-handlebars-template">
-        {{#each this}}
-        <li role="presentation" class="active"><a href="javascript:void(0)">{{this}}</a>
-        </li>
-        {{/each}}
-    </script>
-    <script id="review-list-template" type="text/x-handlebars-template">
-        {{#each reviews}}
-        <li class="list-group-item">
-            <div class="comment-container">
-                <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                    <button type="button" class="btn btn-success rate-btn">
-                        <span class="comment-rate">{{rate}}</span>
-                        <span class="badge rate-btn-badge">
-                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                        </span>
-                    </button>
-                </div>
-                <div class="inline-block">
-                    <h5 class="comment-head">{{title}}</h5>
-                </div>
-                <div>
-                    <p>
-                        {{description}}
-                    </p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="commenter-detail">
-                                {{name}} <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> {{../flipkart_certified_buyer}} &nbsp{{ time}}
-                            </p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <div class="comment-action-container pull-right">
-                                <span class="glyphicon glyphicon-thumbs-up pointer" aria-hidden="true"></span>
-                                <span class="pointer like-dislike-count">{{likes}}</span>
-                                <span class="glyphicon glyphicon-thumbs-down pointer" aria-hidden="true"></span>
-                                <span class="pointer like-dislike-count">{{dis_likes}}</span>
-                                <div class="dropdown inline-block">
-                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="true">
-                                                                <span class="caret"></span>
-                                                            </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        {{#each ../flipkart_comment_related_action}}
-                                        <li><a href="javascript:void(0)">{{this}}</a>
-                                        </li>
-                                        {{/each}}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-        {{/each}}
-    </script>
-    <script id="footer-shortcut-link-template" type="text/x-handlebars-template">
-        {{#each footer_shortcut}}
-        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1">
-            <table class="table table-condensed">
-                <thead>
-                    <tr>
-                        <th>{{this.name}}</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {{#each category}}
-                    <tr>
-                        <td>{{this}}</td>
-                    </tr>
-                    {{/each}}
-                </tbody>
-            </table>
-        </div>
-        {{/each}}
-    </script>
-    <script id="footer-static-text-template" type="text/x-handlebars-template">
-        {{#each this}}
-        <td><span class="glyphicon glyphicon-map-marker glyphicon-size" aria-hidden="true"></span>
-            <p class="glyphicon-txt-size"><strong>{{text}}</strong>
-            </p>
-        </td>
-        {{/each}}
-    </script>
-    <script id="footer-address-template" type="text/x-handlebars-template">
-        {{#each footer_address}}
-        <div class="col-xs-6 address-padding">
-            <address>
-                <strong>{{this.address_type}}:</strong><br/>{{this.address}}
-            </address>
-        </div>
-        {{/each}}
-    </script>
-
-    <div class="container-fluid">
-        <div class="row head-color head-nav">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Online shopping Site: Shop online for mobiles,electronics,fashion &amp; more @ Flipkart</title>
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/front_page.css">
+      <link rel="stylesheet" type="text/css" href="css/product.css">
+   </head>
+   <body id="bootstrap-overrides">
+      <script id="main-head-list-template" type="text/x-handlebars-template">
+         {{#each header_link}}
+         <li role="presentation" class="top-nav-link">
+             <a href="javascript:void(0)">{{this}}</a>
+         </li>
+         {{/each}}
+      </script>
+      <script id="cart-btn-data-template" type="text/x-handlebars-template">
+         <span class="cart-btn-txt">{{flipkart_cart}}</span>
+         <span class="badge cart-btn-badge">{{cart_items.length}}</span>
+      </script>
+      <script id="header-main-cat-list-template" type="text/x-handlebars-template">
+         {{#each main_categories}}
+         <li class="dropdown dropdown-head">
+             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{this.name}} 
+         <span class="caret"></span>
+         </a>
+             <ul class="dropdown-menu">
+                 {{#each ../categories}} {{#ifcond ../id this.main_cat_id}}
+                 <li>
+                     <a href="javascript:void(0)">{{this.name}}</a>
+                 </li>
+                 {{/ifcond}} {{/each}}
+             </ul>
+         </li>
+         {{/each}}
+      </script>
+      <script id="add-cart-buy-btn-template" type="text/x-handlebars-template">
+         <div class="col-xs-12 col-sm-12 col-md-6">
+             <div class="btn-container-pad">
+                 <button class="btn btn-primary block-btn add-cart" type="submit">
+                     <a href="javascript:void(0)">
+                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> {{flipkart_add_to_cart}}
+                     </a>
+                 </button>
+             </div>
+         </div>
+         <div class="col-xs-12 col-sm-12 col-md-6">
+             <div class="btn-container-pad">
+                 <button class="btn btn-primary block-btn buy-now" type="submit">
+                     <a href="javascript:void(0)">
+                         <span class="glyphicon glyphicon-flash" aria-hidden="true"></span> {{flipkart_buy_now}}
+                     </a>
+                 </button>
+             </div>
+         </div>
+      </script>
+      <script id="product-heading-template" type="text/x-handlebars-template">
+         <h4 class="prod-name-heading">{{product_name}}</h4>
+      </script>
+      <script id="product-price-template" type="text/x-handlebars-template">
+         <p class="price">₹{{price}}</p>
+      </script>
+      <script id="total-rating-reviews-template" type="text/x-handlebars-template">
+         <span class="rate-info"><span class="total-rate-product">x</span> {{flipkart_ratings}} {{flipkart_and}} <span id="total-review-product">x</span> {{flipkart_reviews}}</span>
+      </script>
+      <script id="spec-list-template" type="text/x-handlebars-template">
+         {{#each specifications}}
+         <li class="list-group-item">
+             <div class="spec-table-cont">
+                 <table class="table">
+                     <thead>
+                         <tr>
+                             <th>{{spec_type}}</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         {{#each spec_type_details}}
+                         <tr>
+                             <td>{{feature_name}}</td>
+                             <td>{{feature_value}}</td>
+                         </tr>
+                         {{/each}}
+                     </tbody>
+                 </table>
+             </div>
+         </li>
+         {{/each}}
+      </script>
+       <script id="total-review-bottom-template" type="text/x-handlebars-template">
+         <p class="total-review"><span class="total-rate-product">x</span> {{flipkart_reviews}}</p>
+      </script>
+      <script id="rate-review-btn-template" type="text/x-handlebars-template">
+         <button type="button" class="btn btn-secondary block-btn">
+             <a href="javascript:void(0)">{{this}}</a>
+         </button>
+      </script>
+      <script id="comment-type-list-template" type="text/x-handlebars-template">
+         {{#each this}}
+         <li role="presentation" class="active"><a href="javascript:void(0)">{{this}}</a>
+         </li>
+         {{/each}}
+      </script>
+      <script id="review-list-template" type="text/x-handlebars-template">
+         {{#each reviews}}
+         <li class="list-group-item">
+             <div class="comment-container">
+                 <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                     <button type="button" class="btn btn-success rate-btn">
+                         <span class="comment-rate">{{rate}}</span>
+                         <span class="badge rate-btn-badge">
+                         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                         </span>
+                     </button>
+                 </div>
+                 <div class="inline-block">
+                     <h5 class="comment-head">{{title}}</h5>
+                 </div>
+                 <div>
+                     <p>
+                         {{description}}
+                     </p>
+                     <div class="row">
+                         <div class="col-xs-12 col-md-6">
+                             <p class="commenter-detail">
+                                 {{name}} <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> {{../flipkart_certified_buyer}}
+                                 &nbsp{{ time}}
+                             </p>
+                         </div>
+                         <div class="col-xs-12 col-md-6">
+                             <div class="comment-action-container pull-right">
+                                 <span class="glyphicon glyphicon-thumbs-up pointer" aria-hidden="true"></span>
+                                 <span class="pointer like-dislike-count">{{likes}}</span>
+                                 <span class="glyphicon glyphicon-thumbs-down pointer" aria-hidden="true"></span>
+                                 <span class="pointer like-dislike-count">{{dis_likes}}</span>
+                                 <div class="dropdown inline-block">
+                                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                         aria-expanded="true">
+                                                                 <span class="caret"></span>
+                                                             </button>
+                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                         {{#each ../flipkart_comment_related_action}}
+                                         <li><a href="javascript:void(0)">{{this}}</a>
+                                         </li>
+                                         {{/each}}
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </li>
+         {{/each}}
+      </script>
+      <script id="footer-shortcut-link-template" type="text/x-handlebars-template">
+         {{#each footer_shortcut}}
+         <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1">
+             <table class="table table-condensed">
+                 <thead>
+                     <tr>
+                         <th>{{this.name}}</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     {{#each category}}
+                     <tr>
+                         <td>{{this}}</td>
+                     </tr>
+                     {{/each}}
+                 </tbody>
+             </table>
+         </div>
+         {{/each}}
+      </script>
+      <script id="footer-static-text-template" type="text/x-handlebars-template">
+         {{#each this}}
+         <td><span class="glyphicon glyphicon-map-marker glyphicon-size" aria-hidden="true"></span>
+             <p class="glyphicon-txt-size"><strong>{{text}}</strong>
+             </p>
+         </td>
+         {{/each}}
+      </script>
+      <script id="footer-address-template" type="text/x-handlebars-template">
+         {{#each footer_address}}
+         <div class="col-xs-6 address-padding">
+             <address>
+                 <strong>{{this.address_type}}:</strong><br/>{{this.address}}
+             </address>
+         </div>
+         {{/each}}
+      </script>
+      <div class="container-fluid">
+         <div class="row head-color head-nav">
             <div class="col-xs-12">
-                <ul class="nav nav-pills pull-right rgt-pad-md-48" id="main-head-list">
-                </ul>
+               <ul class="nav nav-pills pull-right rgt-pad-md-48" id="main-head-list">
+               </ul>
             </div>
-        </div>
-        <div class="row head-color">
+         </div>
+         <div class="row head-color">
             <div class="col-xs-12">
-                <nav class="navbar navbar-default navbar-overrider">
-                    <div class="container-fluid">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-sm-3 col-md-2 rmove-rgt-pad">
-                                    <!-- Brand and toggle get grouped for better mobile display -->
-                                    <div class="navbar-header pull-right float-none-xs">
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                                            aria-expanded="false">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                        <a class="navbar-brand" href="javascript:void(0)">
-                                            <img alt="Brand" src="images/logo.png" class="img-responsive">
-                                        </a>
+               <nav class="navbar navbar-default navbar-overrider">
+                  <div class="container-fluid">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-sm-3 col-md-2 rmove-rgt-pad">
+                              <!-- Brand and toggle get grouped for better mobile display -->
+                              <div class="navbar-header pull-right float-none-xs">
+                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                    aria-expanded="false">
+                                 <span class="sr-only">Toggle navigation</span>
+                                 <span class="icon-bar"></span>
+                                 <span class="icon-bar"></span>
+                                 <span class="icon-bar"></span>
+                                 </button>
+                                 <a class="navbar-brand" href="javascript:void(0)">
+                                 <img alt="Brand" src="images/logo.png" class="img-responsive">
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-sm-9 col-md-10 rmove-lft-pad">
+                              <!-- Collect the nav links, forms, and other content for toggling -->
+                              <div class="collapse navbar-collapse rmove-lft-pad" id="bs-example-navbar-collapse-1">
+                                 <div class="container-fluid">
+                                    <div class="row">
+                                       <div class="col-xs-12 col-sm-9 col-md-10">
+                                          <div class="input-group input-group-lg search-field">
+                                             <input type="text" class="form-control" placeholder="Search for Products, Brands and More" aria-describedby="sizing-addon1">
+                                             <span class="input-group-addon" id="sizing-addon1">
+                                             <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                             </span>
+                                          </div>
+                                       </div>
+                                       <div class="col-xs-2 hidden-xs col-sm-3 col-md-2">
+                                          <button type="button" class="btn btn-default cart-btn float-rgt-md" id="cart-btn-data">
+                                          <span class="glyphicon glyphicon-shopping-cart cart-btn-icon" aria-hidden="true"></span>
+                                          </button>
+                                       </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-9 col-md-10 rmove-lft-pad">
-                                    <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <div class="collapse navbar-collapse rmove-lft-pad" id="bs-example-navbar-collapse-1">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-9 col-md-10">
-                                                    <div class="input-group input-group-lg search-field">
-                                                        <input type="text" class="form-control" placeholder="Search for Products, Brands and More" aria-describedby="sizing-addon1">
-                                                        <span class="input-group-addon" id="sizing-addon1">
-                                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-2 hidden-xs col-sm-3 col-md-2">
-                                                    <button type="button" class="btn btn-default cart-btn float-rgt-md" id="cart-btn-data">
-                                                        <span class="glyphicon glyphicon-shopping-cart cart-btn-icon" aria-hidden="true"></span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /.navbar-collapse -->
-                                </div>
-                            </div>
+                                 </div>
+                              </div>
+                              <!-- /.navbar-collapse -->
+                           </div>
                         </div>
-                    </div>
-                    <!-- /.container-fluid -->
-                </nav>
+                     </div>
+                  </div>
+                  <!-- /.container-fluid -->
+               </nav>
             </div>
-        </div>
-        <div class="row head-color">
+         </div>
+         <div class="row head-color">
             <div class="col-xs-12">
-                <ul class="nav nav-pills lft-pad-sm-20 lft-pad-md-53" id="header-main-cat-list">
-
-                </ul>
+               <ul class="nav nav-pills lft-pad-sm-20 lft-pad-md-53" id="header-main-cat-list">
+               </ul>
             </div>
-        </div>
-        <!-- End header-->
-        <section id="resest-bootstrap">
+         </div>
+         <!-- End header-->
+         <section id="resest-bootstrap">
             <div class="row pad-top-21">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div>
-                                <img src="images/product_page.jpg" class="img-responsive" alt="Responsive image">
-                            </div>
+               <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="row">
+                     <div class="col-xs-12">
+                        <div>
+                           <img src="images/product_page.jpg" class="img-responsive" alt="Responsive image">
                         </div>
-                    </div>
-                    <div class="row" id="add-cart-buy-btn">
-
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-8 col-md-8 ">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="detail-container" id="product-heading">
-                            </div>
-                            <div class="detail-container">
-                                <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                    <button type="button" class="btn btn-success rate-btn">
-                                        <span>3.6</span>
-                                        <span class="badge rate-btn-badge">
-                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                        </span>
-                                    </button>
-                                </div>
-                                <span class="rate-info">18,023 Ratings &amp; 4,849 Reviews</span>
-                            </div>
-                            <div class="detail-container" id="product-price">
-                            </div>
+                     </div>
+                  </div>
+                  <div class="row" id="add-cart-buy-btn">
+                  </div>
+               </div>
+               <div class="col-xs-12 col-sm-8 col-md-8 ">
+                  <div class="row">
+                     <div class="col-xs-12">
+                        <div class="detail-container" id="product-heading">
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul class="list-group" id="spec-list">
-                                <li class="list-group-item">
-                                    <h3 class="spec-head"> Specification</h3>
-                                </li>
-                            </ul>
+                        <div class="detail-container" id="total-rating-reviews">
+                           <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                              <button type="button" class="btn btn-success rate-btn">
+                                <span class="prod-rate-avg"">X</span>
+                                <span class="badge rate-btn-badge">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                </span>
+                              </button>
+                           </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul class="list-group" id="comment-sec">
-                                <li class="list-group-item pad-bottom-0">
-                                    <div class="row">
-                                        <div class="col-xs-4 col-sm-3 col-md-3">
-                                            <div>
-                                                <div>
-                                                    <p>
-                                                        <span class="prod-rate">4</span>
-                                                        <span class="glyphicon glyphicon-star prod-rate-star" aria-hidden="true"></span>
-                                                    </p>
-                                                </div>
-                                                <div>
-                                                    <p class="total-review">X reviews</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-5 col-md-5">
-                                            <div>
-                                                <div class="individual-rate-container">
-                                                    <span class="individual-rate-count">5</span>
-                                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </div>
-                                                <div class="progress-bar-container">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                            style="width: 100%">
-                                                            <span class="sr-only">100% Complete (success)</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="individual-rate-container">
-                                                    <span class="individual-rate-count">4</span>
-                                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </div>
-                                                <div class="progress-bar-container">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                            style="width: 40%">
-                                                            <span class="sr-only">40% Complete (success)</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="individual-rate-container">
-                                                    <span class="individual-rate-count">3</span>
-                                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </div>
-                                                <div class="progress-bar-container">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                            style="width: 25%">
-                                                            <span class="sr-only">25% Complete (success)</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="individual-rate-container">
-                                                    <span class="individual-rate-count">2</span>
-                                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </div>
-                                                <div class="progress-bar-container">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                            style="width: 10%">
-                                                            <span class="sr-only">10% Complete (warning)</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="individual-rate-container">
-                                                    <span class="individual-rate-count">1</span>
-                                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </div>
-                                                <div class="progress-bar-container">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                            style="width: 30%">
-                                                            <span class="sr-only">30% Complete (danger)</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4">
-                                            <div class="rate-review-btn-container" id="rate-review-btn">
-
-                                            </div>
-                                        </div>
+                        <div class="detail-container" id="product-price">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-12">
+                        <ul class="list-group" id="spec-list">
+                           <li class="list-group-item">
+                              <h3 class="spec-head"> Specification</h3>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-12">
+                        <ul class="list-group" id="comment-sec">
+                           <li class="list-group-item pad-bottom-0">
+                              <div class="row">
+                                 <div class="col-xs-4 col-sm-3 col-md-3">
+                                    <div>
+                                       <div>
+                                          <p>
+                                             <span class="prod-rate prod-rate-avg">x</span>
+                                             <span class="glyphicon glyphicon-star prod-rate-star" aria-hidden="true"></span>
+                                          </p>
+                                       </div>
+                                       <div id="total-review-bottom">
+                                       </div>
                                     </div>
-                                    <div class="row">
-                                        <ul class="nav nav-pills" id="comment-type-list">
-
-                                        </ul>
+                                 </div>
+                                 <div class="col-xs-8 col-sm-5 col-md-5">
+                                    <div>
+                                       <div class="individual-rate-container">
+                                          <span class="individual-rate-count">5</span>
+                                          <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                       </div>
+                                       <div class="progress-bar-container">
+                                          <div class="progress">
+                                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 100%">
+                                                <span class="sr-only">100% Complete (success)</span>
+                                             </div>
+                                          </div>
+                                       </div>
                                     </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                                    <div>
+                                       <div class="individual-rate-container">
+                                          <span class="individual-rate-count">4</span>
+                                          <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                       </div>
+                                       <div class="progress-bar-container">
+                                          <div class="progress">
+                                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 40%">
+                                                <span class="sr-only">40% Complete (success)</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div>
+                                       <div class="individual-rate-container">
+                                          <span class="individual-rate-count">3</span>
+                                          <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                       </div>
+                                       <div class="progress-bar-container">
+                                          <div class="progress">
+                                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 25%">
+                                                <span class="sr-only">25% Complete (success)</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div>
+                                       <div class="individual-rate-container">
+                                          <span class="individual-rate-count">2</span>
+                                          <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                       </div>
+                                       <div class="progress-bar-container">
+                                          <div class="progress">
+                                             <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 10%">
+                                                <span class="sr-only">10% Complete (warning)</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div>
+                                       <div class="individual-rate-container">
+                                          <span class="individual-rate-count">1</span>
+                                          <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                       </div>
+                                       <div class="progress-bar-container">
+                                          <div class="progress">
+                                             <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 30%">
+                                                <span class="sr-only">30% Complete (danger)</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xs-12 col-sm-4 col-md-4">
+                                    <div class="rate-review-btn-container" id="rate-review-btn">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <ul class="nav nav-pills" id="comment-type-list">
+                                 </ul>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </section>
-        <!-- End middle content-->
-        <div class="row">
+         </section>
+         <!-- End middle content-->
+         <div class="row">
             <div class="col-xs-12">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="row footer-table-nav" id="footer-shortcut-link">
-
+               <div class="panel panel-default">
+                  <div class="panel-body">
+                     <div class="row footer-table-nav" id="footer-shortcut-link">
+                     </div>
+                     <div class="row">
+                        <div class="col-xs-12">
+                           <div class="col-xs-12-default">
+                              <table class="table table-bordered">
+                                 <tbody>
+                                    <tr class="text-center" id="footer-static-text">
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="col-xs-12-default">
-                                    <table class="table table-bordered">
-                                        <tbody>
-                                            <tr class="text-center" id="footer-static-text">
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-xs-12">
+                           <div class="col-xs-12-default address-border" id="footer-address">
+                           </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="col-xs-12-default address-border" id="footer-address">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <!-- End footer-->
-    </div>
-    <script src="data/header_footer.js"></script>
-    <script src="data/main_category.js"></script>
-    <script src="data/product_cat.js"></script>
-    <script src="data/product_details.js"></script>
-    <script src="data/brand.js"></script>
-    <script src="data/global_keys.js"></script>
-    <script src="data/user_info.js"></script>
-    <script src="js/libs/jquery-3.2.0.js"></script>
-    <script src="js/libs/handlebars-v4.0.5.js"></script>
-    <script src="js/libs/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
-    <script src="js/libs/lodash.js"></script>
-    <script src="js/global_function.js"></script>
-    <script src="js/header_footer.js"></script>
-    <script src="js/product.js"></script>
-
-
-</body>
-
+         </div>
+         <!-- End footer-->
+      </div>
+      <script src="data/header_footer.js"></script>
+      <script src="data/main_category.js"></script>
+      <script src="data/product_cat.js"></script>
+      <script src="data/product_details.js"></script>
+      <script src="data/brand.js"></script>
+      <script src="data/global_keys.js"></script>
+      <script src="data/user_info.js"></script>
+      <script src="js/libs/jquery-3.2.0.js"></script>
+      <script src="js/libs/handlebars-v4.0.5.js"></script>
+      <script src="js/libs/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+      <script src="js/libs/lodash.js"></script>
+      <script src="js/global_function.js"></script>
+      <script src="js/header_footer.js"></script>
+      <script src="js/product.js"></script>
+   </body>
 </html>
+

@@ -1,32 +1,8 @@
 "use strict"
-var specData;
-var specPath = productDetails.products[0].specifications;
-
-class Specification {
-    constructor(specType, featureName, featureValue) {
-        this.specType = specType;
-        this.featureName = featureName;
-        this.featureValue = featureValue;
-    }
-}
-
-var specData = (specPath => {
-    let arr = [],
-        counter = 0;
-    for (let i = 0; i < specPath.length; i++) {
-        for (var j = 0; j < specPath[i].spec_type_details.length; j++) {
-            arr[counter] = new Specification(specPath[i].spec_type, specPath[i].spec_type_details[j].feature_name, specPath[i].spec_type_details[j].feature_value);
-            counter++;
-        }
-    }
-    return arr;
-})(specPath);
-
-
 /*
 * @method:Anonymous
 * @param:No parameters
-* @desc :Load product page main body data from JSON
+* @desc :Load product page main body data from JSON by Handlebars
 * @return: undefined{undefined}
 */
 (() => {
@@ -36,19 +12,31 @@ var specData = (specPath => {
         dest_node: document.getElementById("add-cart-buy-btn"),
         node_position: 'beforeend'
     },
-    _specTemplate = {
-        raw_temp: document.getElementById("spec-list-template").innerHTML,
-        context: productDetails.products[0],
-        dest_node: document.getElementById("spec-list"),
-        node_position: 'beforeend'
-    },
-    _rateReviewBtnTemplate = {
+        _totalRateReviewTemplate = {
+            raw_temp: document.getElementById("total-rating-reviews-template").innerHTML,
+            context: globalKeys.global_keys,
+            dest_node: document.getElementById("total-rating-reviews"),
+            node_position: 'beforeend'
+        },
+        _specTemplate = {
+            raw_temp: document.getElementById("spec-list-template").innerHTML,
+            context: productDetails.products[0],
+            dest_node: document.getElementById("spec-list"),
+            node_position: 'beforeend'
+        },
+        _totalReviewBottomTemplate = {
+            raw_temp: document.getElementById("total-review-bottom-template").innerHTML,
+            context: globalKeys.global_keys,
+            dest_node: document.getElementById("total-review-bottom"),
+            node_position: 'beforeend'
+        },
+        _rateReviewBtnTemplate = {
             raw_temp: document.getElementById("rate-review-btn-template").innerHTML,
             context: globalKeys.global_keys.flipkart_rate_review,
             dest_node: document.getElementById("rate-review-btn"),
             node_position: 'beforeend'
         },
-    _commentTypeTemplate = {
+        _commentTypeTemplate = {
             raw_temp: document.getElementById("comment-type-list-template").innerHTML,
             context: globalKeys.global_keys.flipkart_type_of_comment,
             dest_node: document.getElementById("comment-type-list"),
@@ -56,7 +44,7 @@ var specData = (specPath => {
         },
         _reviewTemplate = {
             raw_temp: document.getElementById("review-list-template").innerHTML,
-            context: Object.assign({},productDetails.products[0],globalKeys.global_keys),
+            context: Object.assign({}, productDetails.products[0], globalKeys.global_keys),
             dest_node: document.getElementById("comment-sec"),
             node_position: 'beforeend'
         },
@@ -75,7 +63,9 @@ var specData = (specPath => {
 
     //function call
     templateHandler(_addCartBuyBtnTemplate);
+    templateHandler(_totalRateReviewTemplate);
     templateHandler(_specTemplate);
+    templateHandler(_totalReviewBottomTemplate);
     templateHandler(_rateReviewBtnTemplate);
     templateHandler(_commentTypeTemplate);
     templateHandler(_reviewTemplate);
@@ -83,17 +73,21 @@ var specData = (specPath => {
     templateHandler(_productPriceTemplate);
 })();
 
-function avgRateCalcu(){
+/*
+* @method:Anonymous
+* @param:No parameters
+* @desc :DOM manipulation based on the some value by javaSccript
+* @return: undefined{undefined}
+*/
 
-var rate=_.flatMap(productDetails.products[0].reviews,function(c){return c.rate}),
-    totalRate=0;
+(() => { 
+    var _rateobj=objArrayAverageAndTotalfinder(productDetails.products[0].reviews, "rate");
 
-for(var _i=0;_i<rate.length;_i++){
-    totalRate+=Number(rate[_i]);
+   _.flatMap(document.getElementsByClassName("prod-rate-avg"),function(c){c.innerHTML=_rateobj.avg});
+   _.flatMap(document.getElementsByClassName("total-rate-product"),function(c){c.innerHTML=_rateobj.total});
+   document.getElementById("total-review-product").innerHTML=productDetails.products[0].reviews.length;
 }
-console.log(totalRate);
-}
-avgRateCalcu();
+)();
 
 
 
