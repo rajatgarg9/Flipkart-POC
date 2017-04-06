@@ -83,7 +83,17 @@ var specData = (specPath => {
     templateHandler(_productPriceTemplate);
 })();
 
+function avgRateCalcu(){
 
+var rate=_.flatMap(productDetails.products[0].reviews,function(c){return c.rate}),
+    totalRate=0;
+
+for(var _i=0;_i<rate.length;_i++){
+    totalRate+=Number(rate[_i]);
+}
+console.log(totalRate);
+}
+avgRateCalcu();
 
 
 
