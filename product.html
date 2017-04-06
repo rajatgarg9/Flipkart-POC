@@ -19,6 +19,10 @@
         </li>
         {{/each}}
     </script>
+    <script id="cart-btn-data-template" type="text/x-handlebars-template">
+        <span class="cart-btn-txt">{{flipkart_cart}}</span>
+        <span class="badge cart-btn-badge">{{cart_items.length}}</span>
+    </script>
     <script id="header-main-cat-list-template" type="text/x-handlebars-template">
         {{#each main_categories}}
         <li class="dropdown dropdown-head">
@@ -34,6 +38,26 @@
             </ul>
         </li>
         {{/each}}
+    </script>
+    <script id="add-cart-buy-btn-template" type="text/x-handlebars-template">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="btn-container-pad">
+                <button class="btn btn-primary block-btn add-cart" type="submit">
+                    <a href="javascript:void(0)">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> {{flipkart_add_to_cart}}
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="btn-container-pad">
+                <button class="btn btn-primary block-btn buy-now" type="submit">
+                    <a href="javascript:void(0)">
+                        <span class="glyphicon glyphicon-flash" aria-hidden="true"></span> {{flipkart_buy_now}}
+                    </a>
+                </button>
+            </div>
+        </div>
     </script>
     <script id="product-heading-template" type="text/x-handlebars-template">
         <h4 class="prod-name-heading">{{product_name}}</h4>
@@ -61,6 +85,17 @@
                     </tbody>
                 </table>
             </div>
+        </li>
+        {{/each}}
+    </script>
+    <script id="rate-review-btn-template" type="text/x-handlebars-template">
+        <button type="button" class="btn btn-secondary block-btn">
+            <a href="javascript:void(0)">{{this}}</a>
+        </button>
+    </script>
+    <script id="comment-type-list-template" type="text/x-handlebars-template">
+        {{#each this}}
+        <li role="presentation" class="active"><a href="javascript:void(0)">{{this}}</a>
         </li>
         {{/each}}
     </script>
@@ -102,10 +137,10 @@
                                                                 <span class="caret"></span>
                                                             </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="javascript:void(0)">Permalink</a>
+                                        {{#each ../flipkart_comment_related_action}}
+                                        <li><a href="javascript:void(0)">{{this}}</a>
                                         </li>
-                                        <li><a href="javascript:void(0)">Report Abuse</a>
-                                        </li>
+                                        {{/each}}
                                     </ul>
                                 </div>
                             </div>
@@ -196,10 +231,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-2 hidden-xs col-sm-3 col-md-2">
-                                                    <button type="button" class="btn btn-default cart-btn float-rgt-md">
+                                                    <button type="button" class="btn btn-default cart-btn float-rgt-md" id="cart-btn-data">
                                                         <span class="glyphicon glyphicon-shopping-cart cart-btn-icon" aria-hidden="true"></span>
-                                                        <span class="cart-btn-txt">CART</span>
-                                                        <span class="badge cart-btn-badge">1</span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -232,25 +265,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row ">
-                        <div class="col-xs-12 col-sm-12 col-md-6">
-                            <div class="btn-container-pad">
-                                <button class="btn btn-primary block-btn add-cart" type="submit">
-                                    <a href="javascript:void(0)">
-                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> ADD TO CART
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6">
-                            <div class="btn-container-pad">
-                                <button class="btn btn-primary block-btn buy-now" type="submit">
-                                    <a href="javascript:void(0)">
-                                        <span class="glyphicon glyphicon-flash" aria-hidden="true"></span> BUY NOW
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
+                    <div class="row" id="add-cart-buy-btn">
+
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 ">
@@ -296,7 +312,7 @@
                                                     </p>
                                                 </div>
                                                 <div>
-                                                    <p class="total-review">108 reviews</p>
+                                                    <p class="total-review">X reviews</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -373,23 +389,14 @@
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-4 col-md-4">
-                                            <div class="rate-review-btn-container">
-                                                <button type="button" class="btn btn-secondary block-btn">
-                                                    <a href="javascript:void(0)">Rate &amp; Review this product</a>
-                                                </button>
+                                            <div class="rate-review-btn-container" id="rate-review-btn">
+
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <ul class="nav nav-pills">
-                                            <li role="presentation" class="active"><a href="javascript:void(0)">Most Helpful</a>
-                                            </li>
-                                            <li role="presentation"><a href="javascript:void(0)">Positive</a>
-                                            </li>
-                                            <li role="presentation"><a href="javascript:void(0)">Negative</a>
-                                            </li>
-                                            <li role="presentation"><a href="javascript:void(0)">Most Recent</a>
-                                            </li>
+                                        <ul class="nav nav-pills" id="comment-type-list">
+
                                         </ul>
                                     </div>
                                 </li>
@@ -439,6 +446,7 @@
     <script src="data/product_details.js"></script>
     <script src="data/brand.js"></script>
     <script src="data/global_keys.js"></script>
+    <script src="data/user_info.js"></script>
     <script src="js/libs/jquery-3.2.0.js"></script>
     <script src="js/libs/handlebars-v4.0.5.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>

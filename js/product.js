@@ -30,15 +30,33 @@ var specData = (specPath => {
 * @return: undefined{undefined}
 */
 (() => {
-    var _specTemplate = {
+    var _addCartBuyBtnTemplate = {
+        raw_temp: document.getElementById("add-cart-buy-btn-template").innerHTML,
+        context: globalKeys.global_keys,
+        dest_node: document.getElementById("add-cart-buy-btn"),
+        node_position: 'beforeend'
+    },
+    _specTemplate = {
         raw_temp: document.getElementById("spec-list-template").innerHTML,
         context: productDetails.products[0],
         dest_node: document.getElementById("spec-list"),
         node_position: 'beforeend'
     },
+    _rateReviewBtnTemplate = {
+            raw_temp: document.getElementById("rate-review-btn-template").innerHTML,
+            context: globalKeys.global_keys.flipkart_rate_review,
+            dest_node: document.getElementById("rate-review-btn"),
+            node_position: 'beforeend'
+        },
+    _commentTypeTemplate = {
+            raw_temp: document.getElementById("comment-type-list-template").innerHTML,
+            context: globalKeys.global_keys.flipkart_type_of_comment,
+            dest_node: document.getElementById("comment-type-list"),
+            node_position: 'beforeend'
+        },
         _reviewTemplate = {
             raw_temp: document.getElementById("review-list-template").innerHTML,
-            context: productDetails.products[0],
+            context: Object.assign({},productDetails.products[0],globalKeys.global_keys),
             dest_node: document.getElementById("comment-sec"),
             node_position: 'beforeend'
         },
@@ -56,7 +74,10 @@ var specData = (specPath => {
         }
 
     //function call
+    templateHandler(_addCartBuyBtnTemplate);
     templateHandler(_specTemplate);
+    templateHandler(_rateReviewBtnTemplate);
+    templateHandler(_commentTypeTemplate);
     templateHandler(_reviewTemplate);
     templateHandler(_productHeadingTemplate);
     templateHandler(_productPriceTemplate);
