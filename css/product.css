@@ -135,6 +135,7 @@
     border-right: 6px solid transparent;
     border-left: 6px solid transparent;
 }
+
 .comment-action-container .glyphicon-thumbs-up{
     font-size: 16px;
 }
@@ -206,4 +207,8 @@
 .rate-review-btn-container{
     padding-top: 4em;
 }
+}
+.comment-action-container .dropdown-menu{
+    right: 0;
+     left: initial;
 }

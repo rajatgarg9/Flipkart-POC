@@ -10,5 +10,6 @@ var globalKeys = {
         "flipkart_free_easy_returns": "FREE & EASY RETURNS",
         "flipkart_online_cancellations": "ONLINE CANCELLATIONS",
         "flipkart_type_of_comment": ["Most Helpful", "Positive", "Negative", "Most Recent"],
+        "flipkart_certified_buyer": "Certified Buyer",
     }
 }

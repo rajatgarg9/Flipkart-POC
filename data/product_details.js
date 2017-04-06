@@ -241,14 +241,18 @@ var productDetails = {
 					"description": "Audio quality is very bad...Phone ringing sound is also hopeless.Samsung should improve on this area. Rest of the specs are ok . Flipkart also should consider these feedback's and can let the vendors know (not sure if they have this mechanism)",
 					"name": "Ramesh G V",
 					"rate": "1",
-					"time": "Sun Mar 01 2014 05:30:00 GMT+0530 (India Standard Time)"
+					"time": "Sun Mar 01 2014 05:30:00",
+					"likes":"233",
+					"dis_likes":"21"
 				},
 				{
 					"title": "nice product",
 					"description": "BULL SHIT PHONE LOTES OF SOFTWARE ISSUES OR OTHER UNKNOWN SCREEN SHOW UN USUAL COLOUR WHEN CALLING AND DIDNT WORK",
 					"name": "ADIL MUHAMMAD",
 					"rate": "5",
-					"time": "Sun Jan 01 2013 05:30:00 GMT+0530 (India Standard Time)"
+					"time": "Sun Jan 01 2013 05:30:00",
+					"likes":"233",
+					"dis_likes":"21"
 				}
 			]
 		},

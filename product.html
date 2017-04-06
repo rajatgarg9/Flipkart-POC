@@ -119,18 +119,17 @@
                         {{description}}
                     </p>
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-xs-12 col-md-6">
                             <p class="commenter-detail">
-                                {{name}} <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Certified
-                                Buyer {{time}}
+                                {{name}} <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> {{../flipkart_certified_buyer}} &nbsp{{ time}}
                             </p>
                         </div>
-                        <div class="col-xs-12">
-                            <div class="comment-action-container">
+                        <div class="col-xs-12 col-md-6">
+                            <div class="comment-action-container pull-right">
                                 <span class="glyphicon glyphicon-thumbs-up pointer" aria-hidden="true"></span>
-                                <span class="pointer like-dislike-count">342</span>
+                                <span class="pointer like-dislike-count">{{likes}}</span>
                                 <span class="glyphicon glyphicon-thumbs-down pointer" aria-hidden="true"></span>
-                                <span class="pointer like-dislike-count">62</span>
+                                <span class="pointer like-dislike-count">{{dis_likes}}</span>
                                 <div class="dropdown inline-block">
                                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="true">
