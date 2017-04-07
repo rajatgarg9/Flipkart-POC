@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 /*
 * @method:Anonymous
 * @param:No parameters
@@ -6,7 +6,13 @@
 * @return: undefined{undefined}
 */
 (() => {
-    var _addCartBuyBtnTemplate = {
+    var _productImageTemplate = {
+        raw_temp: document.getElementById("product-image-template").innerHTML,
+        context: Object.assign({},globalKeys.global_keys,productDetails.products[0]),
+        dest_node: document.getElementById("product-image"),
+        node_position: 'beforeend'
+    },
+    _addCartBuyBtnTemplate = {
         raw_temp: document.getElementById("add-cart-buy-btn-template").innerHTML,
         context: globalKeys.global_keys,
         dest_node: document.getElementById("add-cart-buy-btn"),
@@ -62,6 +68,7 @@
         }
 
     //function call
+    templateHandler(_productImageTemplate);
     templateHandler(_addCartBuyBtnTemplate);
     templateHandler(_totalRateReviewTemplate);
     templateHandler(_specTemplate);

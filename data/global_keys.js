@@ -14,5 +14,8 @@ var globalKeys = {
         "flipkart_ratings": "Ratings",
         "flipkart_reviews": "Reviews",
         "flipkart_and": "&",
+        "flipkart_image_path": "images/products",
+        "flipkart_image_extension": ".jpg",
+        "flipkart_search_for_product_brand_more":"Search for Products, Brands and More"
     }
 }

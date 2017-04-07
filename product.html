@@ -19,6 +19,9 @@
          </li>
          {{/each}}
       </script>
+      <script id="search-box-template" type="text/x-handlebars-template">
+         <input type="text" class="form-control" placeholder="{{flipkart_search_for_product_brand_more}}" aria-describedby="sizing-addon1">
+      </script>
       <script id="cart-btn-data-template" type="text/x-handlebars-template">
          <span class="cart-btn-txt">{{flipkart_cart}}</span>
          <span class="badge cart-btn-badge">{{cart_items.length}}</span>
@@ -38,6 +41,9 @@
              </ul>
          </li>
          {{/each}}
+      </script>
+      <script id="product-image-template" type="text/x-handlebars-template">
+         <img src= {{{flipkart_image_path}}}/{{{id}}}{{{flipkart_image_extension}}} class="img-responsive" alt="Responsive image">
       </script>
       <script id="add-cart-buy-btn-template" type="text/x-handlebars-template">
          <div class="col-xs-12 col-sm-12 col-md-6">
@@ -228,8 +234,7 @@
                                  <div class="container-fluid">
                                     <div class="row">
                                        <div class="col-xs-12 col-sm-9 col-md-10">
-                                          <div class="input-group input-group-lg search-field">
-                                             <input type="text" class="form-control" placeholder="Search for Products, Brands and More" aria-describedby="sizing-addon1">
+                                          <div class="input-group input-group-lg search-field" id="search-box">
                                              <span class="input-group-addon" id="sizing-addon1">
                                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                                              </span>
@@ -264,8 +269,8 @@
                <div class="col-xs-12 col-sm-4 col-md-4">
                   <div class="row">
                      <div class="col-xs-12">
-                        <div>
-                           <img src="images/product_page.jpg" class="img-responsive" alt="Responsive image">
+                        <div id="product-image">
+                           
                         </div>
                      </div>
                   </div>
@@ -280,7 +285,7 @@
                         <div class="detail-container" id="total-rating-reviews">
                            <div class="btn-group btn-group-sm" role="group" aria-label="...">
                               <button type="button" class="btn btn-success rate-btn">
-                                <span class="prod-rate-avg"">X</span>
+                                <span class="prod-rate-avg">X</span>
                                 <span class="badge rate-btn-badge">
                                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                                 </span>

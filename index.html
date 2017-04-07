@@ -12,31 +12,77 @@
 </head>
 
 <body id="bootstrap-overrides">
+    <script id="main-head-list-template" type="text/x-handlebars-template">
+        {{#each header_link}}
+        <li role="presentation" class="top-nav-link">
+            <a href="javascript:void(0)">{{this}}</a>
+        </li>
+        {{/each}}
+    </script>
+    <script id="search-box-template" type="text/x-handlebars-template">
+        <input type="text" class="form-control" placeholder="{{flipkart_search_for_product_brand_more}}" aria-describedby="sizing-addon1">
+    </script>
+    <script id="cart-btn-data-template" type="text/x-handlebars-template">
+        <span class="cart-btn-txt">{{flipkart_cart}}</span>
+        <span class="badge cart-btn-badge">{{cart_items.length}}</span>
+    </script>
+    <script id="header-main-cat-list-template" type="text/x-handlebars-template">
+        {{#each main_categories}}
+        <li class="dropdown dropdown-head">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{this.name}} 
+         <span class="caret"></span>
+         </a>
+            <ul class="dropdown-menu">
+                {{#each ../categories}} {{#ifcond ../id this.main_cat_id}}
+                <li>
+                    <a href="javascript:void(0)">{{this.name}}</a>
+                </li>
+                {{/ifcond}} {{/each}}
+            </ul>
+        </li>
+        {{/each}}
+    </script>
+    <script id="footer-shortcut-link-template" type="text/x-handlebars-template">
+        {{#each footer_shortcut}}
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1">
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>{{this.name}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each category}}
+                    <tr>
+                        <td>{{this}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{/each}}
+    </script>
+    <script id="footer-static-text-template" type="text/x-handlebars-template">
+        {{#each this}}
+        <td><span class="glyphicon glyphicon-map-marker glyphicon-size" aria-hidden="true"></span>
+            <p class="glyphicon-txt-size"><strong>{{text}}</strong>
+            </p>
+        </td>
+        {{/each}}
+    </script>
+    <script id="footer-address-template" type="text/x-handlebars-template">
+        {{#each footer_address}}
+        <div class="col-xs-6 address-padding">
+            <address>
+                <strong>{{this.address_type}}:</strong><br/>{{this.address}}
+            </address>
+        </div>
+        {{/each}}
+    </script>
     <div class="container-fluid">
         <div class="row head-color head-nav">
             <div class="col-xs-12">
-                <ul class="nav nav-pills pull-right rgt-pad-md-48" id="main-head">
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Sell on Advertise</a>
-                    </li>
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Advertise</a>
-                    </li>
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Gift Card</a>
-                    </li>
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Track Order</a>
-                    </li>
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Signup</a>
-                    </li>
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Log In</a>
-                    </li>
-                    <li role="presentation" class="top-nav-link">
-                        <a href="#">Cart</a>
-                    </li>
+                <ul class="nav nav-pills pull-right rgt-pad-md-48" id="main-head-list">
                 </ul>
             </div>
         </div>
@@ -49,13 +95,14 @@
                                 <div class="col-sm-3 col-md-2 rmove-rgt-pad">
                                     <!-- Brand and toggle get grouped for better mobile display -->
                                     <div class="navbar-header pull-right float-none-xs">
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                        <a class="navbar-brand" href="#">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                            aria-expanded="false">
+                                 <span class="sr-only">Toggle navigation</span>
+                                 <span class="icon-bar"></span>
+                                 <span class="icon-bar"></span>
+                                 <span class="icon-bar"></span>
+                                 </button>
+                                        <a class="navbar-brand" href="javascript:void(0)">
                                             <img alt="Brand" src="images/logo.png" class="img-responsive">
                                         </a>
                                     </div>
@@ -66,19 +113,16 @@
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-xs-12 col-sm-9 col-md-10">
-                                                    <div class="input-group input-group-lg search-field">
-                                                        <input type="text" class="form-control" placeholder="Search for Products, Brands and More" aria-describedby="sizing-addon1">
+                                                    <div class="input-group input-group-lg search-field" id="search-box">
                                                         <span class="input-group-addon" id="sizing-addon1">
-                                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                             <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                                                         </span>
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-2 hidden-xs col-sm-3 col-md-2">
-                                                    <button type="button" class="btn btn-default cart-btn float-rgt-md">
-                                                        <span class="glyphicon glyphicon-shopping-cart cart-btn-icon" aria-hidden="true"></span>
-                                                        <span class="cart-btn-txt">CART</span>
-                                                        <span class="badge cart-btn-badge">1</span>
-                                                    </button>
+                                                    <button type="button" class="btn btn-default cart-btn float-rgt-md" id="cart-btn-data">
+                                          <span class="glyphicon glyphicon-shopping-cart cart-btn-icon" aria-hidden="true"></span>
+                                          </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -94,111 +138,11 @@
         </div>
         <div class="row head-color">
             <div class="col-xs-12">
-                <ul class="nav nav-pills lft-pad-sm-20 lft-pad-md-53">
-                    <li class="dropdown dropdown-head">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Electronics 
-																	<span class="caret"></span>
-																</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Action</a>
-                            </li>
-                            <li>
-                                <a href="#">Another action</a>
-                            </li>
-                            <li>
-                                <a href="#">Something else here</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="#">Separated link</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown dropdown-head">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Appliance 
-																	<span class="caret"></span>
-																</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Action</a>
-                            </li>
-                            <li>
-                                <a href="#">Another action</a>
-                            </li>
-                            <li>
-                                <a href="#">Something else here</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="#">Separated link</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown dropdown-head">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Men 
-																	<span class="caret"></span>
-																</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Action</a>
-                            </li>
-                            <li>
-                                <a href="#">Another action</a>
-                            </li>
-                            <li>
-                                <a href="#">Something else here</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="#">Separated link</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown dropdown-head">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">women 
-																	<span class="caret"></span>
-																</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Action</a>
-                            </li>
-                            <li>
-                                <a href="#">Another action</a>
-                            </li>
-                            <li>
-                                <a href="#">Something else here</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="#">Separated link</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown dropdown-head">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">books & More 
-																	<span class="caret"></span>
-																</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Action</a>
-                            </li>
-                            <li>
-                                <a href="#">Another action</a>
-                            </li>
-                            <li>
-                                <a href="#">Something else here</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="#">Separated link</a>
-                            </li>
-                        </ul>
-                    </li>
+                <ul class="nav nav-pills lft-pad-sm-20 lft-pad-md-53" id="header-main-cat-list">
                 </ul>
             </div>
         </div>
-           <!-- End header-->  
+        <!-- End header-->
         <div class="row">
             <div class="col-xs-12">
                 <br/>
@@ -515,107 +459,19 @@
                 </div>
             </div>
         </div>
-         <!-- End middle content-->
+        <!-- End middle content-->
         <div class="row">
             <div class="col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <div class="row footer-table-nav">
-                            <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1">
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>MISC</th>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td>Online Shopping</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Affiliate Program</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gift Card</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Flipkart First Subscription</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1">
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>HELP</th>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td>Payments</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Shipping</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cancellation & Returns</td>
-                                    </tr>
-                                    <tr>
-                                        <td>FAQ</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Report Infringement</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1">
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>FLIPKART</th>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td>Contact Us</td>
-                                    </tr>
-                                    <tr>
-                                        <td>About Us</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Careers</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Flipkart Stories</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Press</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sell on Flipkart</td>
-                                    </tr>
-                                </table>
-                            </div>
+                        <div class="row footer-table-nav" id="footer-shortcut-link">
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="col-xs-12-default">
                                     <table class="table table-bordered">
                                         <tbody>
-                                            <tr class="text-center ">
-                                                <td><span class="glyphicon glyphicon-map-marker glyphicon-size" aria-hidden="true">
-                                                    </span>
-                                                    <p class="glyphicon-txt-size"><strong>TRACK YOUR ORDER</strong>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <span class="glyphicon glyphicon-refresh glyphicon-size " aria-hidden="true">
-                                                    </span>
-                                                    <p class="glyphicon-txt-size"><strong>FREE & EASY RETURNS</strong>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <span class="glyphicon glyphicon-remove-circle glyphicon-size" aria-hidden="true"></span>
-                                                    <p class="glyphicon-txt-size break-word"><strong >ONLINE CANCELLATIONS</strong>
-                                                    </p>
-                                                </td>
+                                            <tr class="text-center" id="footer-static-text">
                                             </tr>
                                         </tbody>
                                     </table>
@@ -624,25 +480,7 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
-                                <div class="col-xs-12-default address-border">
-                                    <div class="col-xs-6 address-padding">
-                                        <address>
-                                            <strong>Mail Us:</strong><br/> Flipkart Internet Private Limited,<br/> Ozone
-                                            Manay Tech Park,<br/> #56/18 & 55/09, 7th Floor,<br/> Garvebhavipalya, Hosur
-                                            Road,
-                                            <br/> Bangalore - 560068,<br/> Karnataka, India.
-                                            <br/>
-                                        </address>
-                                    </div>
-                                    <div class="col-xs-6 reg-address-border address-padding">
-                                        <address>
-                                            <strong>Registered Office Address:</strong><br/> Flipkart Internet Private Limited,
-                                            <br/> Vaishnavi Summit, Ground Floor, 7th Main,<br/> 80 Feet Road, 3rd Block,
-                                            <br/> Koramangala,
-                                            <br/> Bengaluru - 560034<br/> India
-                                            <br/> CIN : U51109KA2012PTC066107<br/> Telephone: 1800 208 9898
-                                        </address>
-                                    </div>
+                                <div class="col-xs-12-default address-border" id="footer-address">
                                 </div>
                             </div>
                         </div>
@@ -652,12 +490,20 @@
         </div>
         <!-- End footer-->
     </div>
+    <script src="data/header_footer.js"></script>
     <script src="data/main_category.js"></script>
     <script src="data/product_cat.js"></script>
     <script src="data/product_details.js"></script>
     <script src="data/brand.js"></script>
-    <script src="js/jquery-3.2.0.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="data/global_keys.js"></script>
+    <script src="data/user_info.js"></script>
+    <script src="js/libs/jquery-3.2.0.js"></script>
+    <script src="js/libs/handlebars-v4.0.5.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+    <script src="js/libs/lodash.js"></script>
+    <script src="js/global_function.js"></script>
+    <script src="js/header_footer.js"></script>
     <script src="js/front_page.js"></script>
 </body>
 

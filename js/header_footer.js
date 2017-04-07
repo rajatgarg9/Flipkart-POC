@@ -7,7 +7,13 @@
 * @return: undefined{undefined}
 */
     (() => {
-        var _mainHeadLinkTemplate = {
+        var _searchBoxTemplate = {
+                raw_temp: document.getElementById("search-box-template").innerHTML,
+                context: globalKeys.global_keys,
+                dest_node: document.getElementById("search-box"),
+                node_position: 'afterbegin'
+            },
+            _mainHeadLinkTemplate = {
                 raw_temp: document.getElementById("main-head-list-template").innerHTML,
                 context: headerData,
                 dest_node: document.getElementById("main-head-list"),
@@ -45,6 +51,7 @@
             };
 
             //function call
+            templateHandler( _searchBoxTemplate);
         templateHandler( _footerStaticTextTemplate);
         templateHandler( _addCartBtnTemplate);
         templateHandler(_footerAddressTemplate);
