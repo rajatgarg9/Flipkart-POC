@@ -42,8 +42,17 @@
         </li>
         {{/each}}
     </script>
+    <script id="product-images-list-template" type="text/x-handlebars-template">
+        <ul class="list-group">
+            {{#each images_name}}
+            <li class="list-group-item">
+                <img src="{{../images_path}}/{{this}}" class="img-responsive" alt="Responsive image">
+            </li>
+            {{/each}}
+        </ul>
+    </script>
     <script id="product-image-template" type="text/x-handlebars-template">
-        <img src="{{{this.images_path}}}/{{{this.images_name}}}" class="img-responsive" alt="Responsive image">
+        <img src="{{{this.images_path}}}/{{{images_name}}}" class="img-responsive" alt="Responsive image">
     </script>
     <script id="add-cart-buy-btn-template" type="text/x-handlebars-template">
         <div class="col-xs-12 col-sm-12 col-md-6">
@@ -267,24 +276,13 @@
         <section id="resest-bootstrap">
             <div class="row pad-top-21">
                 <div class="col-xs-3 col-md-1">
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <img src="images/products/samsung galaxy on5/1.jpg" class="img-responsive" alt="Responsive image">
-                        </li>
-                        <li class="list-group-item">
-                            <img src="images/products/samsung galaxy on5/1.jpg" class="img-responsive" alt="Responsive image">
-                        </li>
-                        <li class="list-group-item">
-                            <img src="images/products/samsung galaxy on5/1.jpg" class="img-responsive" alt="Responsive image">
-                        </li>
-                        <li class="list-group-item">
-                            <img src="images/products/samsung galaxy on5/1.jpg" class="img-responsive" alt="Responsive image">
-                        </li>
-                    </ul>
+                    <div id="product-images-list">
+
+                    </div>
                 </div>
-                <div class="col-xs-9 col-sm-4 col-md-4">
+                <div class="col-xs-9 col-sm-4 col-md-4 pad-left-0">
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-xs-12 prod-imag-conta">
                             <div id="product-image">
 
                             </div>

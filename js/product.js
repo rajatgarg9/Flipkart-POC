@@ -6,7 +6,13 @@
 * @return: undefined{undefined}
 */
 (() => {
-    var _productImageTemplate = {
+    var _productImageListTemplate = {
+        raw_temp: document.getElementById("product-images-list-template").innerHTML,
+        context: productDetails.products[0],
+        dest_node: document.getElementById("product-images-list"),
+        node_position: 'beforeend'
+    },
+    _productImageTemplate = {
         raw_temp: document.getElementById("product-image-template").innerHTML,
         context: productDetails.products[0],
         dest_node: document.getElementById("product-image"),
@@ -68,6 +74,7 @@
         }
 
     //function call
+    templateHandler(_productImageListTemplate);
     templateHandler(_productImageTemplate);
     templateHandler(_addCartBuyBtnTemplate);
     templateHandler(_totalRateReviewTemplate);

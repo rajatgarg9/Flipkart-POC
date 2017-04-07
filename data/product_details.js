@@ -9,7 +9,7 @@ var productDetails = {
 			"product_name": "samsung galaxy on5",
 			"price": "7490",
 			"images_path":"images/products/samsung galaxy on5",
-			"images_name":["1.jpg"],
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
