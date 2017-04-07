@@ -8,7 +8,7 @@
 (() => {
     var _productImageTemplate = {
         raw_temp: document.getElementById("product-image-template").innerHTML,
-        context: Object.assign({},globalKeys.global_keys,productDetails.products[0]),
+        context: productDetails.products[0],
         dest_node: document.getElementById("product-image"),
         node_position: 'beforeend'
     },
