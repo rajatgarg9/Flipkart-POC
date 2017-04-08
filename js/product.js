@@ -12,12 +12,6 @@
         dest_node: document.getElementById("product-images-list"),
         node_position: 'beforeend'
     },
-    _productImageTemplate = {
-        raw_temp: document.getElementById("product-image-template").innerHTML,
-        context: productDetails.products[0],
-        dest_node: document.getElementById("product-image"),
-        node_position: 'beforeend'
-    },
     _addCartBuyBtnTemplate = {
         raw_temp: document.getElementById("add-cart-buy-btn-template").innerHTML,
         context: globalKeys.global_keys,
@@ -29,6 +23,12 @@
             context: globalKeys.global_keys,
             dest_node: document.getElementById("total-rating-reviews"),
             node_position: 'beforeend'
+        },
+        _specHeadingTemplate = {
+            raw_temp: document.getElementById("spec-list-heading-template").innerHTML,
+            context: globalKeys.global_keys,
+            dest_node: document.getElementById("spec-list"),
+            node_position: 'afterbegin'
         },
         _specTemplate = {
             raw_temp: document.getElementById("spec-list-template").innerHTML,
@@ -75,9 +75,9 @@
 
     //function call
     templateHandler(_productImageListTemplate);
-    templateHandler(_productImageTemplate);
     templateHandler(_addCartBuyBtnTemplate);
     templateHandler(_totalRateReviewTemplate);
+    templateHandler(_specHeadingTemplate);
     templateHandler(_specTemplate);
     templateHandler(_totalReviewBottomTemplate);
     templateHandler(_rateReviewBtnTemplate);

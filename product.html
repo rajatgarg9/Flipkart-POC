@@ -51,9 +51,6 @@
             {{/each}}
         </ul>
     </script>
-    <script id="product-image-template" type="text/x-handlebars-template">
-        <img src="{{{this.images_path}}}/{{{images_name}}}" class="img-responsive" alt="Responsive image">
-    </script>
     <script id="add-cart-buy-btn-template" type="text/x-handlebars-template">
         <div class="col-xs-12 col-sm-12 col-md-6">
             <div class="btn-container-pad">
@@ -83,10 +80,13 @@
     <script id="total-rating-reviews-template" type="text/x-handlebars-template">
         <span class="rate-info"><span class="total-rate-product">x</span> {{flipkart_ratings}} {{flipkart_and}} <span id="total-review-product">x</span>        {{flipkart_reviews}}</span>
     </script>
-    <script id="spec-list-template" type="text/x-handlebars-template">
+    <script id="spec-list-heading-template" type="text/x-handlebars-template">
         <li class="list-group-item">
-            <h3 class="spec-head"> {{@key.price}}:{{this.price}}</h3>
+            <h3 class="spec-head">{{flipkart_specifications}}</h3>
         </li>
+    </script>
+    <script id="spec-list-template" type="text/x-handlebars-template">
+
         {{#each specifications}}
         <li class="list-group-item">
             <div class="spec-table-cont">
@@ -286,8 +286,8 @@
                 <div class="col-xs-9 col-sm-4 col-md-4 pad-left-0">
                     <div class="row">
                         <div class="col-xs-12 prod-imag-conta">
-                            <div id="product-image">
-
+                            <div>
+                                <img src="" class="img-responsive" id="product-image" alt="Responsive image">
                             </div>
                         </div>
                     </div>
@@ -316,9 +316,6 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <ul class="list-group" id="spec-list">
-                                <li class="list-group-item">
-                                    <h3 class="spec-head"> Specification</h3>
-                                </li>
                             </ul>
                         </div>
                     </div>
