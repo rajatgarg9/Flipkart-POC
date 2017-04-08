@@ -15,6 +15,7 @@ var globalKeys = {
         "flipkart_reviews": "Reviews",
         "flipkart_and": "&",
         "flipkart_search_for_product_brand_more":"Search for Products, Brands and More",
-        "flipkart_specifications": "Specification"
+        "flipkart_specifications": "Specification",
+        "flipkart_price_symbol": "₹"
     }
 }

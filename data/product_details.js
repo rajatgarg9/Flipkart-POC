@@ -266,6 +266,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "samsung galaxy on6",
 			"price": "7590",
+			"images_path":"images/products/samsung galaxy on6",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -518,6 +520,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "samsung galaxy on7",
 			"price": "8490",
+			"images_path":"images/products/samsung galaxy on7",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -770,6 +774,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "samsung galaxy NXT",
 			"price": "17490",
+			"images_path":"images/products/samsung galaxy NXT",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -1022,6 +1028,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "lenovo galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/lenovo galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -1274,6 +1282,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "lenovo galaxy on6",
 			"price": "7590",
+			"images_path":"images/products/lenovo galaxy on6",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -1526,6 +1536,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "lenovo galaxy on7",
 			"price": "8490",
+			"images_path":"images/products/lenovo galaxy on7",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -1778,6 +1790,8 @@ var productDetails = {
 			"brand_id": "3",
 			"product_name": "mi galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/mi galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -2030,6 +2044,8 @@ var productDetails = {
 			"brand_id": "3",
 			"product_name": "mi galaxy on6",
 			"price": "7590",
+			"images_path":"images/products/mi galaxy on6",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -2282,6 +2298,8 @@ var productDetails = {
 			"brand_id": "3",
 			"product_name": "mi galaxy on7",
 			"price": "8490",
+			"images_path":"images/products/mi galaxy on7",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -2534,6 +2552,8 @@ var productDetails = {
 			"brand_id": "4",
 			"product_name": "motorola galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/motorola galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -2786,6 +2806,8 @@ var productDetails = {
 			"brand_id": "4",
 			"product_name": "motorola galaxy on6",
 			"price": "7590",
+			"images_path":"images/products/motorola galaxy on6",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -3038,6 +3060,8 @@ var productDetails = {
 			"brand_id": "4",
 			"product_name": "motorola galaxy on7",
 			"price": "8490",
+			"images_path":"images/products/motorola galaxy on7",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -3290,6 +3314,8 @@ var productDetails = {
 			"brand_id": "4",
 			"product_name": "motorola galaxy NXT",
 			"price": "17490",
+			"images_path":"images/products/motorola galaxy NXT",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -3542,6 +3568,8 @@ var productDetails = {
 			"brand_id": "5",
 			"product_name": "leEco galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/leEco galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -3794,6 +3822,8 @@ var productDetails = {
 			"brand_id": "5",
 			"product_name": "leEco galaxy on6",
 			"price": "7590",
+			"images_path":"images/products/leEco galaxy on6",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -4046,6 +4076,8 @@ var productDetails = {
 			"brand_id": "5",
 			"product_name": "leEco galaxy on7",
 			"price": "8490",
+			"images_path":"images/products/leEco galaxy on7",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -4298,6 +4330,8 @@ var productDetails = {
 			"brand_id": "6",
 			"product_name": "apple galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/apple galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -4550,6 +4584,8 @@ var productDetails = {
 			"brand_id": "6",
 			"product_name": "apple galaxy on6",
 			"price": "7590",
+			"images_path":"images/products/apple galaxy on6",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -4802,6 +4838,8 @@ var productDetails = {
 			"brand_id": "6",
 			"product_name": "apple galaxy on7",
 			"price": "8490",
+			"images_path":"images/products/apple galaxy on7",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -5054,6 +5092,8 @@ var productDetails = {
 			"brand_id": "6",
 			"product_name": "apple galaxy NXT",
 			"price": "17490",
+			"images_path":"images/products/apple galaxy NXT",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -5306,6 +5346,8 @@ var productDetails = {
 			"brand_id": "7",
 			"product_name": "asus galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/asus galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -5558,6 +5600,8 @@ var productDetails = {
 			"brand_id": "7",
 			"product_name": "asus galaxy on6",
 			"price": "7590",
+			"images_path":"images/products/asus galaxy on6",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -5810,6 +5854,8 @@ var productDetails = {
 			"brand_id": "8",
 			"product_name": "micromax galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/micromax galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -6062,6 +6108,8 @@ var productDetails = {
 			"brand_id": "9",
 			"product_name": "arise galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/arise galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -6314,6 +6362,8 @@ var productDetails = {
 			"brand_id": "10",
 			"product_name": "blackberry galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/blackberry galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -6566,6 +6616,8 @@ var productDetails = {
 			"brand_id": "11",
 			"product_name": "atom galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/atom galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -6818,6 +6870,8 @@ var productDetails = {
 			"brand_id": "12",
 			"product_name": "auxus galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/auxus galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jpg"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -7070,6 +7124,8 @@ var productDetails = {
 			"brand_id": "13",
 			"product_name": "dell galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/dell galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -7322,6 +7378,8 @@ var productDetails = {
 			"brand_id": "14",
 			"product_name": "hp galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/hp galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -7574,6 +7632,8 @@ var productDetails = {
 			"brand_id": "15",
 			"product_name": "edge galaxy on5",
 			"price": "7490",
+			"images_path":"images/products/edge galaxy on5",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -7826,6 +7886,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Flipkart SmartBuy Back Cover for Moto M",
 			"price": "299",
+			"images_path":"images/products/Flipkart SmartBuy Back Cover for Moto M",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "Suitable For",
@@ -7903,8 +7965,10 @@ var productDetails = {
 			"prod_cat_id": "2",
 			"prod_sub_cat_id": "1",
 			"brand_id": "1",
-			"product_name": "Flipkart SmartBuy Back Cover for Moto M",
+			"product_name": "Flipkart SmartBuy Back Cover for Moto",
 			"price": "299",
+			"images_path":"images/products/Flipkart SmartBuy Back Cover for Moto",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "Suitable For",
@@ -7984,6 +8048,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Apple Back Cover for Moto M",
 			"price": "299",
+			"images_path":"images/products/Apple Back Cover for Moto M",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "Suitable For",
@@ -8061,8 +8127,10 @@ var productDetails = {
 			"prod_cat_id": "2",
 			"prod_sub_cat_id": "1",
 			"brand_id": "2",
-			"product_name": "Apple Back Cover for Moto M",
+			"product_name": "Apple Back Cover for Moto",
 			"price": "299",
+			"images_path":"images/products/Apple Back Cover for Moto",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "Suitable For",
@@ -8142,6 +8210,8 @@ var productDetails = {
 			"brand_id": "3",
 			"product_name": "Lenovo Back Cover for Moto M",
 			"price": "299",
+			"images_path":"images/products/Lenovo Back Cover for Moto M",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "Suitable For",
@@ -8219,8 +8289,10 @@ var productDetails = {
 			"prod_cat_id": "2",
 			"prod_sub_cat_id": "1",
 			"brand_id": "3",
-			"product_name": "Lenovo Back Cover for Moto M",
+			"product_name": "Lenovo Back Cover for Moto",
 			"price": "399",
+			"images_path":"images/products/Lenovo Back Cover for Moto",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "Suitable For",
@@ -8300,6 +8372,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Ambrane P-1310 NA 13000 mAh Power Bank  (Black, Gold, Lithium-ion)",
 			"price": "949",
+			"images_path":"images/products/Ambrane P-1310 NA 13000 mAh Power Bank  (Black, Gold, Lithium-ion)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -8403,6 +8477,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Ambrane P-1122 NA 10000 mAh Power Bank  (White, Grey, Lithium-ion)",
 			"price": "799",
+			"images_path":"images/products/Ambrane P-1122 NA 10000 mAh Power Bank  (White, Grey, Lithium-ion)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -8506,6 +8582,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Sony P-1310 NA 13000 mAh Power Bank  (Black, Gold, Lithium-ion)",
 			"price": "949",
+			"images_path":"images/products/Sony P-1310 NA 13000 mAh Power Bank  (Black, Gold, Lithium-ion)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -8609,6 +8687,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Sony P-1122 NA 10000 mAh Power Bank  (White, Grey, Lithium-ion)",
 			"price": "799",
+			"images_path":"images/products/Sony P-1122 NA 10000 mAh Power Bank  (White, Grey, Lithium-ion)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -8712,6 +8792,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Sandisk 16 GB MicroSD Card Class 4 Memory Card",
 			"price": "459",
+			"images_path":"images/products/Sandisk 16 GB MicroSD Card Class 4 Memory Card",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -8846,8 +8928,10 @@ var productDetails = {
 			"prod_cat_id": "2",
 			"prod_sub_cat_id": "3",
 			"brand_id": "1",
-			"product_name": "Sandisk 16 GB MicroSD Card Class 4 Memory Card",
+			"product_name": "Sandisk 8 GB MicroSD Card Class 4 Memory Card",
 			"price": "1499",
+			"images_path":"images/products/Sandisk 8 GB MicroSD Card Class 4 Memory Card",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -8976,6 +9060,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Samsung 16 GB MicroSD Card Class 4 Memory Card",
 			"price": "675",
+			"images_path":"images/products/Samsung 16 GB MicroSD Card Class 4 Memory Card",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -9110,8 +9196,10 @@ var productDetails = {
 			"prod_cat_id": "2",
 			"prod_sub_cat_id": "3",
 			"brand_id": "2",
-			"product_name": "Samsung 16 GB MicroSD Card Class 4 Memory Card",
+			"product_name": "Samsung 8 GB MicroSD Card Class 4 Memory Card",
 			"price": "999",
+			"images_path":"images/products/Samsung 8 GB MicroSD Card Class 4 Memory Card",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -9240,6 +9328,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Motorola Moto 360 2nd Gen (46 mm) for Men Gold Black Leather Smartwatch  (Gold, Black Strap Large)",
 			"price": "18999",
+			"images_path":"images/products/Motorola Moto 360 2nd Gen (46 mm) for Men Gold Black Leather Smartwatch  (Gold, Black Strap Large)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -9502,6 +9592,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Motorola Moto 360 Sport Smartwatch  (Black Strap)",
 			"price": "17999",
+			"images_path":"images/products/Motorola Moto 360 Sport Smartwatch  (Black Strap)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -9768,6 +9860,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Apple Apple 360 2nd Gen (46 mm) for Men Gold Black Leather Smartwatch  (Gold, Black Strap Large)",
 			"price": "18999",
+			"images_path":"images/products/Apple Apple 360 2nd Gen (46 mm) for Men Gold Black Leather Smartwatch  (Gold, Black Strap Large)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -10030,6 +10124,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Apple Apple 360 Sport Smartwatch  (Black Strap)",
 			"price": "17999",
+			"images_path":"images/products/Apple Apple 360 Sport Smartwatch  (Black Strap)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -10296,6 +10392,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Intex fitRiSt Pulzz  (Black)",
 			"price": "1799",
+			"images_path":"images/products/Intex fitRiSt Pulzz  (Black)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -10504,6 +10602,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Fitbit fitRiSt Pulzz  (Black)",
 			"price": "1799",
+			"images_path":"images/products/Fitbit fitRiSt Pulzz  (Black)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -10712,6 +10812,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "LG 6 kg Fully Automatic Front Load Washing Machine  (FH0B8NDL22)",
 			"price": "25690",
+			"images_path":"images/products/LG 6 kg Fully Automatic Front Load Washing Machine  (FH0B8NDL22)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -10934,6 +11036,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "LG 6.5 kg Semi Automatic Top Load Washing Machine  (P7556R3FA)",
 			"price": "10990",
+			"images_path":"images/products/LG 6.5 kg Semi Automatic Top Load Washing Machine  (P7556R3FA)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -11160,6 +11264,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Samsung 6 kg Fully Automatic Front Load Washing Machine  (FH0B8NDL22)",
 			"price": "25690",
+			"images_path":"images/products/Samsung 6 kg Fully Automatic Front Load Washing Machine  (FH0B8NDL22)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -11382,6 +11488,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Samsung 6.5 kg Semi Automatic Top Load Washing Machine  (P7556R3FA)",
 			"price": "10990",
+			"images_path":"images/products/Samsung 6.5 kg Semi Automatic Top Load Washing Machine  (P7556R3FA)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -11608,6 +11716,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Whirlpool 190 L Direct Cool Single Door Refrigerator  (WDE 205 CLS 3S WINE, Solid Wine, 2016)",
 			"price": "11350",
+			"images_path":"images/products/Whirlpool 190 L Direct Cool Single Door Refrigerator  (WDE 205 CLS 3S WINE, Solid Wine, 2016)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -11789,6 +11899,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Whirlpool 185 L Direct Cool Single Door Refrigerator  (200 IMPWCOOL PRM 3S, Wine Titanium, 2017)",
 			"price": "12190",
+			"images_path":"images/products/Whirlpool 185 L Direct Cool Single Door Refrigerator  (200 IMPWCOOL PRM 3S, Wine Titanium, 2017)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -11978,6 +12090,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Videocon 190 L Direct Cool Single Door Refrigerator  (WDE 205 CLS 3S WINE, Solid Wine, 2016)",
 			"price": "11350",
+			"images_path":"images/products/Videocon 190 L Direct Cool Single Door Refrigerator  (WDE 205 CLS 3S WINE, Solid Wine, 2016)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -12159,6 +12273,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Videocon 185 L Direct Cool Single Door Refrigerator  (200 IMPWCOOL PRM 3S, Wine Titanium, 2017)",
 			"price": "12190",
+			"images_path":"images/products/Videocon 185 L Direct Cool Single Door Refrigerator  (200 IMPWCOOL PRM 3S, Wine Titanium, 2017)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -12348,6 +12464,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Hitachi 1.2 Ton 5 Star Split AC Silver  (RAU - RAC/RAS/514HWDD)",
 			"price": "29990",
+			"images_path":"images/products/Hitachi 1.2 Ton 5 Star Split AC Silver",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -12544,6 +12662,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Voltas 1.2 Ton 5 Star Split AC Silver  (RAU - RAC/RAS/514HWDD)",
 			"price": "39990",
+			"images_path":"images/products/Voltas 1.2 Ton 5 Star Split AC Silver",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -12740,6 +12860,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Bajaj 3 L Instant Water Geyser  (White, Majesty 3L-3KW Instant Water Heater)",
 			"price": "3350",
+			"images_path":"images/products/Bajaj 3 L Instant Water Geyser  (White, Majesty 3L-3KW Instant Water Heater)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "Type",
@@ -12932,6 +13054,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Norpro 3168 Donut Maker Donut Maker",
 			"price": "1698",
+			"images_path":"images/products/Norpro 3168 Donut Maker Donut Maker",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"specifications": [
 				{
 					"spec_type": "general",
@@ -12980,6 +13104,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Prestige PGMFB Grill  (Black)",
 			"price": "949",
+			"images_path":"images/products/Prestige PGMFB Grill  (Black)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -13137,6 +13263,8 @@ var productDetails = {
 			"brand_id": "2",
 			"product_name": "Philips PGMFB Grill  (Black)",
 			"price": "949",
+			"images_path":"images/products/Philips PGMFB Grill  (Black)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -13294,6 +13422,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Skybags 26 L Backpack",
 			"price": "1507",
+			"images_path":"images/products/Skybags 26 L Backpack",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -13448,6 +13578,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Annapurna Sales Designer Blouse Covers - Set of 3 Pcs. Maroon0091  (Maroon)",
 			"price": "375",
+			"images_path":"images/products/Annapurna Sales Designer Blouse Covers - Set of 3 Pcs. Maroon0091  (Maroon)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -13566,6 +13698,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Philips QT4001/15 Pro Skin Advanced Trimmer For Men",
 			"price": "1199",
+			"images_path":"images/products/Philips QT400115 Pro Skin Advanced Trimmer For Men",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -13728,6 +13862,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Philips AquaTouch AT620/14 Shaver For Men  (Black)",
 			"price": "2299",
+			"images_path":"images/products/Philips AquaTouch AT62014 Shaver For Men  (Black)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "null",
@@ -13838,6 +13974,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Gillette Fusion Hydra Gel Pure and Sensitive Shave Gel  (195 gm)",
 			"price": "346",
+			"images_path":"images/products/Gillette Fusion Hydra Gel Pure and Sensitive Shave Gel  (195 gm)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "Quantity",
@@ -13921,6 +14059,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Mobizworld Stark Disposable Razor  (Pack of 8)",
 			"price": "279",
+			"images_path":"images/products/Mobizworld Stark Disposable Razor  (Pack of 8)",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "Pack of",
@@ -13988,6 +14128,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Puma Printed Men's Polo Neck Red T-Shirt",
 			"price": "1259",
+			"images_path":"images/products/Puma Printed Men's Polo Neck Red T-Shirt",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "Fabric",
@@ -14098,6 +14240,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Lee Men's Printed Casual Shirt",
 			"price": "1264",
+			"images_path":"images/products/Lee Men's Printed Casual Shirt",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "Fabric",
@@ -14204,6 +14348,8 @@ var productDetails = {
 			"brand_id": "1",
 			"product_name": "Titan 9490SP01 Octane Analog Watch - For Men",
 			"price": "1978",
+			"images_path":"images/products/Titan 9490SP01 Octane Analog Watch - For Men",
+			"images_name":["(1).jpg","(2).jpg","(3).jpg","(4).jpg","(5).jpg","(6).jpg","(7).jpg","(8).jp"],
 			"features": [
 				{
 					"feature_name": "Watch Movement",

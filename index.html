@@ -30,8 +30,8 @@
         {{#each main_categories}}
         <li class="dropdown dropdown-head">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{this.name}} 
-         <span class="caret"></span>
-         </a>
+          <span class="caret"></span>
+          </a>
             <ul class="dropdown-menu">
                 {{#each ../categories}} {{#ifcond ../id this.main_cat_id}}
                 <li>
@@ -41,6 +41,40 @@
             </ul>
         </li>
         {{/each}}
+    </script>
+    <script id="product-list-rows-template" type="text/x-handlebars-template">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        {{#each products}}
+                            <div class="col-sm-6 col-md-2">
+                                <div class="thumbnail">
+                                    <img src="{{this.images_path}}/{{this.images_name.[0]}}" alt="...">
+                                    <div class="caption">
+                                        <br/>
+                                        <p>{{product_name}} </p>
+                                        <p>
+                                            <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                                <button type="button" class="btn btn-success rate-btn">
+                                    <span>3.6</span>
+                                    <span class="badge rate-btn-badge">
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    </span>
+                                    </button>
+                                            </div>
+                                            <span class="itm-qunty">(50)</span>
+                                            <br/>
+                                            <span class="itm-price"><strong>{{../flipkart_price_symbol}}{{this.price}}</strong></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
     </script>
     <script id="footer-shortcut-link-template" type="text/x-handlebars-template">
         {{#each footer_shortcut}}
@@ -180,284 +214,8 @@
                 <br/>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="col-sm-6 col-md-2">
-                            <div class="thumbnail">
-                                <img src="images/mobile (1).jpg" alt="...">
-                                <div class="caption">
-                                    <br/>
-                                    <p>Intex Cloud Breeze (Grey, 8 GB)</p>
-                                    <p>
-                                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-success rate-btn">
-                                                <span>3.6</span>
-                                                <span class="badge rate-btn-badge">
-                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                            </button>
-                                        </div>
-                                        <span class="itm-qunty">(50)</span>
-                                        <br/>
-                                        <span class="itm-price"><strong>₹3,590</strong></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-2">
-                            <div class="thumbnail">
-                                <img src="images/mobile (2).jpg" alt="...">
-                                <div class="caption">
-                                    <br/>
-                                    <p>Intex Cloud Breeze (Grey, 8 GB)</p>
-                                    <p>
-                                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-success rate-btn">
-                                                <span>3.6</span>
-                                                <span class="badge rate-btn-badge">
-                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <span class="itm-qunty">(50)</span>
-                                        <br/>
-                                        <span class="itm-price"><strong>₹3,590</strong></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-2">
-                            <div class="thumbnail">
-                                <img src="images/mobile (3).jpg" alt="...">
-                                <div class="caption">
-                                    <br/>
-                                    <p>Intex Cloud Breeze (Grey, 8 GB)</p>
-                                    <p>
-                                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-success rate-btn">
-                                                <span>3.6</span>
-                                                <span class="badge rate-btn-badge">
-                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <span class="itm-qunty">(50)</span>
-                                        <br/>
-                                        <span class="itm-price"><strong>₹3,590</strong></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-2">
-                            <div class="thumbnail">
-                                <img src="images/mobile (1).jpg" alt="...">
-                                <div class="caption">
-                                    <br/>
-                                    <p>Intex Cloud Breeze (Grey, 8 GB)</p>
-                                    <p>
-                                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-success rate-btn">
-                                                <span>3.6</span>
-                                                <span class="badge rate-btn-badge">
-                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <span class="itm-qunty">(50)</span>
-                                        <br/>
-                                        <span class="itm-price"><strong>₹3,590</strong></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-2">
-                            <div class="thumbnail">
-                                <img src="images/mobile (2).jpg" alt="...">
-                                <div class="caption">
-                                    <br/>
-                                    <p>Intex Cloud Breeze (Grey, 8 GB)</p>
-                                    <p>
-                                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-success rate-btn">
-                                                <span>3.6</span>
-                                                <span class="badge rate-btn-badge">
-                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <span class="itm-qunty">(50)</span>
-                                        <br/>
-                                        <span class="itm-price"><strong>₹3,590</strong></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-2">
-                            <div class="thumbnail">
-                                <img src="images/mobile (3).jpg" alt="...">
-                                <div class="caption">
-                                    <br/>
-                                    <p>Intex Cloud Breeze (Grey, 8 GB)</p>
-                                    <p>
-                                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-success rate-btn">
-                                                <span>3.6</span>
-                                                <span class="badge rate-btn-badge">
-                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <span class="itm-qunty">(50)</span>
-                                        <br/>
-                                        <span class="itm-price"><strong>₹3,590</strong></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="col-sm-6 col-md-2">
-                            <div class="thumbnail">
-                                <img src="images/mobile (1).jpg" alt="...">
-                                <div class="caption">
-                                    <br/>
-                                    <p>Intex Cloud Breeze (Grey, 8 GB)</p>
-                                    <p>
-                                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-success rate-btn">
-                                                <span>3.6</span>
-                                                <span class="badge rate-btn-badge">
-                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <span class="itm-qunty">(50)</span>
-                                        <br/>
-                                        <span class="itm-price"><strong>₹3,590</strong></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-2">
-                            <div class="thumbnail">
-                                <img src="images/mobile (2).jpg" alt="...">
-                                <div class="caption">
-                                    <br/>
-                                    <p>Intex Cloud Breeze (Grey, 8 GB)</p>
-                                    <p>
-                                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-success rate-btn">
-                                                <span>3.6</span>
-                                                <span class="badge rate-btn-badge">
-                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <span class="itm-qunty">(50)</span>
-                                        <br/>
-                                        <span class="itm-price"><strong>₹3,590</strong></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-2">
-                            <div class="thumbnail">
-                                <img src="images/mobile (3).jpg" alt="...">
-                                <div class="caption">
-                                    <br/>
-                                    <p>Intex Cloud Breeze (Grey, 8 GB)</p>
-                                    <p>
-                                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-success rate-btn">
-                                                <span>3.6</span>
-                                                <span class="badge rate-btn-badge">
-                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <span class="itm-qunty">(50)</span>
-                                        <br/>
-                                        <span class="itm-price"><strong>₹3,590</strong></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-2">
-                            <div class="thumbnail">
-                                <img src="images/mobile (1).jpg" alt="...">
-                                <div class="caption">
-                                    <br/>
-                                    <p>Intex Cloud Breeze (Grey, 8 GB)</p>
-                                    <p>
-                                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-success rate-btn">
-                                                <span>3.6</span>
-                                                <span class="badge rate-btn-badge">
-                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <span class="itm-qunty">(50)</span>
-                                        <br/>
-                                        <span class="itm-price"><strong>₹3,590</strong></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-2">
-                            <div class="thumbnail">
-                                <img src="images/mobile (2).jpg" alt="...">
-                                <div class="caption">
-                                    <br/>
-                                    <p>Intex Cloud Breeze (Grey, 8 GB)</p>
-                                    <p>
-                                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-success rate-btn">
-                                                <span>3.6</span>
-                                                <span class="badge rate-btn-badge">
-                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <span class="itm-qunty">(50)</span>
-                                        <br/>
-                                        <span class="itm-price"><strong>₹3,590</strong></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-2">
-                            <div class="thumbnail">
-                                <img src="images/mobile (3).jpg" alt="...">
-                                <div class="caption">
-                                    <br/>
-                                    <p>Intex Cloud Breeze (Grey, 8 GB)</p>
-                                    <p>
-                                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-success rate-btn">
-                                                <span>3.6</span>
-                                                <span class="badge rate-btn-badge">
-                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <span class="itm-qunty">(50)</span>
-                                        <br/>
-                                        <span class="itm-price"><strong>₹3,590</strong></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div id="product-list-rows">
+
         </div>
         <!-- End middle content-->
         <div class="row">
