@@ -84,6 +84,9 @@
         <span class="rate-info"><span class="total-rate-product">x</span> {{flipkart_ratings}} {{flipkart_and}} <span id="total-review-product">x</span>        {{flipkart_reviews}}</span>
     </script>
     <script id="spec-list-template" type="text/x-handlebars-template">
+        <li class="list-group-item">
+            <h3 class="spec-head"> {{@key.price}}:{{this.price}}</h3>
+        </li>
         {{#each specifications}}
         <li class="list-group-item">
             <div class="spec-table-cont">
