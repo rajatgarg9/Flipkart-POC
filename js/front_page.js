@@ -12,7 +12,7 @@ $('.carousel').carousel({
 (() => {
     var _productListRowsTemplate = {
         raw_temp: document.getElementById("product-list-rows-template").innerHTML,
-        context: Object.assign({},productDetails,globalKeys.global_keys),
+        context: Object.assign({},productDetails,globalKeys.global_keys,rowDataSelector),
         dest_node: document.getElementById("product-list-rows"),
         node_position: 'beforeend'
     }

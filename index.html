@@ -43,38 +43,40 @@
         {{/each}}
     </script>
     <script id="product-list-rows-template" type="text/x-handlebars-template">
+        {{#each rows}}
         <div class="row">
             <div class="col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        {{#each products}}
-                            <div class="col-sm-6 col-md-2">
-                                <div class="thumbnail">
-                                    <img src="{{this.images_path}}/{{this.images_name.[0]}}" alt="...">
-                                    <div class="caption">
-                                        <br/>
-                                        <p>{{product_name}} </p>
-                                        <p>
-                                            <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                                                <button type="button" class="btn btn-success rate-btn">
+                        {{#each product_id}} {{#each ../../products}} {{#ifcond this.id ../this}}
+                        <div class="col-sm-6 col-md-2">
+                            <div class="thumbnail">
+                                <img src="{{this.images_path}}/{{this.images_name.[0]}}" alt="...">
+                                <div class="caption">
+                                    <br/>
+                                    <p>{{product_name}} </p>
+                                    <p>
+                                        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                            <button type="button" class="btn btn-success rate-btn">
                                     <span>3.6</span>
                                     <span class="badge rate-btn-badge">
                                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                                     </span>
                                     </button>
-                                            </div>
-                                            <span class="itm-qunty">(50)</span>
-                                            <br/>
-                                            <span class="itm-price"><strong>{{../flipkart_price_symbol}}{{this.price}}</strong></span>
-                                        </p>
-                                    </div>
+                                        </div>
+                                        <span class="itm-qunty">(50)</span>
+                                        <br/>
+                                        <span class="itm-price"><strong>{{../flipkart_price_symbol}}{{this.price}}</strong></span>
+                                    </p>
                                 </div>
                             </div>
-                        {{/each}}
+                        </div>
+                        {{/ifcond}}{{/each}} {{/each}}
                     </div>
                 </div>
             </div>
         </div>
+        {{/each}}
     </script>
     <script id="footer-shortcut-link-template" type="text/x-handlebars-template">
         {{#each footer_shortcut}}
