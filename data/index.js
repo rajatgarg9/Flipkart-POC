@@ -32,7 +32,7 @@ var rowDataSelector = {
         }
     ],
     "carousel_data":{
-        "image_path":"",
-        "images_name":[]
+        "image_path":"images/carousel",
+        "images_name":["carousel1.jpg","carousel2.jpg","carousel3.jpg"]
     }
 }
