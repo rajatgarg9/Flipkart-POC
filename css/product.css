@@ -216,6 +216,10 @@
         border: 1px solid #eee;
 }
 #product-images-list ul li:hover,#product-images-list ul li:active{
-        border: 2px solid blue;
         z-index: 34;
+}
+.product-img-con-ele{
+    width: 90%;
+    margin: auto;
+    padding: 8% 0%;
 }

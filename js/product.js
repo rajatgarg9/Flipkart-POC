@@ -102,14 +102,15 @@
    document.getElementById("total-review-product").innerHTML=productDetails.products[0].reviews.length;
 }
 )();
-
-
-document.querySelectorAll("#product-images-list ul li").onmouseover=function(){
+_.flatMap(document.querySelectorAll("#product-images-list ul li"),function(c){
+    c.onmouseover=function(){
+        _.flatMap(document.querySelectorAll("#product-images-list ul li"),function(c){
+            c.style.border="";
+        });
     this.style.border="2px solid #2874f0";
-    this.style.zIndex="4"
-    document.getElementById("product-image").setAttribute("class","this.getElementsByTagName('li').getAttribute('src'))
+    document.getElementById("product-image").setAttribute("src",this.getElementsByTagName('img')[0].getAttribute('src'));
 }
-
+});
 
 
 
