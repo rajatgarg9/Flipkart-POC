@@ -104,6 +104,13 @@
 )();
 
 
+document.querySelectorAll("#product-images-list ul li").onmouseover=function(){
+    this.style.border="2px solid #2874f0";
+    this.style.zIndex="4"
+    document.getElementById("product-image").setAttribute("class","this.getElementsByTagName('li').getAttribute('src'))
+}
+
+
 
 
 

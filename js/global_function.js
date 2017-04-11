@@ -18,16 +18,16 @@ function templateHandler(templateInfo) {
 * @desc:find the sum and average of a key in the array of Object
 * @return:{total:_sum,avg:_avg} {object}
 */
-function objArrayAverageAndTotalfinder(objArray,key){
-var _values,
-     _sum=0,
-     _avg=0;
-     
-_values=_.flatMap(objArray,function(c){return c[key]});
-   
-for(var _i=0;_i < _values.length;_i++){
-    _sum+=Number(_values[_i]);
-}
- _avg=_sum/objArray.length;
-   return {total:_sum,avg:_avg};
+function objArrayAverageAndTotalfinder(objArray, key) {
+    var _values,
+        _sum = 0,
+        _avg = 0;
+
+    _values = _.flatMap(objArray, function (c) { return c[key] });
+
+    for (var _i = 0; _i < _values.length; _i++) {
+        _sum += Number(_values[_i]);
+    }
+    _avg = _sum / objArray.length;
+    return { total: _sum, avg: _avg };
 }
