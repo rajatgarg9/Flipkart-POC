@@ -12,6 +12,12 @@
         dest_node: document.getElementById("product-images-list"),
         node_position: 'beforeend'
     },
+    _productImageContainertTemplate = {
+        raw_temp: document.getElementById("product-img-container-template").innerHTML,
+        context: productDetails.products[0],
+        dest_node: document.getElementById("product-img-container"),
+        node_position: 'beforeend'
+    },
     _addCartBuyBtnTemplate = {
         raw_temp: document.getElementById("add-cart-buy-btn-template").innerHTML,
         context: globalKeys.global_keys,
@@ -75,6 +81,7 @@
 
     //function call
     templateHandler(_productImageListTemplate);
+    templateHandler(_productImageContainertTemplate);
     templateHandler(_addCartBuyBtnTemplate);
     templateHandler(_totalRateReviewTemplate);
     templateHandler(_specHeadingTemplate);
