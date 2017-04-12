@@ -215,9 +215,6 @@
 .prod-imag-conta{
         border: 1px solid #eee;
 }
-#product-images-list ul li:hover,#product-images-list ul li:active{
-        z-index: 34;
-}
 #product-img-container{
     width: 90%;
     margin: auto;

@@ -113,8 +113,10 @@ _.flatMap(document.querySelectorAll("#product-images-list ul li"),function(c){
     c.onmouseover=function(){
         _.flatMap(document.querySelectorAll("#product-images-list ul li"),function(c){
             c.style.border="";
+            c.style.zIndex="";
         });
     this.style.border="2px solid #2874f0";
+    c.style.zIndex="4";
     document.getElementById("product-image").setAttribute("src",this.getElementsByTagName('img')[0].getAttribute('src'));
 }
 });
