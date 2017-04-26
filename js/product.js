@@ -12,18 +12,18 @@
         dest_node: document.getElementById("product-images-list"),
         node_position: 'beforeend'
     },
-    _productImageContainertTemplate = {
-        raw_temp: document.getElementById("product-img-container-template").innerHTML,
-        context: productDetails.products[0],
-        dest_node: document.getElementById("product-img-container"),
-        node_position: 'beforeend'
-    },
-    _addCartBuyBtnTemplate = {
-        raw_temp: document.getElementById("add-cart-buy-btn-template").innerHTML,
-        context: globalKeys.global_keys,
-        dest_node: document.getElementById("add-cart-buy-btn"),
-        node_position: 'beforeend'
-    },
+        _productImageContainertTemplate = {
+            raw_temp: document.getElementById("product-img-container-template").innerHTML,
+            context: productDetails.products[0],
+            dest_node: document.getElementById("product-img-container"),
+            node_position: 'beforeend'
+        },
+        _addCartBuyBtnTemplate = {
+            raw_temp: document.getElementById("add-cart-buy-btn-template").innerHTML,
+            context: globalKeys.global_keys,
+            dest_node: document.getElementById("add-cart-buy-btn"),
+            node_position: 'beforeend'
+        },
         _totalRateReviewTemplate = {
             raw_temp: document.getElementById("total-rating-reviews-template").innerHTML,
             context: globalKeys.global_keys,
@@ -101,25 +101,40 @@
 * @return: undefined{undefined}
 */
 
-(() => { 
-    var _rateobj=objArrayAverageAndTotalfinder(productDetails.products[0].reviews, "rate");
-
-   _.flatMap(document.getElementsByClassName("prod-rate-avg"),function(c){c.innerHTML=_rateobj.avg});
-   _.flatMap(document.getElementsByClassName("total-rate-product"),function(c){c.innerHTML=_rateobj.total});
-   document.getElementById("total-review-product").innerHTML=productDetails.products[0].reviews.length;
+(() => {
+    var _rateobj = objArrayAverageAndTotalfinder(productDetails.products[0].reviews, "rate");
+    _.flatMap(document.getElementsByClassName("prod-rate-avg"), function (c) { c.innerHTML = _rateobj.avg });
+    _.flatMap(document.getElementsByClassName("total-rate-product"), function (c) { c.innerHTML = _rateobj.total });
+    document.getElementById("total-review-product").innerHTML = productDetails.products[0].reviews.length;
 }
 )();
-_.flatMap(document.querySelectorAll("#product-images-list ul li"),function(c){
-    c.onmouseover=function(){
-        _.flatMap(document.querySelectorAll("#product-images-list ul li"),function(c){
-            c.style.border="";
-            c.style.zIndex="";
+_.flatMap(document.querySelectorAll("#product-images-list ul li"), function (c) {
+    c.onmouseover = function () {
+        _.flatMap(document.querySelectorAll("#product-images-list ul li"), function (c) {
+            c.style.border = "";
+            c.style.zIndex = "";
         });
-    this.style.border="2px solid #2874f0";
-    c.style.zIndex="4";
-    document.getElementById("product-image").setAttribute("src",this.getElementsByTagName('img')[0].getAttribute('src'));
-}
+        this.style.border = "2px solid #2874f0";
+        c.style.zIndex = "4";
+        document.getElementById("product-image").setAttribute("src", this.getElementsByTagName('img')[0].getAttribute('src'));
+    }
 });
+
+var xttp;
+//if (window.XMLHTTPRequest)
+    xttp = new XMLHttpRequest();
+//else
+  //  xttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+xttp.open("GET", "data/product_details.json", true);
+xttp.send();
+
+xttp.onreadystatechange = function () {
+    console.log(this.readyState);
+    if (this.readyState == 4 && this.status == 200) {
+        console.log(this.responseText);
+    }
+}
 
 
 
