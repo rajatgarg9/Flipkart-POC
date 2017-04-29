@@ -1,21 +1,18 @@
-var http = require('http');
+var express = require('express');
+var app = express();
+var reload=require('reload');
 
-http.createServer(function(request, response) {
-  request.on('error', function(err) {
-    console.error(err);
-    response.statusCode = 400;
-    response.end();
-  });
-  response.on('error', function(err) {
-    console.error(err);
-  });
-  if (request.method === 'GET') {
-    console.log(`Sever is connected`);
-  } else {
-    response.statusCode = 404;
-    response.end();
-  }
-}).listen(8080);
-console.log("Server is listening");
+app.get('/hello', function(req, res){
+	res.send(`Hello World!
+   ${app}
+     <script src="/reload/reload.js"></script>
+  `);
+});
 
+app.post('/hello', function(req, res){
+	res.send("You just called the post method at '/hello'!\n");
+});
 
+var server=app.listen(3000);
+console.log(`listening`);
+reload(server,app);
