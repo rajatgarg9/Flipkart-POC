@@ -2,16 +2,14 @@ var express = require('express');
 var app = express();
 var reload=require('reload');
 
-app.get('/hello', function(req, res){
-	res.send(`Hello World!
-   ${app}
-     <script src="/reload/reload.js"></script>
-  `);
+app.set('view engine', 'pug');
+app.set('views','./views');
+
+app.get('/product_page', function(req, res){
+   res.sendFile(`file:///D:/Github/Flipkart-POC/product.html`);
+     //res.send(`Hello World! <script src="/reload/reload.js"></script>`);
 });
 
-app.post('/hello', function(req, res){
-	res.send("You just called the post method at '/hello'!\n");
-});
 
 var server=app.listen(3000);
 console.log(`listening`);
