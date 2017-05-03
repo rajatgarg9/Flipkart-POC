@@ -1,20 +1,17 @@
 var express = require('express');
 var app = express();
 var reload=require('reload');
-const path = require('path');
 
 
-app.use('/public',express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'data')));
 
+app.use(express.static('public'));
 
-app.get('/product',function(req,res){
-  //res.send(`Hello World! <script src="/reload/reload.js"></script>`);
-  //console.log(/public);
-  res.sendFile(`/github/flipkart-poc/public/product.html`);
-})
-     
-
+app.get('/product_page', function(req, res){
+   res.sendFile(`file:///D:/Github/Flipkart-POC/product.html`);
+   res.setHeader("Content-Type", "text/html"); 
+   //res.render('product');
+     //res.send(`Hello World! <script src="/reload/reload.js"></script>`);
+});
 
 //
 
