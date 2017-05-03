@@ -1,0 +1,13 @@
+var userInfo = {
+    "cart_items": [
+        {
+            "item_name": "abc"
+        },
+        {
+            "item_name": "abc"
+        },
+        {
+            "item_name": "abc"
+        }
+    ]
+}
