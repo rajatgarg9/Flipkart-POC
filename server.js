@@ -1,16 +1,17 @@
 var express = require('express');
 var app = express();
 var reload=require('reload');
+var path = require('path');
 
 
+app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static('public'));
+//app.use(express.static('data'));
 
-app.use(express.static('public'));
 
 app.get('/product_page', function(req, res){
-   res.sendFile(`file:///D:/Github/Flipkart-POC/product.html`);
-   res.setHeader("Content-Type", "text/html"); 
-   //res.render('product');
-     //res.send(`Hello World! <script src="/reload/reload.js"></script>`);
+  res.sendFile(path.join(__dirname, '/public', 'product.html'));
+   //res.setHeader("Content-Type", "text/html"); 
 });
 
 //
