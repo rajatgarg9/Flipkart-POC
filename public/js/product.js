@@ -1,4 +1,4 @@
-//"use strict";
+"use strict";
 
 var xttp,
 productDetails;
@@ -7,17 +7,15 @@ productDetails;
 //else
   //  xttp = new ActiveXObject("Microsoft.XMLHTTP");
 
-xttp.open("POST", "", true);
+xttp.open("POST", "/product_page", true);
 xttp.send();
 
 xttp.onreadystatechange = function () {
-    console.log("every thing is running");
-    console.log(this.readyState);
-     console.log("every thing is running again");
     if (this.readyState == 4 && this.status == 200) {
         productDetails=JSON.parse(this.responseText);
-    }
-}
+    
+
+
 
 /*
 * @method:Anonymous
@@ -25,7 +23,7 @@ xttp.onreadystatechange = function () {
 * @desc :Load product page main body data from JSON by Handlebars
 * @return: undefined{undefined}
 */
-//(() => {
+(() => {
     var _productImageListTemplate = {
         raw_temp: document.getElementById("product-images-list-template").innerHTML,
         context: productDetails.products[0],
@@ -112,7 +110,7 @@ xttp.onreadystatechange = function () {
     templateHandler(_reviewTemplate);
     templateHandler(_productHeadingTemplate);
     templateHandler(_productPriceTemplate);
-//})();
+})();
 
 /*
 * @method:Anonymous
@@ -143,9 +141,24 @@ _.flatMap(document.querySelectorAll("#product-images-list ul li"), function (c) 
 
 
 
+// ajax end
+}
+}
 
 
+var xttpa;
+//if (window.XMLHTTPRequest)
+    xttpa = new XMLHttpRequest();
+    var params = "lorem=ipsum&name=binny";
 
+    //xmlhttp.setRequestHeader("Content-Type", "text/string");
+
+xttpa.open("POST", "/product_page?page=2", true);
+xttpa.send(params);
+
+xttpa.onreadystatechange = function () {
+    console.log("every thing is running xttpa");
+}
 
 
 
