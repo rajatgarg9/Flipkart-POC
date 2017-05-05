@@ -10,9 +10,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/product_page', function(req, res){
-  res.sendFile(path.join(__dirname, '/public', 'product.html'));
-   //res.setHeader("Content-Type", "text/html"); 
+  res.setHeader("Content-Type", "text/html");
+  res.sendFile(path.join(__dirname, '/public', 'product.html') ); 
 });
+app.post('/product_page',function(req,res){
+  res.setHeader("Content-Type", "text/json");
+  res.sendFile(path.join(__dirname,'/data', 'product_details.json'));
+  console.log("data sent");
+})
+
+
 
 
 

@@ -1,11 +1,31 @@
-"use strict";
+//"use strict";
+
+var xttp,
+productDetails;
+//if (window.XMLHTTPRequest)
+    xttp = new XMLHttpRequest();
+//else
+  //  xttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+xttp.open("POST", "", true);
+xttp.send();
+
+xttp.onreadystatechange = function () {
+    console.log("every thing is running");
+    console.log(this.readyState);
+     console.log("every thing is running again");
+    if (this.readyState == 4 && this.status == 200) {
+        productDetails=JSON.parse(this.responseText);
+    }
+}
+
 /*
 * @method:Anonymous
 * @param:No parameters
 * @desc :Load product page main body data from JSON by Handlebars
 * @return: undefined{undefined}
 */
-(() => {
+//(() => {
     var _productImageListTemplate = {
         raw_temp: document.getElementById("product-images-list-template").innerHTML,
         context: productDetails.products[0],
@@ -92,7 +112,7 @@
     templateHandler(_reviewTemplate);
     templateHandler(_productHeadingTemplate);
     templateHandler(_productPriceTemplate);
-})();
+//})();
 
 /*
 * @method:Anonymous
@@ -120,21 +140,9 @@ _.flatMap(document.querySelectorAll("#product-images-list ul li"), function (c) 
     }
 });
 
-var xttp;
-//if (window.XMLHTTPRequest)
-    xttp = new XMLHttpRequest();
-//else
-  //  xttp = new ActiveXObject("Microsoft.XMLHTTP");
 
-xttp.open("GET", "data/product_details.json", true);
-xttp.send();
 
-xttp.onreadystatechange = function () {
-    console.log(this.readyState);
-    if (this.readyState == 4 && this.status == 200) {
-        console.log(this.responseText);
-    }
-}
+
 
 
 
