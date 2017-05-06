@@ -7,7 +7,7 @@ productDetails;
 //else
   //  xttp = new ActiveXObject("Microsoft.XMLHTTP");
 
-xttp.open("POST", "/product_page", true);
+xttp.open("POST", "/product_page?page=data", true);
 xttp.send();
 
 xttp.onreadystatechange = function () {
@@ -149,17 +149,23 @@ _.flatMap(document.querySelectorAll("#product-images-list ul li"), function (c) 
 var xttpa;
 //if (window.XMLHTTPRequest)
     xttpa = new XMLHttpRequest();
-    var params = "lorem=ipsum&name=binny";
+    var params = "'abc':'1'";
 
     //xmlhttp.setRequestHeader("Content-Type", "text/string");
 
-xttpa.open("POST", "/product_page?page=2", true);
+xttpa.open("POST", "/product_page?page=1", true);
 xttpa.send(params);
 
 xttpa.onreadystatechange = function () {
     console.log("every thing is running xttpa");
 }
 
+$.ajax('/product_page?page=jquery',{
+    'data': "abc:4", //{action:'x',params:['a','b','c']}
+    'type': 'POST',
+    'processData': false,
+    //'contentType': '' //typically 'application/x-www-form-urlencoded', but the service you are calling may expect 'text/json'... check with the service to see what they expect as content-type in the HTTP header.
+});
 
 
 

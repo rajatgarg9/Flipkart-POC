@@ -15,13 +15,19 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 
 app.get('/product_page', function(req, res){
+  console.log("data sent GET");
+  console.log(req.query.page);
+console.log(req.body);
+console.log(req.params);
   res.setHeader("Content-Type", "text/html");
   res.sendFile(path.join(__dirname, '/public', 'product.html') ); 
 });
 app.post('/product_page',function(req,res,body){
 
-  console.log("data sent");
-  console.log(req.params.page);
+  console.log("data sent POST");
+  console.log(req.query.page);
+console.log(req.body);
+console.log(req.params);
   res.setHeader("Content-Type", "text/json");
   res.sendFile(path.join(__dirname,'/data', 'product_details.json'));  
 })
