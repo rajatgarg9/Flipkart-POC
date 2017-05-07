@@ -149,11 +149,11 @@ _.flatMap(document.querySelectorAll("#product-images-list ul li"), function (c) 
 var xttpa;
 //if (window.XMLHTTPRequest)
     xttpa = new XMLHttpRequest();
-    var params = "'abc':'1'";
+    var params = "home=Cosby&favorite+flavor=flies";
 
     //xmlhttp.setRequestHeader("Content-Type", "text/string");
-
 xttpa.open("POST", "/product_page?page=1", true);
+xttpa.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xttpa.send(params);
 
 xttpa.onreadystatechange = function () {
@@ -161,10 +161,10 @@ xttpa.onreadystatechange = function () {
 }
 
 $.ajax('/product_page?page=jquery',{
-    'data': "abc:4", //{action:'x',params:['a','b','c']}
+    'data': '{ "foo" : "bar", "name" : "John" }', //{action:'x',params:['a','b','c']}
     'type': 'POST',
     'processData': false,
-    //'contentType': '' //typically 'application/x-www-form-urlencoded', but the service you are calling may expect 'text/json'... check with the service to see what they expect as content-type in the HTTP header.
+    'contentType': 'application/json'//, but the service you are calling may expect 'text/json'... check with the service to see what they expect as content-type in the HTTP header.
 });
 
 

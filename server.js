@@ -24,7 +24,7 @@ console.log(req.params);
 });
 app.post('/product_page',function(req,res,body){
 
-  console.log("data sent POST");
+  console.log("data sent POST1");
   console.log(req.query.page);
 console.log(req.body);
 console.log(req.params);
