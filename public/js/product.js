@@ -1,32 +1,41 @@
 "use strict";
-var jsonDataObj = {};
-
-
-
-
-function ajaxCall() {
-    let _xttp;
-
-
-    if (window.XMLHttpRequest)
-        xttp = new XMLHttpRequest();
-    else
-        xttp = new ActiveXObject("Microsoft.XMLHTTP");
-
-    xttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
+var jsonDataObj = {},
+xttp,
+productDetailsAPI={
+    method:"POST",
+    url:"/product_page?file=product_details",
+    async:"true",
+    content_type:"application/x-www-form-urlencoded",
+    action: function(){
             jsonDataObj.productDetails = JSON.parse(this.responseText);
             pageRender(jsonDataObj);
+    }
+};
+
+
+
+
+function ajaxCall(ajaxParameters){
+    let _xttp;
+
+    if (window.XMLHttpRequest)
+        _xttp = new XMLHttpRequest();
+    else
+        _xttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+    _xttp.onreadystatechange = function (event,ajaxParameters) {
+        if (this.readyState == 4 && this.status == 200) {
+            ajaxParameters.action();
         }
     }
 
-    xttp.open("POST", "/product_page?file=product_details", false);
-    xttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xttp.send();
+    _xttp.open(ajaxParameters.method, ajaxParameters.url, ajaxParameters.async);
+    _xttp.setRequestHeader("Content-type", ajaxParameters.content_type);
+    _xttp.send();
 }
 
 
-ajaxCall();
+ajaxCall(productDetailsAPI);;
 
 
 
