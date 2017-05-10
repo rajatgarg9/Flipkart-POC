@@ -6,10 +6,10 @@ productDetailsAPI={
     url:"/product_page?file=product_details",
     async:"true",
     content_type:"application/x-www-form-urlencoded",
-    action: function(){
-            jsonDataObj.productDetails = JSON.parse(this.responseText);
-            pageRender(jsonDataObj);
-    }
+    action: (function(thiss){
+            return function(){jsonDataObj.productDetails = JSON.parse(thiss.responseText);
+            pageRender(jsonDataObj);}
+    })()
 };
 
 
@@ -23,11 +23,14 @@ function ajaxCall(ajaxParameters){
     else
         _xttp = new ActiveXObject("Microsoft.XMLHTTP");
 
-    _xttp.onreadystatechange = function (event,ajaxParameters) {
+    _xttp.onreadystatechange = (function (event,ajaxParameters) {
+       return function(){
         if (this.readyState == 4 && this.status == 200) {
-            ajaxParameters.action();
-        }
-    }
+            console.log(this.responseText);
+           ajaxParameters.action(this);
+        }   
+       }  
+    })(event, ajaxParameters);
 
     _xttp.open(ajaxParameters.method, ajaxParameters.url, ajaxParameters.async);
     _xttp.setRequestHeader("Content-type", ajaxParameters.content_type);
