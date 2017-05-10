@@ -4,7 +4,7 @@ xttp,
 productDetailsAPI={
     method:"POST",
     url:"/product_page?file=product_details",
-    async:"true",
+    async:"false",
     content_type:"application/x-www-form-urlencoded",
     action: function(){
             jsonDataObj.productDetails = JSON.parse(this.responseText);
