@@ -1,20 +1,21 @@
 "use strict";
 var jsonDataObj = {},
-xttp,
-productDetailsAPI={
-    method:"POST",
-    url:"/product_page?file=product_details",
-    async:"false",
-    content_type:"application/x-www-form-urlencoded",
-    action: function(ed){
-           jsonDataObj.productDetails = JSON.parse(ed.responseText);
-            pageRender(jsonDataObj);}
-};
+    xttp,
+    productDetailsAPI = {
+        method: "POST",
+        url: "/product_page?file=product_details",
+        async: "false",
+        content_type: "application/x-www-form-urlencoded",
+        action: function (ed) {
+            jsonDataObj.productDetails = JSON.parse(ed.responseText);
+            pageRender(jsonDataObj);
+        }
+    };
 
 
 
 
-function ajaxCall(ajaxParameters){
+function ajaxCall(ajaxParameters) {
     let _xttp;
 
     if (window.XMLHttpRequest)
@@ -22,14 +23,14 @@ function ajaxCall(ajaxParameters){
     else
         _xttp = new ActiveXObject("Microsoft.XMLHTTP");
 
-    _xttp.onreadystatechange = (function (event,ajaxParameters) {
-       return function(){
+
+    _xttp.onreadystatechange = function (event, ajaxParameters) {
+        debugger;
         if (this.readyState == 4 && this.status == 200) {
-           ajaxParameters.action(this);
-           console.log(this.responseText);
-        }   
-       }  
-    })(event, ajaxParameters);
+            console.log(ajaxParameters);
+            ajaxParameters.action(this);
+        }
+    }
 
     _xttp.open(ajaxParameters.method, ajaxParameters.url, ajaxParameters.async);
     _xttp.setRequestHeader("Content-type", ajaxParameters.content_type);
