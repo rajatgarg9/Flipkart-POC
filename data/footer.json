@@ -1,17 +1,4 @@
-var headerData = {
-    "header_link":[
-        "Sell on Advertise",
-        "Advertise",
-        "Gift Card",
-        "Track Order",
-        "Signup",
-        "Log In",
-        "Cart"
-    ]
-
-}
-
-var footerData = {
+{
     "footer_info": [
         {
             "footer_shortcut": [
@@ -30,10 +17,8 @@ var footerData = {
                         "Payments",
                         "Shipping",
                         "Cancellation & Returns",
-                        "Report Infringement",
-
+                        "Report Infringement"
                     ]
-
                 },
                 {
                     "name": "FLIPKART",

@@ -1,4 +1,4 @@
-var userInfo = {
+{
     "cart_items": [
         {
             "item_name": "abc"

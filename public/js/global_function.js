@@ -31,3 +31,26 @@ function objArrayAverageAndTotalfinder(objArray, key) {
     _avg = _sum / objArray.length;
     return { total: _sum, avg: _avg };
 }
+
+function ajaxCall(ajaxParameters) {
+    let _xttp;
+
+    if (window.XMLHttpRequest)
+        _xttp = new XMLHttpRequest();
+    else
+        _xttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+    _xttp.onreadystatechange = (
+        function () {
+            return function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    ajaxParameters.action.call(this);
+                    console.log("ajax");
+                }
+            }
+        })();
+
+    _xttp.open(ajaxParameters.method, ajaxParameters.url, ajaxParameters.async);
+    _xttp.setRequestHeader("Content-type", ajaxParameters.content_type);
+    _xttp.send();
+}

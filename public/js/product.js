@@ -1,49 +1,10 @@
 "use strict";
-var jsonDataObj = {},
-    xttp,
-    productDetailsAPI = {
-        method: "POST",
-        url: "/product_page?file=product_details",
-        async: "false",
-        content_type: "application/x-www-form-urlencoded",
-        action: function (ed) {
-            jsonDataObj.productDetails = JSON.parse(ed.responseText);
-            pageRender(jsonDataObj);
-        }
-    };
 
-
-
-
-function ajaxCall(ajaxParameters) {
-    let _xttp;
-
-    if (window.XMLHttpRequest)
-        _xttp = new XMLHttpRequest();
-    else
-        _xttp = new ActiveXObject("Microsoft.XMLHTTP");
-
-
-    _xttp.onreadystatechange = function (event, ajaxParameters) {
-        debugger;
-        if (this.readyState == 4 && this.status == 200) {
-            console.log(ajaxParameters);
-            ajaxParameters.action(this);
-        }
-    }
-
-    _xttp.open(ajaxParameters.method, ajaxParameters.url, ajaxParameters.async);
-    _xttp.setRequestHeader("Content-type", ajaxParameters.content_type);
-    _xttp.send();
-}
-
-
-ajaxCall(productDetailsAPI);;
-
-
-
-
-
+console.log("page Render");
+//pageRender(jsonDataObj)
+setTimeout(function(){
+    console.log("page Render--In Time Out");
+    pageRender(jsonDataObj);},90);
 
 function pageRender(jsonDataObj) {
     /*
@@ -55,73 +16,73 @@ function pageRender(jsonDataObj) {
     (() => {
         var _productImageListTemplate = {
             raw_temp: document.getElementById("product-images-list-template").innerHTML,
-            context: jsonDataObj.productDetails.products[0],
+            context: jsonDataObj.product_details_data.products[0],
             dest_node: document.getElementById("product-images-list"),
             node_position: 'beforeend'
         },
             _productImageContainertTemplate = {
                 raw_temp: document.getElementById("product-img-container-template").innerHTML,
-                context: jsonDataObj.productDetails.products[0],
+                context: jsonDataObj.product_details_data.products[0],
                 dest_node: document.getElementById("product-img-container"),
                 node_position: 'beforeend'
             },
             _addCartBuyBtnTemplate = {
                 raw_temp: document.getElementById("add-cart-buy-btn-template").innerHTML,
-                context: globalKeys.global_keys,
+                context: jsonDataObj.global_keys_data.global_keys,
                 dest_node: document.getElementById("add-cart-buy-btn"),
                 node_position: 'beforeend'
             },
             _totalRateReviewTemplate = {
                 raw_temp: document.getElementById("total-rating-reviews-template").innerHTML,
-                context: globalKeys.global_keys,
+                context: jsonDataObj.global_keys_data.global_keys,
                 dest_node: document.getElementById("total-rating-reviews"),
                 node_position: 'beforeend'
             },
             _specHeadingTemplate = {
                 raw_temp: document.getElementById("spec-list-heading-template").innerHTML,
-                context: globalKeys.global_keys,
+                context: jsonDataObj.global_keys_data.global_keys,
                 dest_node: document.getElementById("spec-list"),
                 node_position: 'afterbegin'
             },
             _specTemplate = {
                 raw_temp: document.getElementById("spec-list-template").innerHTML,
-                context: jsonDataObj.productDetails.products[0],
+                context: jsonDataObj.product_details_data.products[0],
                 dest_node: document.getElementById("spec-list"),
                 node_position: 'beforeend'
             },
             _totalReviewBottomTemplate = {
                 raw_temp: document.getElementById("total-review-bottom-template").innerHTML,
-                context: globalKeys.global_keys,
+                context: jsonDataObj.global_keys_data.global_keys,
                 dest_node: document.getElementById("total-review-bottom"),
                 node_position: 'beforeend'
             },
             _rateReviewBtnTemplate = {
                 raw_temp: document.getElementById("rate-review-btn-template").innerHTML,
-                context: globalKeys.global_keys.flipkart_rate_review,
+                context: jsonDataObj.global_keys_data.global_keys.flipkart_rate_review,
                 dest_node: document.getElementById("rate-review-btn"),
                 node_position: 'beforeend'
             },
             _commentTypeTemplate = {
                 raw_temp: document.getElementById("comment-type-list-template").innerHTML,
-                context: globalKeys.global_keys.flipkart_type_of_comment,
+                context: jsonDataObj.global_keys_data.global_keys.flipkart_type_of_comment,
                 dest_node: document.getElementById("comment-type-list"),
                 node_position: 'beforeend'
             },
             _reviewTemplate = {
                 raw_temp: document.getElementById("review-list-template").innerHTML,
-                context: Object.assign({}, jsonDataObj.productDetails.products[0], globalKeys.global_keys),
+                context: Object.assign({}, jsonDataObj.product_details_data.products[0], jsonDataObj.global_keys_data.global_keys),
                 dest_node: document.getElementById("comment-sec"),
                 node_position: 'beforeend'
             },
             _productHeadingTemplate = {
                 raw_temp: document.getElementById("product-heading-template").innerHTML,
-                context: jsonDataObj.productDetails.products[0],
+                context: jsonDataObj.product_details_data.products[0],
                 dest_node: document.getElementById("product-heading"),
                 node_position: 'beforeend'
             },
             _productPriceTemplate = {
                 raw_temp: document.getElementById("product-price-template").innerHTML,
-                context: jsonDataObj.productDetails.products[0],
+                context: jsonDataObj.product_details_data.products[0],
                 dest_node: document.getElementById("product-price"),
                 node_position: 'beforeend'
             }
@@ -149,10 +110,10 @@ function pageRender(jsonDataObj) {
     */
 
     (() => {
-        var _rateobj = objArrayAverageAndTotalfinder(jsonDataObj.productDetails.products[0].reviews, "rate");
+        var _rateobj = objArrayAverageAndTotalfinder(jsonDataObj.product_details_data.products[0].reviews, "rate");
         _.flatMap(document.getElementsByClassName("prod-rate-avg"), function (c) { c.innerHTML = _rateobj.avg });
         _.flatMap(document.getElementsByClassName("total-rate-product"), function (c) { c.innerHTML = _rateobj.total });
-        document.getElementById("total-review-product").innerHTML = jsonDataObj.productDetails.products[0].reviews.length;
+        document.getElementById("total-review-product").innerHTML = jsonDataObj.product_details_data.products[0].reviews.length;
     }
     )();
     _.flatMap(document.querySelectorAll("#product-images-list ul li"), function (c) {
