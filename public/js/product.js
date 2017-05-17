@@ -1,12 +1,19 @@
 "use strict";
 
-console.log("page Render");
-//pageRender(jsonDataObj)
-setTimeout(function(){
-    console.log("page Render--In Time Out");
-    pageRender(jsonDataObj);},90);
 
-function pageRender(jsonDataObj) {
+setTimeout(function(){               // providing delay to productPageRender to prevent it execution before ajax 
+    productPageRender(jsonDataObj);
+      },90);
+
+
+
+/*
+* @method:productPageRender
+* @param:{Object}dataObj
+* @desc: Handle all the data rendering and design of product page
+* @return :undefined{undefined}
+*/
+var productPageRender=(dataObj)=>{
     /*
     * @method:Anonymous
     * @param:No parameters
@@ -16,73 +23,73 @@ function pageRender(jsonDataObj) {
     (() => {
         var _productImageListTemplate = {
             raw_temp: document.getElementById("product-images-list-template").innerHTML,
-            context: jsonDataObj.product_details_data.products[0],
+            context: dataObj.product_details_data.products[0],
             dest_node: document.getElementById("product-images-list"),
             node_position: 'beforeend'
         },
             _productImageContainertTemplate = {
                 raw_temp: document.getElementById("product-img-container-template").innerHTML,
-                context: jsonDataObj.product_details_data.products[0],
+                context: dataObj.product_details_data.products[0],
                 dest_node: document.getElementById("product-img-container"),
                 node_position: 'beforeend'
             },
             _addCartBuyBtnTemplate = {
                 raw_temp: document.getElementById("add-cart-buy-btn-template").innerHTML,
-                context: jsonDataObj.global_keys_data.global_keys,
+                context: dataObj.global_keys_data.global_keys,
                 dest_node: document.getElementById("add-cart-buy-btn"),
                 node_position: 'beforeend'
             },
             _totalRateReviewTemplate = {
                 raw_temp: document.getElementById("total-rating-reviews-template").innerHTML,
-                context: jsonDataObj.global_keys_data.global_keys,
+                context: dataObj.global_keys_data.global_keys,
                 dest_node: document.getElementById("total-rating-reviews"),
                 node_position: 'beforeend'
             },
             _specHeadingTemplate = {
                 raw_temp: document.getElementById("spec-list-heading-template").innerHTML,
-                context: jsonDataObj.global_keys_data.global_keys,
+                context: dataObj.global_keys_data.global_keys,
                 dest_node: document.getElementById("spec-list"),
                 node_position: 'afterbegin'
             },
             _specTemplate = {
                 raw_temp: document.getElementById("spec-list-template").innerHTML,
-                context: jsonDataObj.product_details_data.products[0],
+                context: dataObj.product_details_data.products[0],
                 dest_node: document.getElementById("spec-list"),
                 node_position: 'beforeend'
             },
             _totalReviewBottomTemplate = {
                 raw_temp: document.getElementById("total-review-bottom-template").innerHTML,
-                context: jsonDataObj.global_keys_data.global_keys,
+                context: dataObj.global_keys_data.global_keys,
                 dest_node: document.getElementById("total-review-bottom"),
                 node_position: 'beforeend'
             },
             _rateReviewBtnTemplate = {
                 raw_temp: document.getElementById("rate-review-btn-template").innerHTML,
-                context: jsonDataObj.global_keys_data.global_keys.flipkart_rate_review,
+                context: dataObj.global_keys_data.global_keys.flipkart_rate_review,
                 dest_node: document.getElementById("rate-review-btn"),
                 node_position: 'beforeend'
             },
             _commentTypeTemplate = {
                 raw_temp: document.getElementById("comment-type-list-template").innerHTML,
-                context: jsonDataObj.global_keys_data.global_keys.flipkart_type_of_comment,
+                context: dataObj.global_keys_data.global_keys.flipkart_type_of_comment,
                 dest_node: document.getElementById("comment-type-list"),
                 node_position: 'beforeend'
             },
             _reviewTemplate = {
                 raw_temp: document.getElementById("review-list-template").innerHTML,
-                context: Object.assign({}, jsonDataObj.product_details_data.products[0], jsonDataObj.global_keys_data.global_keys),
+                context: Object.assign({}, dataObj.product_details_data.products[0], dataObj.global_keys_data.global_keys),
                 dest_node: document.getElementById("comment-sec"),
                 node_position: 'beforeend'
             },
             _productHeadingTemplate = {
                 raw_temp: document.getElementById("product-heading-template").innerHTML,
-                context: jsonDataObj.product_details_data.products[0],
+                context: dataObj.product_details_data.products[0],
                 dest_node: document.getElementById("product-heading"),
                 node_position: 'beforeend'
             },
             _productPriceTemplate = {
                 raw_temp: document.getElementById("product-price-template").innerHTML,
-                context: jsonDataObj.product_details_data.products[0],
+                context: dataObj.product_details_data.products[0],
                 dest_node: document.getElementById("product-price"),
                 node_position: 'beforeend'
             }
@@ -102,18 +109,18 @@ function pageRender(jsonDataObj) {
         templateHandler(_productPriceTemplate);
     })();
 
+
     /*
     * @method:Anonymous
     * @param:No parameters
     * @desc :DOM manipulation based on the some value by javaSccript
     * @return: undefined{undefined}
     */
-
     (() => {
-        var _rateobj = objArrayAverageAndTotalfinder(jsonDataObj.product_details_data.products[0].reviews, "rate");
+        var _rateobj = objArrayAverageAndTotalfinder(dataObj.product_details_data.products[0].reviews, "rate");
         _.flatMap(document.getElementsByClassName("prod-rate-avg"), function (c) { c.innerHTML = _rateobj.avg });
         _.flatMap(document.getElementsByClassName("total-rate-product"), function (c) { c.innerHTML = _rateobj.total });
-        document.getElementById("total-review-product").innerHTML = jsonDataObj.product_details_data.products[0].reviews.length;
+        document.getElementById("total-review-product").innerHTML = dataObj.product_details_data.products[0].reviews.length;
     }
     )();
     _.flatMap(document.querySelectorAll("#product-images-list ul li"), function (c) {
