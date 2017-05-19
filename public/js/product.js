@@ -135,6 +135,8 @@ var productPageRender=(dataObj)=>{
         }
     });
 
+    
+
 }
 
 
