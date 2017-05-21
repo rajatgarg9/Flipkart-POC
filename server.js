@@ -43,7 +43,7 @@ app.post('/product_page', function (req, res) {
     console.log("file not found");
 })
 
-//console.log(fs.readdirSync(path.join(__dirname, 'data', 'product_details.json')));
+
 
 
 //`

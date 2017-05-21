@@ -153,11 +153,15 @@
                             </p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <div class="comment-action-container pull-right">
-                                <span class="glyphicon glyphicon-thumbs-up pointer" aria-hidden="true"></span>
-                                <span class="pointer like-dislike-count">{{likes}}</span>
-                                <span class="glyphicon glyphicon-thumbs-down pointer" aria-hidden="true"></span>
-                                <span class="pointer like-dislike-count">{{dis_likes}}</span>
+                            <div class="comment-action-container pull-right like-dis-like-incrementor-container">
+                                <span class="like-incrementor">
+                                  <span class="glyphicon glyphicon-thumbs-up thumbs-up thumbs-up-identifi pointer" aria-hidden="true"></span>
+                                   <span class="pointer like-dislike-count like-count">{{likes}}</span>
+                                 </span>
+                                 <span class="dis-like-incrementor">
+                                  <span class="glyphicon glyphicon-thumbs-down thumbs-down thumbs-down-identifi pointer" aria-hidden="true"></span>
+                                  <span class="pointer like-dislike-count dis-like-count">{{dis_likes}}</span>
+                                </span>
                                 <div class="dropdown inline-block">
                                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="true">

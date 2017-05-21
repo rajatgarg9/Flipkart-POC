@@ -142,10 +142,10 @@
 .comment-action-container .glyphicon-thumbs-down{
     font-size: 16px;
 }
-.comment-action-container .glyphicon-thumbs-up:hover{
+.comment-action-container .thumbs-up:hover{
     color:blue;
 }
-.comment-action-container .glyphicon-thumbs-down:hover{
+.comment-action-container .thumbs-down:hover{
     color:red;
 }
 .comment-container .nav>li>a {
@@ -219,4 +219,10 @@
     width: 90%;
     margin: auto;
     padding: 8% 0%;
+}
+.txt-red-color{
+    color: red;
+}
+.txt-blue-color{
+    color: blue;
 }

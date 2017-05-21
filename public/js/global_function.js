@@ -60,3 +60,28 @@ function ajaxCall(ajaxParameters) {
     _xttp.setRequestHeader("Content-type", ajaxParameters.content_type);
     _xttp.send();
 }
+
+/*
+* @method: particularAttributeValueRemover
+* @param:{string}mainAttributeValue , {string}valueToRemove
+* @desc: remove the string(valueToRemove) from string(mainAttributeValue)
+* @return: _newAttributeValue{string}
+*/
+ particularAttributeValueRemover = function (mainAttributeValue, valueToRemove) {
+     let _newAttributeValue,
+          _searchExpression= new RegExp(` ${valueToRemove.trim()} `, "g");;
+        _newAttributeValue= mainAttributeValue.replace(_searchExpression, " ");
+        return _newAttributeValue;
+    }
+
+ /*
+* @method: attributeValueAdder
+* @param:{string}mainAttributeValue , {string}valueToAdd
+* @desc: add the string(valueToAdd) with space at the end of string(mainAttributeValue)
+* @return: _newAttributeValue{string}
+*/
+    attributeValueAdder = function (mainAttributeValue, valueToAdd) {
+        let _newAttributeValue;
+        _newAttributeValue= mainAttributeValue.replace(mainAttributeValue.trim(), `${mainAttributeValue} ${valueToAdd}`);
+        return _newAttributeValue;
+    }
