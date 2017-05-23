@@ -201,7 +201,7 @@ var productPageRender = (dataObj) => {
                  this.parentNode.getElementsByClassName("like-incrementor")[0].removeEventListener("click", likehandler);
         
         }
-    })();
+    })();;
 
 
 }
