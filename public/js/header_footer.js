@@ -7,7 +7,6 @@
 * @return: undefined{undefined}
 */
 setTimeout(function(){
-    console.log(" Header--In Time Out");
     (() => {
         var _searchBoxTemplate = {
                 raw_temp: document.getElementById("search-box-template").innerHTML,

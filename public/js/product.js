@@ -1,9 +1,9 @@
 //"use strict";
 
 
-setTimeout(function() { // providing delay to productPageRender to prevent it execution before ajax 
+setTimeout(function () { // providing delay to productPageRender to prevent it execution before ajax 
     productPageRender(jsonDataObj);
-}, 90);
+}, 500);
 
 
 
@@ -22,11 +22,11 @@ var productPageRender = (dataObj) => {
      */
     (() => {
         var _productImageListTemplate = {
-                raw_temp: document.getElementById("product-images-list-template").innerHTML,
-                context: dataObj.product_details_data.products[0],
-                dest_node: document.getElementById("product-images-list"),
-                node_position: 'beforeend'
-            },
+            raw_temp: document.getElementById("product-images-list-template").innerHTML,
+            context: dataObj.product_details_data.products[0],
+            dest_node: document.getElementById("product-images-list"),
+            node_position: 'beforeend'
+        },
             _productImageContainertTemplate = {
                 raw_temp: document.getElementById("product-img-container-template").innerHTML,
                 context: dataObj.product_details_data.products[0],
@@ -53,7 +53,7 @@ var productPageRender = (dataObj) => {
             },
             _specTemplate = {
                 raw_temp: document.getElementById("spec-list-template").innerHTML,
-                context: dataObj.product_details_data.products[0],
+                context: dataObj.product_specifications_data.specifications[0],
                 dest_node: document.getElementById("spec-list"),
                 node_position: 'beforeend'
             },
@@ -77,7 +77,7 @@ var productPageRender = (dataObj) => {
             },
             _reviewTemplate = {
                 raw_temp: document.getElementById("review-list-template").innerHTML,
-                context: Object.assign({}, dataObj.product_details_data.products[0], dataObj.global_keys_data.global_keys),
+                context: Object.assign({}, dataObj.product_reviews_data, dataObj.global_keys_data.global_keys),
                 dest_node: document.getElementById("comment-sec"),
                 node_position: 'beforeend'
             },
@@ -117,16 +117,16 @@ var productPageRender = (dataObj) => {
      * @return: undefined{undefined}
      */
     (() => {
-        var _rateobj = objArrayAverageAndTotalfinder(dataObj.product_details_data.products[0].reviews, "rate");
+        var _rateobj = objArrayAverageAndTotalfinder(dataObj.product_reviews_data.reviews, "rate");
 
 
-        _.flatMap(document.getElementsByClassName("prod-rate-avg"), function(c) {
+        _.flatMap(document.getElementsByClassName("prod-rate-avg"), function (c) {
             c.innerHTML = _rateobj.avg
         });
-        _.flatMap(document.getElementsByClassName("total-rate-product"), function(c) {
+        _.flatMap(document.getElementsByClassName("total-rate-product"), function (c) {
             c.innerHTML = _rateobj.total
         });
-        document.getElementById("total-review-product").innerHTML = dataObj.product_details_data.products[0].reviews.length;
+        document.getElementById("total-review-product").innerHTML = dataObj.product_reviews_data.reviews.length;
     })();
 
     /*
@@ -137,9 +137,9 @@ var productPageRender = (dataObj) => {
      */
 
     (() => {
-        _.flatMap(document.querySelectorAll("#product-images-list ul li"), function(c) {
-            c.onmouseover = function() {
-                _.flatMap(document.querySelectorAll("#product-images-list ul li"), function(c) {
+        _.flatMap(document.querySelectorAll("#product-images-list ul li"), function (c) {
+            c.onmouseover = function () {
+                _.flatMap(document.querySelectorAll("#product-images-list ul li"), function (c) {
                     c.style.border = "";
                     c.style.zIndex = "";
                 });
@@ -158,50 +158,77 @@ var productPageRender = (dataObj) => {
     
     */
     (() => {
-        _.flatMap(document.querySelectorAll(".like-dis-like-incrementor-container"), function(c) {
-            c.getElementsByClassName("like-incrementor")[0].addEventListener("click", likehandler,false);
-            c.getElementsByClassName("dis-like-incrementor")[0].addEventListener("click", disLikehandler,false);
+        _.flatMap(document.querySelectorAll(".like-dis-like-incrementor-container"), function (c) {
+            c.getElementsByClassName("like-incrementor")[0].addEventListener("click", likehandler, false);
+            c.getElementsByClassName("dis-like-incrementor")[0].addEventListener("click", disLikehandler, false);
         })
 
 
-        function likehandler(){
+        /*
+         * @method:likehandler
+         * @param:No parameters
+         * @desc:on click like increase counter of like on FE and BE(ajax call) and then remove click event from like button and dis like button
+         * @return: undefined{undefined} 
+        */
+        function likehandler() {
             let _className,
-                    _likeElement = this.getElementsByClassName("thumbs-up-identifi")[0],
-                    _disLikeElement = this.parentNode.getElementsByClassName("thumbs-down-identifi")[0],
-                    _likeCount=this.getElementsByClassName("like-count")[0];
-                _className = _likeElement.getAttribute("class")
-                _className = particularAttributeValueRemover(_className, "thumbs-up");
-                _className = attributeValueAdder(_className, "txt-blue-color");
-                _likeElement.setAttribute("class", _className);
-                _likeCount.innerHTML=Number(_likeCount.innerHTML)+1;
+                _likeElement = this.getElementsByClassName("thumbs-up-identifi")[0],
+                _disLikeElement = this.parentNode.getElementsByClassName("thumbs-down-identifi")[0],
+                _likeCount = this.getElementsByClassName("like-count")[0],
+                _increasecounter = {
+                method: "POST",
+                url: "/product_page?type=forDB&file=reviews",
+                async: "true",
+                content_type: "application/x-www-form-urlencoded",
+                action: function () { },
+                data: `id=${this.getAttribute("data-review-id")}`
+            };
 
 
-                _className = _disLikeElement.getAttribute("class");
-                _className = particularAttributeValueRemover(_className, "thumbs-down");
-                _disLikeElement.setAttribute("class", _className);
-                 this.removeEventListener("click", likehandler);
-                 this.parentNode.getElementsByClassName("dis-like-incrementor")[0].removeEventListener("click",disLikehandler);
+
+            _className = _likeElement.getAttribute("class")
+            _className = particularAttributeValueRemover(_className, "thumbs-up");
+            _className = attributeValueAdder(_className, "txt-blue-color");
+            _likeElement.setAttribute("class", _className);
+            _likeCount.innerHTML = Number(_likeCount.innerHTML) + 1;
+
+
+            _className = _disLikeElement.getAttribute("class");
+            _className = particularAttributeValueRemover(_className, "thumbs-down");
+            _disLikeElement.setAttribute("class", _className);
+            this.removeEventListener("click", likehandler);
+            this.parentNode.getElementsByClassName("dis-like-incrementor")[0].removeEventListener("click", disLikehandler);
+
+
+            ajaxCall(_increasecounter);  // increase counter at Database
         }
-        function disLikehandler(){
+
+        /*
+         * @method:likehandler
+         * @param:No parameters
+         * @desc:on click increase dis like counter of like and then remove click event from like button and dis like button
+         * @return: undefined{undefined} 
+        */
+        function disLikehandler() {
             let _className,
-                    _disLikeElement = this.getElementsByClassName("thumbs-down-identifi")[0],
-                    _likeElement = this.parentNode.getElementsByClassName("thumbs-up-identifi")[0],
-                    _disLikeCount=this.getElementsByClassName("dis-like-count")[0];
-                _className = _disLikeElement.getAttribute("class")
-                _className = particularAttributeValueRemover(_className, "thumbs-down");
-                _className = attributeValueAdder(_className, "txt-red-color");
-                _disLikeElement.setAttribute("class", _className);
-                _disLikeCount.innerHTML=Number(_disLikeCount.innerHTML)+1;
+                _disLikeElement = this.getElementsByClassName("thumbs-down-identifi")[0],
+                _likeElement = this.parentNode.getElementsByClassName("thumbs-up-identifi")[0],
+                _disLikeCount = this.getElementsByClassName("dis-like-count")[0];
+            _className = _disLikeElement.getAttribute("class")
+            _className = particularAttributeValueRemover(_className, "thumbs-down");
+            _className = attributeValueAdder(_className, "txt-red-color");
+            _disLikeElement.setAttribute("class", _className);
+            _disLikeCount.innerHTML = Number(_disLikeCount.innerHTML) + 1;
 
 
-                _className = _likeElement.getAttribute("class");
-                _className = particularAttributeValueRemover(_className, "thumbs-up");
-                _likeElement.setAttribute("class", _className);
-                 this.removeEventListener("click", disLikehandler);
-                 this.parentNode.getElementsByClassName("like-incrementor")[0].removeEventListener("click", likehandler);
-        
+            _className = _likeElement.getAttribute("class");
+            _className = particularAttributeValueRemover(_className, "thumbs-up");
+            _likeElement.setAttribute("class", _className);
+            this.removeEventListener("click", disLikehandler);
+            this.parentNode.getElementsByClassName("like-incrementor")[0].removeEventListener("click", likehandler);
+
         }
-    })();;
+    })();
 
 
 }

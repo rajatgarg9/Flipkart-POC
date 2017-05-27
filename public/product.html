@@ -52,7 +52,7 @@
         </ul>
     </script>
     <script id="product-img-container-template" type="text/x-handlebars-template">
-         <img src="{{this.images_path}}/{{this.images_name.[0]}}" class="img-responsive" id="product-image" alt="Responsive image">
+        <img src="{{this.images_path}}/{{this.images_name.[0]}}" class="img-responsive" id="product-image" alt="Responsive image">
     </script>
     <script id="add-cart-buy-btn-template" type="text/x-handlebars-template">
         <div class="col-xs-12 col-sm-12 col-md-6">
@@ -90,7 +90,7 @@
     </script>
     <script id="spec-list-template" type="text/x-handlebars-template">
 
-        {{#each specifications}}
+        {{#each categories}}
         <li class="list-group-item">
             <div class="spec-table-cont">
                 <table class="table">
@@ -122,45 +122,45 @@
     </script>
     <script id="comment-type-list-template" type="text/x-handlebars-template">
         {{#each this}}
-        <li role="presentation" {{#ifcond @key 0}}class="active"{{/ifcond}}><a href="javascript:void(0)">{{this}}</a>
+        <li role="presentation" {{#ifcond @key 0}}class="active" {{/ifcond}}><a href="javascript:void(0)">{{this}}</a>
         </li>
         {{/each}}
     </script>
-    <script id="review-list-template" type="text/x-handlebars-template">
+    <script id="review-list-template"  type="text/x-handlebars-template">
         {{#each reviews}}
         <li class="list-group-item">
             <div class="comment-container">
                 <div class="btn-group btn-group-sm" role="group" aria-label="...">
                     <button type="button" class="btn btn-success rate-btn">
-                         <span class="comment-rate">{{rate}}</span>
+                         <span class="comment-rate">{{this.details.rate}}</span>
                          <span class="badge rate-btn-badge">
                          <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                          </span>
                      </button>
                 </div>
                 <div class="inline-block">
-                    <h5 class="comment-head">{{title}}</h5>
+                    <h5 class="comment-head">{{this.details.title}}</h5>
                 </div>
                 <div>
                     <p>
-                        {{description}}
+                        {{this.details.description}}
                     </p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <p class="commenter-detail">
-                                {{name}} <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> {{../flipkart_certified_buyer}}
-                                &nbsp{{ time}}
+                                {{this.details.name}} <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> {{../flipkart_certified_buyer}}
+                                &nbsp{{this.details.time}}
                             </p>
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <div class="comment-action-container pull-right like-dis-like-incrementor-container">
-                                <span class="like-incrementor">
+                                <span class="like-incrementor" data-review-id={{this.id}}>
                                   <span class="glyphicon glyphicon-thumbs-up thumbs-up thumbs-up-identifi pointer" aria-hidden="true"></span>
-                                   <span class="pointer like-dislike-count like-count">{{likes}}</span>
-                                 </span>
-                                 <span class="dis-like-incrementor">
+                                <span class="pointer like-dislike-count like-count">{{this.details.likes}}</span>
+                                </span>
+                                <span class="dis-like-incrementor" data-review-id={{this.id}}>
                                   <span class="glyphicon glyphicon-thumbs-down thumbs-down thumbs-down-identifi pointer" aria-hidden="true"></span>
-                                  <span class="pointer like-dislike-count dis-like-count">{{dis_likes}}</span>
+                                <span class="pointer like-dislike-count dis-like-count">{{this.details.dis_likes}}</span>
                                 </span>
                                 <div class="dropdown inline-block">
                                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -294,7 +294,7 @@
                     <div class="row">
                         <div class="col-xs-12 prod-imag-conta">
                             <div id="product-img-container">
-                               
+
                             </div>
                         </div>
                     </div>
@@ -461,14 +461,14 @@
             </div>
         </div>
         <!-- End footer-->
-    </div> 
+    </div>
     <script src="js/libs/jquery-3.2.0.js"></script>
     <script src="js/libs/handlebars-v4.0.5.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
     <script src="js/libs/lodash.js"></script>
     <script src="js/global_function.js"></script>
-     <script src="js/json_api.js"></script>
+    <script src="js/json_api.js"></script>
     <script src="js/header_footer.js"></script>
     <script src="js/product.js"></script>
 </body>

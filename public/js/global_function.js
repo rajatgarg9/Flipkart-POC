@@ -51,14 +51,13 @@ function ajaxCall(ajaxParameters) {
             return function () {
                 if (this.readyState == 4 && this.status == 200) {
                     ajaxParameters.action.call(this);
-                    console.log("ajax");
                 }
             }
         })();
 
     _xttp.open(ajaxParameters.method, ajaxParameters.url, ajaxParameters.async);
     _xttp.setRequestHeader("Content-type", ajaxParameters.content_type);
-    _xttp.send();
+    _xttp.send(ajaxParameters.data);
 }
 
 /*

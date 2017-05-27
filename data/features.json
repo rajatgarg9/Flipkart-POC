@@ -1,0 +1,1007 @@
+{
+    "features":[
+        {
+            "id": "1",
+            "product_id": "391", 
+            "categories":[
+				{
+					"feature_name": "Suitable For",
+					"feature_value": "Mobile"
+				},
+				{
+					"feature_name": "Material",
+					"feature_value": "Polyurethane"
+				},
+				{
+					"feature_name": "Theme",
+					"feature_value": "No Theme"
+				},
+				{
+					"feature_name": "Type",
+					"feature_value": "Back Cover"
+				}
+			]
+        },
+        {
+            "id": "2",
+            "product_id": "392", 
+            "categories":[
+				{
+					"feature_name": "Suitable For",
+					"feature_value": "Mobile"
+				},
+				{
+					"feature_name": "Material",
+					"feature_value": "Polyurethane"
+				},
+				{
+					"feature_name": "Theme",
+					"feature_value": "No Theme"
+				},
+				{
+					"feature_name": "Type",
+					"feature_value": "Back Cover"
+				}
+			]
+        },
+        {
+            "id": "3",
+            "product_id": "393",
+            "categories":[
+				{
+					"feature_name": "Suitable For",
+					"feature_value": "Mobile"
+				},
+				{
+					"feature_name": "Material",
+					"feature_value": "Polyurethane"
+				},
+				{
+					"feature_name": "Theme",
+					"feature_value": "No Theme"
+				},
+				{
+					"feature_name": "Type",
+					"feature_value": "Back Cover"
+				}
+			]
+        },
+        {
+            "id": "4",
+            "product_id": "394",
+            "categories":[
+				{
+					"feature_name": "Suitable For",
+					"feature_value": "Mobile"
+				},
+				{
+					"feature_name": "Material",
+					"feature_value": "Polyurethane"
+				},
+				{
+					"feature_name": "Theme",
+					"feature_value": "No Theme"
+				},
+				{
+					"feature_name": "Type",
+					"feature_value": "Back Cover"
+				}
+			]
+        },
+        {
+            "id": "5",
+            "product_id": "395",
+            "categories":[
+				{
+					"feature_name": "Suitable For",
+					"feature_value": "Mobile"
+				},
+				{
+					"feature_name": "Material",
+					"feature_value": "Polyurethane"
+				},
+				{
+					"feature_name": "Theme",
+					"feature_value": "No Theme"
+				},
+				{
+					"feature_name": "Type",
+					"feature_value": "Back Cover"
+				}
+			]
+        },
+        {
+            "id": "6",
+            "product_id": "396",
+            "categories":[
+				{
+					"feature_name": "Suitable For",
+					"feature_value": "Mobile"
+				},
+				{
+					"feature_name": "Material",
+					"feature_value": "Polyurethane"
+				},
+				{
+					"feature_name": "Theme",
+					"feature_value": "No Theme"
+				},
+				{
+					"feature_name": "Type",
+					"feature_value": "Back Cover"
+				}
+			]
+        },
+        {
+            "id": "7",
+            "product_id": "3960",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "For Mobile"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Lithium-ion Battery"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Micro Connector"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "13000 mAh"
+				},
+				{
+					"feature_name": "Power Source",
+					"feature_value": "AC Adapter"
+				}
+			]
+        },
+        {
+            "id": "8",
+            "product_id": "397",
+            "categories": [
+				{
+					"feature_name": "null",
+					"feature_value": "For Mobile"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Lithium-ion Battery"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Micro Connector"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "10000 mAh"
+				},
+				{
+					"feature_name": "Power Source",
+					"feature_value": "AC Adapter"
+				}
+			]
+        },
+        {
+            "id": "9",
+            "product_id": "398",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "For Mobile"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Lithium-ion Battery"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Micro Connector"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "13000 mAh"
+				},
+				{
+					"feature_name": "Power Source",
+					"feature_value": "AC Adapter"
+				}
+			]
+        },
+        {
+            "id": "10",
+            "product_id": "399",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "For Mobile"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Lithium-ion Battery"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Micro Connector"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "10000 mAh"
+				},
+				{
+					"feature_name": "Power Source",
+					"feature_value": "AC Adapter"
+				}
+			]
+        },
+        {
+            "id": "11",
+            "product_id": "400",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "For Mobile"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "16 GB"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "MicroSDHC"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Class 4"
+				},
+				{
+					"feature_name": "Read Speed",
+					"feature_value": "4 MB/s"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "sd card"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "micro sd card"
+				}
+			]
+        },
+        {
+            "id": "12",
+            "product_id": "401",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "For Mobile"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "64 GB"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "MicroSDXC"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Class 10"
+				},
+				{
+					"feature_name": "Read Speed",
+					"feature_value": "48 MB/s"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "sd card"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "micro sd card"
+				}
+			]
+        },
+        {
+            "id": "13",
+            "product_id": "402",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "For Mobile"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "16 GB"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "MicroSDHC"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Class 4"
+				},
+				{
+					"feature_name": "Read Speed",
+					"feature_value": "4 MB/s"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "sd card"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "micro sd card"
+				}
+			]
+        },
+        {
+            "id": "14",
+            "product_id": "403",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "For Mobile"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "64 GB"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "MicroSDXC"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Class 10"
+				},
+				{
+					"feature_name": "Read Speed",
+					"feature_value": "48 MB/s"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "sd card"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "micro sd card"
+				}
+			]
+        },
+        {
+            "id": "15",
+            "product_id": "404",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Bluetooth Support"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Touchscreen"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Water Resistant"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Notifier"
+				}
+			]
+        },
+        {
+            "id": "16",
+            "product_id": "405",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Built-in GPS"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Bluetooth Support"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Touchscreen"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Water Resistant"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Fitness & Outdoor"
+				}
+			]
+        },
+        {
+            "id": "17",
+            "product_id": "406",
+				{
+					"feature_name": "null",
+					"feature_value": "Bluetooth Support"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Touchscreen"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Water Resistant"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Notifier"
+				}
+			]
+        },
+        {
+            "id": "18",
+            "product_id": "407",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Built-in GPS"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Bluetooth Support"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Touchscreen"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Water Resistant"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Fitness & Outdoor"
+				}
+			]
+        },
+        {
+            "id": "19",
+            "product_id": "408",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Digital Smart Band"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Made of Silicone"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Bluetooth Enabled"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Activity Tracker Present"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "OLED Display"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Water Resistant"
+				}
+			]
+        },
+        {
+            "id": "20",
+            "product_id": "409",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Digital Smart Band"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Made of Silicone"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Bluetooth Enabled"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Activity Tracker Present"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "OLED Display"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Water Resistant"
+				}
+			]
+        },
+        {
+            "id": "21",
+            "product_id": "410",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Fully Automatic Front Load"
+				},
+				{
+					"feature_name": "Power",
+					"feature_value": "1700 W"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "6 kg | Max Spin Speed: 1000 rpm"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Tumble Wash"
+				}
+			]
+        },
+        {
+            "id": "22",
+            "product_id": "411",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Semi Automatic Top Load"
+				},
+				{
+					"feature_name": "Power",
+					"feature_value": "360 W"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "6.5 kg |"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Roller Jet Pulsator"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "3 Wash Programs"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Wheel Support | Lint Filter Supported"
+				}
+			]
+        },
+        {
+            "id": "23",
+            "product_id": "412",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Fully Automatic Front Load"
+				},
+				{
+					"feature_name": "Power",
+					"feature_value": "1700 W"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "6 kg | Max Spin Speed: 1000 rpm"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Tumble Wash"
+				}
+			]
+        },
+        {
+            "id": "24",
+            "product_id": "413",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Semi Automatic Top Load"
+				},
+				{
+					"feature_name": "Power",
+					"feature_value": "360 W"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "6.5 kg |"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Roller Jet Pulsator"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "3 Wash Programs"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Wheel Support | Lint Filter Supported"
+				}
+			]
+        },
+        {
+            "id": "25",
+            "product_id": "414",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "3 Star BEE Rating 2016"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Reciprocatory Compressor"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "1 Door Refrigerator"
+				}
+			]
+        },
+        {
+            "id": "26",
+            "product_id": "415",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "3 Star BEE Rating 2016"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Reciprocatory Compressor"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "1 Door Refrigerator"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Built-in Stabilizer"
+				}
+			]
+        },
+        {
+            "id": "27",
+            "product_id": "416",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "3 Star BEE Rating 2016"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Reciprocatory Compressor"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "1 Door Refrigerator"
+				}
+			]
+        },
+        {
+            "id": "28",
+            "product_id": "417",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "3 Star BEE Rating 2016"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Reciprocatory Compressor"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "1 Door Refrigerator"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Built-in Stabilizer"
+				}
+			]
+        },
+        {
+            "id": "29",
+            "product_id": "418",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Auto Restart"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Rotary Compressor"
+				},
+				{
+					"feature_name": "Cooling Capacity",
+					"feature_value": "4050 W"
+				},
+				{
+					"feature_name": "Power Usage",
+					"feature_value": "1065 W"
+				}
+			]
+        },
+        {
+            "id": "30",
+            "product_id": "419",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Auto Restart"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Rotary Compressor"
+				},
+				{
+					"feature_name": "Cooling Capacity",
+					"feature_value": "4050 W"
+				},
+				{
+					"feature_name": "Power Usage",
+					"feature_value": "1065 W"
+				}
+			]
+        },
+        {
+            "id": "31",
+            "product_id": "420",
+            "categories":[
+				{
+					"feature_name": "Type",
+					"feature_value": "Instant"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Verticaly Mounted"
+				},
+				{
+					"feature_name": "Power Consumption",
+					"feature_value": "3000 W"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "3 L"
+				},
+				{
+					"feature_name": "W x H",
+					"feature_value": "19.2 x 37 cm"
+				}
+			]
+        },
+        {
+            "id": "32",
+            "product_id": "422",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Capacity 2 Slices"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Consumes 800 W"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Grill Sandwich Maker"
+				}
+			]
+        },
+        {
+            "id": "33",
+            "product_id": "423",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Capacity 2 Slices"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Consumes 800 W"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Grill Sandwich Maker"
+				}
+			]
+        },
+        {
+            "id": "34",
+            "product_id": "424",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "For Men"
+				},
+				{
+					"feature_name": "Capacity",
+					"feature_value": "26 L"
+				},
+				{
+					"feature_name": "W x H",
+					"feature_value": "12 x 18.5 inch"
+				}
+			]
+        },
+        {
+            "id": "35",
+            "product_id": "425",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Pack of 3"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Made of Pairasute"
+				},
+				{
+					"feature_name": "Color",
+					"feature_value": "Maroon"
+				},
+				{
+					"feature_name": "Length",
+					"feature_value": "4 cm"
+				}
+			]
+        },
+        {
+            "id": "36",
+            "product_id": "426",
+            "categories": [
+				{
+					"feature_name": "null",
+					"feature_value": "Cordless Trimmer"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Rechargeable"
+				}
+			]
+        },
+        {
+            "id": "37",
+            "product_id": "427",
+            "categories":[
+				{
+					"feature_name": "null",
+					"feature_value": "Cordless Shaver"
+				}
+			]
+        },
+        {
+            "id": "38",
+            "product_id": "428",
+            "categories":[
+				{
+					"feature_name": "Quantity",
+					"feature_value": "195 gm"
+				},
+				{
+					"feature_name": "Ideal For",
+					"feature_value": "Men"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Bottle"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Natural Ingredient"
+				}
+			]
+        },
+        {
+            "id": "39",
+            "product_id": "429",
+            "categories":[
+				{
+					"feature_name": "Pack of",
+					"feature_value": "8"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Organic"
+				},
+				{
+					"feature_name": "Ideal For",
+					"feature_value": "Men, Women"
+				},
+				{
+					"feature_name": "Color",
+					"feature_value": "Blue"
+				}
+			]
+        },
+        {
+            "id": "40",
+            "product_id": "430",
+            "categories":[
+				{
+					"feature_name": "Fabric",
+					"feature_value": "Cotton"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Regular Fit Polo Neck T-shirt"
+				},
+				{
+					"feature_name": "Pattern",
+					"feature_value": "Printed"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Half Sleeve"
+				}
+			]
+        },
+        {
+            "id": "41",
+            "product_id": "431",
+            "categories":[
+				{
+					"feature_name": "Fabric",
+					"feature_value": "Cotton"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Slim Fit, Full Sleeve"
+				},
+				{
+					"feature_name": "Collar Type",
+					"feature_value": "Spread"
+				},
+				{
+					"feature_name": "Pattern",
+					"feature_value": "Printed"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Set of 1"
+				}
+			]
+        },
+        {
+            "id": "42",
+            "product_id": "432",
+            "categories":[
+				{
+					"feature_name": "Watch Movement",
+					"feature_value": "Quartz"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Water Resistant (50 m)"
+				},
+				{
+					"feature_name": "Display Type",
+					"feature_value": "Analog"
+				},
+				{
+					"feature_name": "Strap",
+					"feature_value": "Grey, Black, Fabric"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Chronograph"
+				},
+				{
+					"feature_name": "null",
+					"feature_value": "Date Display Available"
+				}
+			]
+        }
+    ]
+}
