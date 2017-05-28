@@ -23,13 +23,13 @@ var productPageRender = (dataObj) => {
     (() => {
         var _productImageListTemplate = {
             raw_temp: document.getElementById("product-images-list-template").innerHTML,
-            context: dataObj.product_details_data.products[0],
+            context: dataObj.product_details_data,
             dest_node: document.getElementById("product-images-list"),
             node_position: 'beforeend'
         },
             _productImageContainertTemplate = {
                 raw_temp: document.getElementById("product-img-container-template").innerHTML,
-                context: dataObj.product_details_data.products[0],
+                context: dataObj.product_details_data,
                 dest_node: document.getElementById("product-img-container"),
                 node_position: 'beforeend'
             },
@@ -53,7 +53,7 @@ var productPageRender = (dataObj) => {
             },
             _specTemplate = {
                 raw_temp: document.getElementById("spec-list-template").innerHTML,
-                context: dataObj.product_specifications_data.specifications[0],
+                context: dataObj.product_specifications_data,
                 dest_node: document.getElementById("spec-list"),
                 node_position: 'beforeend'
             },
@@ -83,13 +83,13 @@ var productPageRender = (dataObj) => {
             },
             _productHeadingTemplate = {
                 raw_temp: document.getElementById("product-heading-template").innerHTML,
-                context: dataObj.product_details_data.products[0],
+                context: dataObj.product_details_data,
                 dest_node: document.getElementById("product-heading"),
                 node_position: 'beforeend'
             },
             _productPriceTemplate = {
                 raw_temp: document.getElementById("product-price-template").innerHTML,
-                context: dataObj.product_details_data.products[0],
+                context: dataObj.product_details_data,
                 dest_node: document.getElementById("product-price"),
                 node_position: 'beforeend'
             }
@@ -167,7 +167,7 @@ var productPageRender = (dataObj) => {
         /*
          * @method:likehandler
          * @param:No parameters
-         * @desc:on click like increase counter of like on FE and BE(ajax call) and then remove click event from like button and dis like button
+         * @desc:on click thumb-up increase counter of like on FE and BE(ajax call) and then remove click event from like button and dis like button
          * @return: undefined{undefined} 
         */
         function likehandler() {
@@ -177,7 +177,7 @@ var productPageRender = (dataObj) => {
                 _likeCount = this.getElementsByClassName("like-count")[0],
                 _increasecounter = {
                 method: "POST",
-                url: "/product_page?type=forDB&file=reviews",
+                url: "/product_page?type=forDB&file=reviews&action=increaseLikes",
                 async: "true",
                 content_type: "application/x-www-form-urlencoded",
                 action: function () { },
@@ -200,20 +200,30 @@ var productPageRender = (dataObj) => {
             this.parentNode.getElementsByClassName("dis-like-incrementor")[0].removeEventListener("click", disLikehandler);
 
 
-            ajaxCall(_increasecounter);  // increase counter at Database
+            ajaxCall(_increasecounter);  // increase like counter at Database by ajax call
         }
 
         /*
          * @method:likehandler
          * @param:No parameters
-         * @desc:on click increase dis like counter of like and then remove click event from like button and dis like button
+         * @desc:on click thumb-down increase counter of dis-like on FE and BE(ajax call) and then remove click event from like button and dis like button
          * @return: undefined{undefined} 
         */
         function disLikehandler() {
             let _className,
                 _disLikeElement = this.getElementsByClassName("thumbs-down-identifi")[0],
                 _likeElement = this.parentNode.getElementsByClassName("thumbs-up-identifi")[0],
-                _disLikeCount = this.getElementsByClassName("dis-like-count")[0];
+                _disLikeCount = this.getElementsByClassName("dis-like-count")[0],
+                _increasecounter = {
+                method: "POST",
+                url: "/product_page?type=forDB&file=reviews&action=increase_disLikes",
+                async: "true",
+                content_type: "application/x-www-form-urlencoded",
+                action: function () { },
+                data: `id=${this.getAttribute("data-review-id")}`
+            };
+
+
             _className = _disLikeElement.getAttribute("class")
             _className = particularAttributeValueRemover(_className, "thumbs-down");
             _className = attributeValueAdder(_className, "txt-red-color");
@@ -227,6 +237,7 @@ var productPageRender = (dataObj) => {
             this.removeEventListener("click", disLikehandler);
             this.parentNode.getElementsByClassName("like-incrementor")[0].removeEventListener("click", likehandler);
 
+            ajaxCall(_increasecounter);  // increase dislike counter at Database by ajax call
         }
     })();
 

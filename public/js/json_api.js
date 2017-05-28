@@ -6,7 +6,8 @@ var jsonDataObj = {},
         content_type: "application/x-www-form-urlencoded",
         action: function () {
             jsonDataObj.product_details_data = JSON.parse(this.responseText);
-        }
+        },
+        data:"id=1"
     },
     productSpecificationsAPI = {
         method: "POST",
@@ -15,7 +16,8 @@ var jsonDataObj = {},
         content_type: "application/x-www-form-urlencoded",
         action: function () {
             jsonDataObj.product_specifications_data = JSON.parse(this.responseText);
-        }
+        },
+        data:"product_id=1"
     },
     productReviewsAPI = {
         method: "POST",
@@ -24,7 +26,8 @@ var jsonDataObj = {},
         content_type: "application/x-www-form-urlencoded",
         action: function () {
             jsonDataObj.product_reviews_data = JSON.parse(this.responseText);
-        }
+        },
+        data:"product_id=1"
     },
     globalkeysAPI = {
         method: "POST",
@@ -33,7 +36,6 @@ var jsonDataObj = {},
         content_type: "application/x-www-form-urlencoded",
         action: function () {
             jsonDataObj.global_keys_data = JSON.parse(this.responseText);
-
         }
     },
     productMainCategoriesAPI = {
@@ -43,7 +45,6 @@ var jsonDataObj = {},
         content_type: "application/x-www-form-urlencoded",
         action: function () {
             jsonDataObj.product_main_categories_data = JSON.parse(this.responseText);
-
         }
     },
     headerAPI = {
