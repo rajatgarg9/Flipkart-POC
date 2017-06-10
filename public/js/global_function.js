@@ -23,7 +23,7 @@ objArrayAverageAndTotalfinder= function(objArray, key) {
         _sum = 0,
         _avg = 0;
 
-    _values = _.flatMap(objArray, function (c) { return c[key] });
+    _values = _.flatMap(objArray, function (c) { return c.details[key] });
 
     for (var _i = 0; _i < _values.length; _i++) {
         _sum += Number(_values[_i]);

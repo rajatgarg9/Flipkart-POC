@@ -10,8 +10,8 @@ var express = require('express'),
 
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(bodyParser.json());       // to support JSON-encoded bodies
-app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+app.use(bodyParser.json()); // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
   extended: false
 }));
 app.use(bodyParser.text());
@@ -39,8 +39,7 @@ app.post('/product_page', function (req, res) {
         }
       });
 
-    }
-    else if (req.query.file == "global_keys")
+    } else if (req.query.file == "global_keys")
       res.sendFile(path.join(__dirname, 'data', 'global_keys.json'));
     else if (req.query.file == "main_categories")
       res.sendFile(path.join(__dirname, 'data', 'main_category.json'));
@@ -58,8 +57,7 @@ app.post('/product_page', function (req, res) {
 
       let _reviewsData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'reviews.json')), "utf-8"),
         _selectedreviewsData = {
-          "reviews": [
-          ]
+          "reviews": []
         }
 
       _.flatMap(_reviewsData.reviews, function (c) {
@@ -70,8 +68,7 @@ app.post('/product_page', function (req, res) {
 
       res.send(_selectedreviewsData);
 
-    }
-    else if (req.query.file == "specifications") {
+    } else if (req.query.file == "specifications") {
 
       let _specificationsData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'specifications.json')), "utf-8");
 
@@ -88,8 +85,7 @@ app.post('/product_page', function (req, res) {
   else if (req.query.type == "forDB") {
     if (req.query.file == "reviews" && req.query.action == "increaseLikes") {
       likeDislikeincrementor(req, res, "increaseLikes");
-    }
-    else if (req.query.file == "reviews" && req.query.action == "increase_disLikes") {
+    } else if (req.query.file == "reviews" && req.query.action == "increase_disLikes") {
       likeDislikeincrementor(req, res, "increase_dislikes");
     }
   }
@@ -98,11 +94,11 @@ app.post('/product_page', function (req, res) {
 
 
 /*
-* @method:likeDislikeincrementor
-* @param:{object}req , {object}res , {string}action
-* @desc: increase like and dislike counter in review API based on ajax call
-* @return: underfined{undefined}
-*/
+ * @method:likeDislikeincrementor
+ * @param:{object}req , {object}res , {string}action
+ * @desc: increase like and dislike counter in review API based on ajax call
+ * @return: underfined{undefined}
+ */
 
 function likeDislikeincrementor(req, res, action) {
   let _content = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'reviews.json'), "utf-8"));
@@ -128,5 +124,3 @@ function likeDislikeincrementor(req, res, action) {
 var server = app.listen(3000);
 console.log(`running`);
 reload(server, app);
-
-

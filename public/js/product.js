@@ -119,7 +119,6 @@ var productPageRender = (dataObj) => {
     (() => {
         var _rateobj = objArrayAverageAndTotalfinder(dataObj.product_reviews_data.reviews, "rate");
 
-
         _.flatMap(document.getElementsByClassName("prod-rate-avg"), function (c) {
             c.innerHTML = _rateobj.avg
         });
@@ -241,5 +240,5 @@ var productPageRender = (dataObj) => {
         }
     })();
 
-
 }
+
