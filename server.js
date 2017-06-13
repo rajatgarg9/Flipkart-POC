@@ -9,7 +9,8 @@ var express = require('express'),
 
 
 
-app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname,'builds','development')));
 app.use(bodyParser.json()); // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
   extended: false
@@ -22,7 +23,8 @@ app.use(bodyParser.text());
 
 app.get('/product_page', function (req, res) {
   res.setHeader("Content-Type", "text/html");
-  res.sendFile(path.join(__dirname, 'public', 'product.html'));
+//res.sendFile(path.join(__dirname, 'public', 'product.html'));
+ res.sendFile(path.join(__dirname, 'builds','development', 'product.html'));
 });
 
 app.post('/product_page', function (req, res) {

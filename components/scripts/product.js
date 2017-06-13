@@ -3,7 +3,7 @@
 
 setTimeout(function () { // providing delay to productPageRender to prevent it execution before ajax 
     productPageRender(jsonDataObj);
-}, 500);
+}, 5000);
 
 
 
