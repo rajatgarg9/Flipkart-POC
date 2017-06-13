@@ -1,0 +1,34 @@
+#general-product-details {
+    .internal-col-xs-12 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .detail-container {
+        padding: 6px 0px;
+    }
+    .prod-name-heading {
+        font-size: 18px;
+    }
+    .rate-btn {
+        background-color: #388e3c;
+        border-radius: 4px;
+        padding: 2px;
+        outline: #388e3c;
+        border: 1px solid #388e3c;
+        cursor: text;
+    }
+    .rate-btn-badge {
+        font-size: 12px;
+        padding: 0px;
+        color: white;
+        background-color: #388e3c;
+    }
+    .rate-info {
+        color: gray;
+        font-weight: bolder;
+    }
+    .price {
+        font-weight: bold;
+        font-size: xx-large;
+    }
+}
