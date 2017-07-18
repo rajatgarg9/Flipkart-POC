@@ -3,14 +3,14 @@
             <div class="spec-table-cont">
                 <table class="table">
                     <thead>
-                        <tr>
+                        <tr tabindex="0" aria-label="{{spec_type}} category">
                             <th>{{spec_type}}</th>
                         </tr>
                     </thead>
                     <tbody>
                         {{#each spec_type_details}}
-                        <tr>
-                            <td>{{feature_name}}</td>
+                        <tr tabindex="0" aria-label="{{feature_name}} is {{feature_value}}">
+                            <td >{{feature_name}}</td>
                             <td>{{feature_value}}</td>
                         </tr>
                         {{/each}}

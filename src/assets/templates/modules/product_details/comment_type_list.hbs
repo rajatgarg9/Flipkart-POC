@@ -1,4 +1,4 @@
  {{#each this}}
-        <li role="presentation" {{#ifcond @key 0}}class="active" {{/ifcond}}><a href="javascript:void(0)">{{this}}</a>
+        <li role="presentation" {{#ifcond @key 0}} class="active" {{/ifcond}}><a href="javascript:void(0)" aria-label="{{this}} comments">{{this}}</a>
         </li>
  {{/each}}

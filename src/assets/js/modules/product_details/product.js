@@ -69,8 +69,8 @@ Handlebars.registerHelper("ifcond", function (catId, subId, options) {
             */
             _likeDislikeHandler = function () {
                 _.flatMap(document.querySelectorAll(".like-dis-like-incrementor-container"), function (c) {
-                    c.getElementsByClassName("like-incrementor")[0].addEventListener("click", _likehandler, false);
-                    c.getElementsByClassName("dis-like-incrementor")[0].addEventListener("click", _disLikehandler, false);
+                    c.getElementsByClassName("like-incrementor")[0].addEventListener("click", _domActionsObj.likehandler, false);
+                    c.getElementsByClassName("dis-like-incrementor")[0].addEventListener("click", _domActionsObj.disLikehandler, false);
                 })
             };
         /*
@@ -105,8 +105,8 @@ Handlebars.registerHelper("ifcond", function (catId, subId, options) {
             _className = _disLikeElement.getAttribute("class");
             _className = globalFunctionsObj.particularAttributeValueRemover(_className, "thumbs-down");
             _disLikeElement.setAttribute("class", _className);
-            this.removeEventListener("click", likehandler);
-            this.parentNode.getElementsByClassName("dis-like-incrementor")[0].removeEventListener("click", disLikehandler);
+            this.removeEventListener("click", _domActionsObj.likehandler);
+            this.parentNode.getElementsByClassName("dis-like-incrementor")[0].removeEventListener("click", _domActionsObj.disLikehandler);
 
 
             globalFunctionsObj.ajaxCall(_increasecounter);  // increase like counter at Database by ajax call
@@ -143,8 +143,8 @@ Handlebars.registerHelper("ifcond", function (catId, subId, options) {
                 _className = _likeElement.getAttribute("class");
                 _className = globalFunctionsObj.particularAttributeValueRemover(_className, "thumbs-up");
                 _likeElement.setAttribute("class", _className);
-                this.removeEventListener("click", disLikehandler);
-                this.parentNode.getElementsByClassName("like-incrementor")[0].removeEventListener("click", likehandler);
+                this.removeEventListener("click", _domActionsObj.disLikehandler);
+                this.parentNode.getElementsByClassName("like-incrementor")[0].removeEventListener("click", _domActionsObj.likehandler);
 
                 globalFunctionsObj.ajaxCall(_increasecounter);  // increase dislike counter at Database by ajax call
             };
@@ -152,7 +152,9 @@ Handlebars.registerHelper("ifcond", function (catId, subId, options) {
         return {
             rateReviewCalculator: _rateReviewCalculator,
             imgListHoverEventBinder: _imgListHoverEventBinder,
-            likeDislikeHandler: _likeDislikeHandler
+            likeDislikeHandler: _likeDislikeHandler,
+            likehandler:_likehandler,
+            disLikehandler:_disLikehandler
         }
     })();
 
