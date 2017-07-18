@@ -1,0 +1,53 @@
+{{#each reviews}}
+        <li class="list-group-item">
+            <div class="comment-container">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                    <button type="button" class="btn btn-success rate-btn">
+                         <span class="comment-rate">{{this.details.rate}}</span>
+                         <span class="badge rate-btn-badge">
+                         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                         </span>
+                     </button>
+                </div>
+                <div class="inline-block">
+                    <h5 class="comment-head">{{this.details.title}}</h5>
+                </div>
+                <div>
+                    <p>
+                        {{this.details.description}}
+                    </p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="commenter-detail">
+                                {{this.details.name}} <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>                                {{../flipkart_certified_buyer}} &nbsp{{this.details.time}}
+                            </p>
+                        </div>
+                        <div class="internal-col-xs-12 col-md-6">
+                            <div class="comment-action-container pull-right like-dis-like-incrementor-container">
+                                <span class="like-incrementor" data-review-id={{this.id}}>
+                                  <span class="glyphicon glyphicon-thumbs-up thumbs-up thumbs-up-identifi pointer" aria-hidden="true"></span>
+                                <span class="pointer like-dislike-count like-count">{{this.details.likes}}</span>
+                                </span>
+                                <span class="dis-like-incrementor" data-review-id={{this.id}}>
+                                  <span class="glyphicon glyphicon-thumbs-down thumbs-down thumbs-down-identifi pointer" aria-hidden="true"></span>
+                                <span class="pointer like-dislike-count dis-like-count">{{this.details.dis_likes}}</span>
+                                </span>
+                                <div class="dropdown inline-block">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="true">
+                                                                 <span class="caret"></span>
+                                                             </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        {{#each ../flipkart_comment_related_action}}
+                                        <li><a href="javascript:void(0)">{{this}}</a>
+                                        </li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        {{/each}}

@@ -1,0 +1,15 @@
+@import "./lib/normalize";
+@import "./lib/bootstrap.min";
+@import "./module/product_details/_mixins";
+@import "./module/product_details/_globalvariables";
+@import "./components/_header.scss";
+@import "./components/_footer.scss";
+@import "./module/product_details/_product_images_btn";
+@import "./module/product_details/_comment_module";
+@import "./module/product_details/_general-prod-details.scss";
+@import "./module/product_details/_specification.scss";
+
+
+#bootstrap-overrides{
+    background-color:white;
+}

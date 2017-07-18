@@ -1,0 +1,15 @@
+@mixin rateButton($padding:2px){
+    background-color: $color-dark-green;
+    border-radius: 4px;
+    padding: $padding;
+    outline: $color-dark-green;
+    border: 1px solid $color-dark-green;
+    cursor: text;
+};
+
+@mixin BuyNowAddCartButton($bgColor:$color-red){
+    border-radius: 0px;
+    background-color: $bgColor;
+    border-color: $bgColor;
+}
+

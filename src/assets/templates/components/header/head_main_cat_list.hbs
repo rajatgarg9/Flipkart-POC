@@ -1,0 +1,15 @@
+ {{#each main_categories}}
+        <li class="dropdown dropdown-head">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{this.name}} 
+         <span class="caret"></span>
+         </a>
+            <ul class="dropdown-menu">
+                {{#each ../categories}} {{#ifcond ../id this.main_cat_id}}
+                <li>
+                    <a href="javascript:void(0)">{{this.name}}</a>
+                </li>
+                {{/ifcond}} {{/each}}
+            </ul>
+        </li>
+        {{/each}}
+ 

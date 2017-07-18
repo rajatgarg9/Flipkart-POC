@@ -1,0 +1,21 @@
+{{#each categories}}
+        <li class="list-group-item">
+            <div class="spec-table-cont">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>{{spec_type}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each spec_type_details}}
+                        <tr>
+                            <td>{{feature_name}}</td>
+                            <td>{{feature_value}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </li>
+        {{/each}}

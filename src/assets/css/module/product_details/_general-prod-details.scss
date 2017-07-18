@@ -1,0 +1,30 @@
+#general-product-details {
+    .internal-col-xs-12 {
+        padding-right:$pad-right-15;
+        padding-left:$pad-left-15;
+    }
+    .detail-container {
+        padding: 6px 0px;
+    }
+    .prod-name-heading {
+        font-size: 18px;
+    }
+    .rate-btn {
+        @include rateButton(3px);
+
+    }
+    .rate-btn-badge {
+        font-size: 12px;
+        padding: 0px;
+        color: $color-white;
+        background-color: $color-dark-green;
+    }
+    .rate-info {
+        color: $color-gray;
+        font-weight: bolder;
+    }
+    .price {
+        font-weight:$font-weight-bold;
+        font-size: xx-large;
+    }
+}

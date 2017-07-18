@@ -1,0 +1,147 @@
+#comment-sec-container {
+    .pad-bottom-0 {
+        padding-bottom: $pad-bottom-0;
+    }
+    .prod-rate {
+        font-size: 43px;
+        font-weight: $font-weight-bold;
+    }
+    .prod-rate-star {
+        font-size: x-large;
+    }
+    .total-review {
+        color: $color-gray;
+        font-weight: $font-weight-bold;
+        font-size:$font-size-15;
+    }
+    .individual-rate-container {
+        float: $float-left;
+        padding-right: 10px;
+    }
+    .individual-rate-container .glyphicon-star {
+        font-size: 12px;
+    }
+    .individual-rate-count {
+        font-weight: $font-weight-bold;
+        font-size: 14px;
+    }
+    .progress-bar-container {
+        clear: $clear-float-right;
+        padding-top: 6px;
+
+        & .progress {
+        height: 6px;
+        width: 125px;
+        border-radius: 0px;
+        border-top-width: 20px;
+        padding-top: $pad-top-0;
+    }
+    }
+    .rate-review-btn-container .btn {
+        background-color: $color-white;
+        color: $color-black;
+        box-shadow: 1px 1px 1px $color-gray;
+        font-size: 14px;
+        font-weight: $font-weight-bold;
+    }
+    .rate-review-btn-container .btn a {
+        color: $color-black;
+        text-decoration: none;
+    }
+    .rate-btn {
+       @include rateButton(2px);
+    }
+    .comment-container .comment-rate {
+        font-size: 11px;
+    }
+    .rate-btn-badge {
+        font-size: 8px;
+        padding: $pad-0;
+        color: $color-white;
+        background-color: $color-dark-green;
+    }
+    .inline-block {
+        display: $display-inline-block;
+    }
+    @media only screen and (min-width:768px) {
+        #comment-sec .nav-pills>li.active>a {
+             border-bottom: 4px solid $color-light-blue;
+             text-decoration: none;
+             color: $color-light-blue;
+             background-color: inherit;
+        }
+        #comment-sec .nav-pills>li>a {
+            font-weight: $font-weight-bold;
+            border-radius: 0px;
+             color: $color-black;
+        }
+        .rate-review-btn-container {
+            padding-top: 4em;
+        }
+    }
+    .comment-head {
+        font-weight: $font-weight-bold;
+        line-height: 20px;
+    }
+    .commenter-detail {
+        color: $color-gray;
+        font-size: 12px;
+    }
+    .internal-col-xs-12 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .comment-action-container {
+        color: $color-gray;
+        font-size: 13px;
+    }
+    .comment-action-container #dropdownMenu1 {
+        background-color: $color-white;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        color: $color-gray;
+    }
+    .comment-action-container #dropdownMenu1 .caret {
+        border-top: 6px dashed;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+    }
+    .comment-action-container .glyphicon-thumbs-up {
+        font-size: $font-size-16;
+    }
+    .comment-action-container .glyphicon-thumbs-down {
+        font-size: $font-size-16;
+    }
+    .comment-action-container .thumbs-up:hover {
+        color: $color-light-blue;
+    }
+    .comment-action-container .thumbs-down:hover {
+        color: $color-red;
+    }
+    .comment-action-container .dropdown-menu {
+        right: 0;
+        left: initial;
+    }
+    .pointer {
+        cursor: pointer;
+    }
+    .like-dislike-count {
+        margin-right: 15px;
+    }
+    .comment-container .nav>li>a {
+        padding: 15px 15px 0px;
+    }
+    #comment-sec .nav>li>a{
+        &:focus,&:hover{
+        text-decoration: none;
+        background-color: inherit;
+        }
+    }
+    .txt-red-color {
+        color: $color-red;
+    }
+    .txt-blue-color {
+        color:$color-blue;
+    }
+}

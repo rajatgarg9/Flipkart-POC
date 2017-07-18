@@ -1,0 +1,116 @@
+#header-container {
+    .head-nav {
+        padding-bottom: 20px;
+    }
+    .head-color {
+        background-color: $color-royal-blue;
+    }
+    .dropdown-head > a {
+        color: $color-white;
+        font-size: large;
+    }
+    .dropdown-head > a:hover {
+        color: $color-white;
+        background-color: $color-royal-blue;
+    }
+    .navbar-overrider {
+        margin-bottom:$margin-0;
+    }
+    .navbar-default-header {
+        background-color: $color-royal-blue;
+        border-color: $color-royal-blue;
+    }
+    .dropdown-head > a:hover {
+        color: $color-white;
+        background-color: $color-royal-blue;
+    }
+    .top-nav-link > a {
+        color: $color-white;
+        font-size: smaller;
+    }
+    .top-nav-link a{
+        &:hover,&:active,&:visited,&:focus{
+        color: $color-white;
+        background-color: $color-royal-blue;
+        outline: 1px solid $color-royal-blue;
+        }
+    }
+    .dropdown-head > a{
+         &,&:active,&:visited,&:focus{
+        background-color: $color-royal-blue;
+        }
+    }
+    .navbar-brand-header {
+        padding-top: 0px;
+        padding-left: 20px;
+    }
+    .cart-btn {
+        color: $color-white;
+        background-color: $color-header;
+        font-weight: bold;
+        border-color: $color-header;
+        width: 120px;
+        box-shadow: 2px 3px $color-header;
+        outline: $color-header;
+    }
+    .col-xs-12-header {
+        padding-right: $pad-0;
+        padding-left: $pad-0;
+    }
+    .cart-btn-icon {
+        font-size: large;
+    }
+    .cart-btn-txt {
+        padding: 0px 5px;
+    }
+    .cart-btn-badge {
+        background-color: rgba(0,0,0,.1);
+        padding: 8px 6px;
+        border-radius: 0px;
+    }
+    @media only screen and (min-width:992px) {
+        .col-xs-12-header {
+            padding-right: $pad-right-15;
+            padding-left:$pad-0;
+        }
+        .rgt-pad-md-48 {
+            padding-right: 48px;
+        }
+        .rmove-rgt-pad {
+            padding-right: $pad-0;
+        }
+        .float-rgt-md {
+            float: $float-right;
+        }
+        .lft-pad-md-53 {
+            padding-left: 53px;
+        }
+    }
+    @media only screen and (min-width:768px) and (max-width:991px) {
+        .rmove-rgt-pad {
+            padding-right:$pad-0;
+        }
+        .lft-pad-sm-20 {
+            padding-left: 20px;
+        }
+    }
+    @media only screen and (max-width:767px) {
+        .float-none-xs {
+            float: none!important;
+        }
+        .navbar-default .navbar-collapse-header, .navbar-default .navbar-form {
+            border-color: $color-royal-blue;
+        }
+        .search-field {
+            padding: 10px 0px;
+        }
+    }
+    @media only screen and (max-width:767px) and (orientation:landscape) {
+        .rgt-pad-md-48 {
+            padding-right: 31px;
+        }
+        .lft-pad-sm-20 {
+            padding-left: 35px;
+        }
+    }
+}

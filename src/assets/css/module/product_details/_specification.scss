@@ -1,0 +1,19 @@
+#specification-list-container {
+    .internal-col-xs-12 {
+        padding-right: $pad-right-15;
+        padding-left:$pad-left-15;
+    }
+    .spec-head {
+        font-weight: 700;
+    }
+    .spec-table-cont th, .spec-table-cont td {
+        border: none;
+    }
+    .spec-table-cont tbody tr td:first-child {
+        color: $color-gray;
+        width: 30%;
+    }
+    .spec-table-cont tbody tr td {
+        font-size: 14px;
+    }
+}
