@@ -88,10 +88,12 @@ this["FlipkartProductpageMyApp"]["templates"]["main_head_list"] = Handlebars.tem
   return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.header_link : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 this["FlipkartProductpageMyApp"]["templates"]["search_box"] = Handlebars.template ({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var helper;
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<input type=\"text\" class=\"form-control\" placeholder=\""
-    + container.escapeExpression(((helper = (helper = helpers.flipkart_search_for_product_brand_more || (depth0 != null ? depth0.flipkart_search_for_product_brand_more : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"flipkart_search_for_product_brand_more","hash":{},"data":data}) : helper)))
+  return "<label for=\"search-field-products-for\" class=\"hidden\">search products</label>\r\n<input type=\"text\" id=\"search-field-products-for\" class=\"form-control\" placeholder=\""
+    + alias4(((helper = (helper = helpers.flipkart_search_for_product_brand_more || (depth0 != null ? depth0.flipkart_search_for_product_brand_more : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"flipkart_search_for_product_brand_more","hash":{},"data":data}) : helper)))
+    + "\" aria-label=\""
+    + alias4(((helper = (helper = helpers.flipkart_search_for_product_brand_more || (depth0 != null ? depth0.flipkart_search_for_product_brand_more : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"flipkart_search_for_product_brand_more","hash":{},"data":data}) : helper)))
     + "\" aria-describedby=\"sizing-addon1\">\r\n";
 },"useData":true});
 this["FlipkartProductpageMyApp"]["templates"]["add_cart_buy_btn"] = Handlebars.template ({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -166,43 +168,43 @@ this["FlipkartProductpageMyApp"]["templates"]["rate_review_button"] = Handlebars
 this["FlipkartProductpageMyApp"]["templates"]["review_list"] = Handlebars.template ({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "        <li class=\"list-group-item\">\r\n            <div class=\"comment-container\">\r\n                <div class=\"btn-group btn-group-sm\" role=\"group\" aria-label=\"...\">\r\n                    <button type=\"button\" class=\"btn btn-success rate-btn\" tabindex=\"-1\">\r\n                         <span class=\"comment-rate\">"
+  return "<li class=\"list-group-item\">\r\n    <div class=\"comment-container\">\r\n        <div class=\"btn-group btn-group-sm\" role=\"group\" aria-label=\"...\">\r\n            <button type=\"button\" class=\"btn btn-success rate-btn\" tabindex=\"-1\">\r\n                         <span class=\"comment-rate\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.details : depth0)) != null ? stack1.rate : stack1), depth0))
-    + "</span>\r\n                         <span class=\"badge rate-btn-badge\">\r\n                         <span class=\"glyphicon glyphicon-star\" aria-hidden=\"true\"></span>\r\n                         </span>\r\n                     </button>\r\n                </div>\r\n                <div class=\"inline-block\" tabindex=\"0\" aria-label='Comment with "
+    + "</span>\r\n                         <span class=\"badge rate-btn-badge\">\r\n                         <span class=\"glyphicon glyphicon-star\" aria-hidden=\"true\"></span>\r\n                         </span>\r\n                     </button>\r\n        </div>\r\n        <div class=\"inline-block\" tabindex=\"0\" aria-label='Comment with "
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.details : depth0)) != null ? stack1.rate : stack1), depth0))
     + " star rating has heading  "
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.details : depth0)) != null ? stack1.title : stack1), depth0))
-    + "'>\r\n                    <h5 class=\"comment-head\">"
+    + "'>\r\n            <h5 class=\"comment-head\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.details : depth0)) != null ? stack1.title : stack1), depth0))
-    + "</h5>\r\n                </div>\r\n                <div>\r\n                    <p tabindex=\"0\" aria-label=\"Description "
+    + "</h5>\r\n        </div>\r\n        <div>\r\n            <p tabindex=\"0\" aria-label=\"Description "
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.details : depth0)) != null ? stack1.description : stack1), depth0))
-    + "\">\r\n                        "
+    + "\">\r\n                "
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.details : depth0)) != null ? stack1.description : stack1), depth0))
-    + "\r\n                    </p>\r\n                    <div class=\"row\">\r\n                        <div class=\"col-xs-12 col-md-6\">\r\n                            <p class=\"commenter-detail\">\r\n                                "
+    + "\r\n            </p>\r\n            <div class=\"row\">\r\n                <div class=\"col-xs-12 col-md-6\">\r\n                    <p class=\"commenter-detail\">\r\n                        "
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.details : depth0)) != null ? stack1.name : stack1), depth0))
     + " <span class=\"glyphicon glyphicon-ok-circle\" aria-hidden=\"true\"></span>"
     + alias2(alias1((depths[1] != null ? depths[1].flipkart_certified_buyer : depths[1]), depth0))
-    + " &nbsp"
+    + "\r\n                        &nbsp"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.details : depth0)) != null ? stack1.time : stack1), depth0))
-    + "\r\n                            </p>\r\n                        </div>\r\n                        <div class=\"internal-col-xs-12 col-md-6\">\r\n                            <div class=\"comment-action-container pull-right like-dis-like-incrementor-container\">\r\n                                <span class=\"like-incrementor\" data-review-id="
+    + "\r\n                    </p>\r\n                </div>\r\n                <div class=\"internal-col-xs-12 col-md-6\">\r\n                    <div class=\"comment-action-container pull-right like-dis-like-incrementor-container\">\r\n                        <span class=\"like-incrementor\" data-review-id="
     + alias2(alias1((depth0 != null ? depth0.id : depth0), depth0))
-    + ">\r\n                                  <span class=\"glyphicon glyphicon-thumbs-up thumbs-up thumbs-up-identifi pointer\" tabindex=\"0\" aria-label=\"clickable like\" role=\"button\" ></span>\r\n                                <span class=\"pointer like-dislike-count like-count\" tabindex=\"0\" role=\"number\" aria-label=\""
+    + ">\r\n                                  <span class=\"glyphicon glyphicon-thumbs-up thumbs-up thumbs-up-identifi pointer\" tabindex=\"0\" aria-label=\"clickable like\" role=\"button\" ></span>\r\n                        <span class=\"pointer like-dislike-count like-count\" tabindex=\"0\" role=\"number\" aria-label=\""
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.details : depth0)) != null ? stack1.likes : stack1), depth0))
     + " likes\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.details : depth0)) != null ? stack1.likes : stack1), depth0))
-    + "</span>\r\n                                </span>\r\n                                <span class=\"dis-like-incrementor\" data-review-id="
+    + "</span>\r\n                        </span>\r\n                        <span class=\"dis-like-incrementor\" data-review-id="
     + alias2(alias1((depth0 != null ? depth0.id : depth0), depth0))
-    + ">\r\n                                  <span class=\"glyphicon glyphicon-thumbs-down thumbs-down thumbs-down-identifi pointer\"  tabindex=\"0\" aria-label=\"clickable dislike\" role=\"button\"></span>\r\n                                <span class=\"pointer like-dislike-count dis-like-count\" tabindex=\"0\" role=\"number\" aria-label=\""
+    + ">\r\n                                  <span class=\"glyphicon glyphicon-thumbs-down thumbs-down thumbs-down-identifi pointer\"  tabindex=\"0\" aria-label=\"clickable dislike\" role=\"button\"></span>\r\n                        <span class=\"pointer like-dislike-count dis-like-count\" tabindex=\"0\" role=\"number\" aria-label=\""
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.details : depth0)) != null ? stack1.likes : stack1), depth0))
     + " dislikes\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.details : depth0)) != null ? stack1.dis_likes : stack1), depth0))
-    + "</span>\r\n                                </span>\r\n                                <div class=\"dropdown inline-block\">\r\n                                    <button class=\"btn btn-default dropdown-toggle\" type=\"button\" tabindex=\"0\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\r\n                                        aria-expanded=\"true\">\r\n                                                                 <span class=\"caret\"></span>\r\n                                                             </button>\r\n                                    <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">\r\n"
+    + "</span>\r\n                        </span>\r\n                        <div class=\"dropdown inline-block\">\r\n                            <button class=\"btn btn-default dropdown-toggle\" type=\"button\" tabindex=\"0\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\r\n                                aria-expanded=\"true\">\r\n                                                                 <span class=\"caret\"></span>\r\n                                                                 <span class=\"hidden\">Carret</span>\r\n                                                             </button>\r\n                            <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depths[1] != null ? depths[1].flipkart_comment_related_action : depths[1]),{"name":"each","hash":{},"fn":container.program(2, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "                                    </ul>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </li>\r\n";
+    + "                            </ul>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</li>\r\n";
 },"2":function(container,depth0,helpers,partials,data) {
-    return "                                        <li><a href=\"javascript:void(0)\">"
+    return "                                <li><a href=\"javascript:void(0)\">"
     + container.escapeExpression(container.lambda(depth0, depth0))
-    + "</a>\r\n                                        </li>\r\n";
+    + "</a>\r\n                                </li>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1;
 
