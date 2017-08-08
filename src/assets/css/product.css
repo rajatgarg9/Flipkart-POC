@@ -7410,6 +7410,10 @@ button.close {
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
+body {
+  background-color: white;
+}
+
 #header-container .head-nav {
   padding-bottom: 20px;
 }
@@ -7877,8 +7881,4 @@ button.close {
 
 #specification-list-container .spec-table-cont tbody tr td {
   font-size: 14px;
-}
-
-#bootstrap-overrides {
-  background-color: white;
 }

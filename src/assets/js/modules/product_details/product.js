@@ -1,12 +1,3 @@
-Handlebars.registerHelper("ifcond", function (catId, subId, options) {
-    if (catId === subId) {
-        return options.fn(this);
-    } else {
-        return options.inverse(this);
-    }
-});
-
-
 (() => {
 
     /*
